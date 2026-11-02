@@ -27,6 +27,8 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
    `git clone https://github.com/Desmotesreal/yuzdebirmedya ~/yuzdebirmedya`. `ffmpeg`, `/usr/bin/google-chrome`,
    python `playwright`, `scipy`, `numpy`, `PIL` ve Inter fontu (`fc-list | grep Inter`) olmalı.
 1. **Tarih**: Bugünün tarihini (Europe/Istanbul) al. `posts.json` oku: aynı konuyu/kancayı son 30 günde tekrar etme.
+   **Çift paylaşım kontrolü**: Metricool `getScheduledPosts` (brandId 7823005, bugün 00:00–23:59, Europe/Istanbul) —
+   bugüne zaten planlı bir Reel/Short varsa yenisini üretme; sadece adım 10 (istatistik) ve 12 (rapor) yap.
 2. **Plan var mı?** `plan/<YYYY-MM-DD>.json` varsa → `ELEVEN_API_KEY=... python3 tools/run_plan.py <tarih> --no-render`,
    `~/work/<tarih>/sheet.png`'ye **bak** (yazı taşması / çakışma yoksa) → `python3 tools/run_plan.py <tarih>` (render + yükleme) → adım 8.
    Plan yoksa adım 3'ten devam: **yeni içerik üret**.
