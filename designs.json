@@ -12,5 +12,12 @@
   "yerlesim": "merkez telefon, sonra halka",
   "vurgu": "cyan",
   "gecisler": "yukarı zoom geçişi"
+ },
+ {
+  "date": "2026-11-10",
+  "metafor": "9x24 saat matrisi (gün x saat ızgarası), uyku/uyanık/mor 2 saat hücreleri, 18 hücre bloğa uçar; koşu şeritleri",
+  "yerlesim": "sola yaslı tipografi + üst başlık bandı + tam ekran ızgara",
+  "vurgu": "violet",
+  "gecisler": "ızgaraya bulanık zoom, yatay kaydırma (whip) girişi, fade"
  }
 ]

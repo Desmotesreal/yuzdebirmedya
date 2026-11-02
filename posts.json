@@ -45,5 +45,31 @@
    "414173009"
   ],
   "note": "seslendirmeli, 60fps 2x, şablon v04_telefon (elle üretildi)"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "9 günlük ara tatil: günde 2 saat = 18 saat önde",
+  "format": "gündem kancalı simülasyon",
+  "hook": "Dokuz günlük ara tatile sadece dört gün kaldı",
+  "script": [
+   "Dokuz günlük ara tatile sadece dört gün kaldı.",
+   "Dokuz gün, tam iki yüz on altı saat demek.",
+   "Bunun yetmiş iki saatini uyuyarak geçireceksin.",
+   "Geriye yüz kırk dört saat kalıyor.",
+   "Şimdi her günden sadece iki saati kendine ayır.",
+   "Dokuz günde on sekiz saat eder.",
+   "Bu, uyanık zamanının sadece sekizde biri.",
+   "Geri kalan yüz yirmi altı saat yine dinlenmenin.",
+   "Okullar açıldığında herkes aynı yerden başlamayacak.",
+   "Sen on sekiz saat önde döneceksin.",
+   "Planını şimdi yaz, kaydet ve tatilde tekrar izle."
+  ],
+  "caption": "9 günlük ara tatil = 216 saat. Uykuyu çıkar, 144 saat uyanıksın. Her gün sadece 2 saat ayır: okula 18 saat önde dönersin, geri kalan 126 saat yine dinlenmenin. Kaydet, tatilde tekrar izle. Planını yorumlara yaz 👇\n\n#aratatil #yks #lgs #dersçalışma #motivasyon #disiplin #öğrenci #hedef",
+  "yt_title": "9 günlük ara tatilde 18 saat önde ol #shorts",
+  "video_url": "https://static.metricool.com/planner/202611/7823005-file-10478365257998229310.mp4",
+  "metricool_ids": [
+   "1615556119540813813"
+  ],
+  "source": "MEB 2026-2027 takvimi: 1. dönem ara tatil 16-20 Kasım 2026 (Cumhuriyet)"
  }
 ]
