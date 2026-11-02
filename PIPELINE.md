@@ -50,7 +50,8 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
    kilidi…), sahne geçişlerini ve tipografi düzenini de çeşitlendir. `templates/` sadece **kod/teknik örneği**dir,
    kompozisyonları kopyalanmaz. Tasarımı bitirince `designs.json`'a {date, metafor, yerlesim, vurgu, gecisler} ekle. Motor: `engine/engine.js` (`boot({dur,scene(t),...})`, `split`, `charsIn`, `slam`, `maskLine`,
    `fadeBlock`, `sweep`, `ENG.mid` canvas, `pulse`, `k`, `E` easing'leri). Zamanları **doğrudan timing.json'dan** al
-   (videoda ses `offset=0.3` sn gecikmeli başlar: ekran zamanı = 0.3 + cümle/kelime başlangıcı). `dur` = 0.3 + ses süresi + 1.3.
+   (videoda ses `offset=0.3` sn gecikmeli başlar: ekran zamanı = 0.3 + cümle/kelime başlangıcı — HTML'de `const O=.3` tanımlayıp
+   **her** zamanı `O+<timing.json değeri>` diye yaz; elle çıkarılmış zaman yazma, sahneler kayar). `dur` = 0.3 + ses süresi + 1.3.
    Engine yolu: `<script src="file:///home/.../yuzdebirmedya/engine/engine.js">` gibi **mutlak yol** kullan (CSS için de).
    Güvenli alan: önemli yazıları y=300–1500 arasında tut (Instagram arayüzü üst/altı kapatır). Uzun kelimede h1 ≤ 220px.
    Kontrol: `SIZE=1080x1920 SCALE=1 FPS=30 python3 engine/render.py stills index.html t1,t2,...` → `sheet.png`'ye **bak**,
@@ -59,7 +60,10 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 7. **Müzik** `~/work/<tarih>/audio.py`: şablonlardaki `audio.py` gibi `audio_engine.make(spec, 'music.wav')`
    (chords / pulses / motif / events — impact, whoosh, riser, ticks, bell…) olayları sahne zamanlarına hizala.
    `python3 tools/mix.py vo.mp3 music.wav mix.wav <dur> 0.3`.
-8. **Render + yükleme**: `tools/render_parallel.sh index.html <dur> mix.wav reel_<tarih>.mp4 reels` (~30–40 dk) →
+8. **Render + yükleme**: `tools/render_parallel.sh index.html <dur> mix.wav reel_<tarih>.mp4 reels` (2 çekirdekte 40 sn video ≈ 38 dk;
+   süre videonun uzunluğuyla doğru orantılı → 35 sn'yi aşma). Çıktı **95 MB'ı geçerse script otomatik yeniden kodlar**
+   (GitHub 100 MB üstünü reddeder). `publish.sh` push ya da URL kontrolü başarısız olursa **hata koduyla çıkar** — VIDEO_URL
+   satırı yoksa Metricool'a gönderme, raporla. →
    `tools/publish.sh reel_<tarih>.mp4 <tarih>.mp4` → `VIDEO_URL=...`. Kapak karesi: kanca yazısının tam göründüğü an (ms).
    Render hata verirse bir kez `FPS=30 SCALE=1` ile tekrar dene.
 9. **Metricool'a planla** (07:00 Europe/Istanbul; saat geçtiyse şimdi+15 dk). **TEK gönderi** (ücretsiz planda ayda 20
@@ -76,7 +80,8 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 11. **Kayıt**: `posts.json`'a ekle `{date, topic, format, hook, script, caption, yt_title, video_url, metricool_ids}` →
     `git add -A && git commit -m "<tarih> reels" && git push origin main` (yalnızca main; videolar main'e girmez).
 12. **Rapor**: Son mesajda Türkçe 3–5 satır: konu, kanca, planlanan saat, Metricool linkleri, varsa sorun.
-    ElevenLabs kredisi 3.000'in altına düştüyse ya da bir adım başarısızsa bunu açıkça yaz.
+    ElevenLabs kredisi 3.000'in altına düştüyse ya da bir adım başarısızsa bunu açıkça yaz. (Kredi `GET /v1/user/subscription`
+    ile okunur; anahtarda `user_read` izni yoksa 401 döner → "kredi okunamadı" yaz, adımı atla.)
 
 ## Hata durumları
 - TTS hata (402/401): anahtar/plan sorunu → rapor et, o gün dünkü değil **yedek plan**: `plan/` altında kullanılmamış bir
