@@ -1,17 +1,17 @@
 {
- "template": "v07_gelecek",
+ "template": "v06_kitap",
  "orig_dur": 21,
- "cover_orig": 11.9,
+ "cover_orig": 9.6,
  "script": [
-  "Bir yıl sonraki sen, sana tek bir mesaj atabilseydi?",
-  "Şöyle yazardı.",
-  "O gün başladığın için teşekkür ederim.",
-  "İlk haftalar çok zordu, biliyorum.",
-  "Ama bak, buradayım.",
-  "Lütfen bugün bırakma.",
-  "Bu mesajı alabilmen için, bugün başlaman lazım.",
-  "Gelecekteki sana ne yazardın?",
-  "Yorumlara yaz, bir yıl sonra gel oku."
+  "Günde sadece on sayfa okusan,",
+  "Yılda kaç kitap eder?",
+  "Bir yıl boyunca, her gün on sayfa.",
+  "Üç bin altı yüz elli sayfa.",
+  "Yani on iki kitap. On iki farklı akıl.",
+  "Peki on yılda?",
+  "Yüz yirmi kitap. Bir kütüphane rafı dolusu.",
+  "Okuduğun her sayfa, seni dünkü halinden ayırır.",
+  "Bugünkü on sayfan hangi kitaptan? Yorumlara yaz."
  ],
  "cues": [
   [
@@ -22,32 +22,22 @@
   [
    0,
    0.5,
-   0.5
-  ],
-  [
-   0,
-   0.8,
-   0.9
-  ],
-  [
-   0,
-   1,
-   3.2
+   0.4
   ],
   [
    1,
    0,
-   3.6
+   0.95
   ],
   [
    2,
    0,
-   5.2
+   3.4
   ],
   [
    3,
    0,
-   7.4
+   8.0
   ],
   [
    4,
@@ -55,43 +45,58 @@
    9.3
   ],
   [
+   4,
+   1,
+   10.6
+  ],
+  [
    5,
    0,
-   10.9
+   11.6
   ],
   [
    6,
    0,
-   12.8
+   12.4
   ],
   [
    6,
    0.5,
-   13.4
-  ],
-  [
-   6,
-   0.75,
-   14.0
+   13.1
   ],
   [
    7,
    0,
-   16.5
+   14.7
+  ],
+  [
+   7,
+   0.45,
+   15.0
+  ],
+  [
+   7,
+   0.7,
+   15.4
   ],
   [
    8,
    0,
-   17.6
+   17.7
+  ],
+  [
+   8,
+   0.75,
+   18.7
   ]
  ],
- "caption": "Bu mesajı alabilmen için bugün başlaman lazım. Gelecekteki sana ne yazardın? Yorumlara yaz, 1 yıl sonra gel oku.\n\n#gelecek #motivasyon #hedef #kendineinan #disiplin #kişiselgelişim",
- "yt_title": "1 yıl sonraki sen sana mesaj atsaydı? #shorts",
+ "caption": "Günde sadece 10 sayfa okursan yılda 3.650 sayfa, yani 300 sayfalık 12 kitap eder. 10 yılda 120 kitap. Bugünkü 10 sayfan hangi kitaptan? Yorumlara yaz 📚\n\n#kitap #kitapokumak #okuma #alışkanlık #motivasyon #kitaptavsiyesi #kişiselgelişim",
+ "yt_title": "Günde 10 sayfa = yılda 12 kitap #shorts",
  "tags": [
+  "kitap",
+  "kitap okumak",
+  "okuma alışkanlığı",
   "motivasyon",
-  "gelecek",
-  "hedef",
-  "disiplin",
   "kişisel gelişim"
  ]
 }

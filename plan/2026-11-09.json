@@ -1,0 +1,97 @@
+{
+ "template": "v07_gelecek",
+ "orig_dur": 21,
+ "cover_orig": 11.9,
+ "script": [
+  "Bir yıl sonraki sen, sana tek bir mesaj atabilseydi?",
+  "Şöyle yazardı.",
+  "O gün başladığın için teşekkür ederim.",
+  "İlk haftalar çok zordu, biliyorum.",
+  "Ama bak, buradayım.",
+  "Lütfen bugün bırakma.",
+  "Bu mesajı alabilmen için, bugün başlaman lazım.",
+  "Gelecekteki sana ne yazardın?",
+  "Yorumlara yaz, bir yıl sonra gel oku."
+ ],
+ "cues": [
+  [
+   0,
+   0,
+   0.1
+  ],
+  [
+   0,
+   0.5,
+   0.5
+  ],
+  [
+   0,
+   0.8,
+   0.9
+  ],
+  [
+   0,
+   1,
+   3.2
+  ],
+  [
+   1,
+   0,
+   3.6
+  ],
+  [
+   2,
+   0,
+   5.2
+  ],
+  [
+   3,
+   0,
+   7.4
+  ],
+  [
+   4,
+   0,
+   9.3
+  ],
+  [
+   5,
+   0,
+   10.9
+  ],
+  [
+   6,
+   0,
+   12.8
+  ],
+  [
+   6,
+   0.5,
+   13.4
+  ],
+  [
+   6,
+   0.75,
+   14.0
+  ],
+  [
+   7,
+   0,
+   16.5
+  ],
+  [
+   8,
+   0,
+   17.6
+  ]
+ ],
+ "caption": "Bu mesajı alabilmen için bugün başlaman lazım. Gelecekteki sana ne yazardın? Yorumlara yaz, 1 yıl sonra gel oku.\n\n#gelecek #motivasyon #hedef #kendineinan #disiplin #kişiselgelişim",
+ "yt_title": "1 yıl sonraki sen sana mesaj atsaydı? #shorts",
+ "tags": [
+  "motivasyon",
+  "gelecek",
+  "hedef",
+  "disiplin",
+  "kişisel gelişim"
+ ]
+}

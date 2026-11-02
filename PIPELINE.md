@@ -12,7 +12,7 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 | Depo | `Desmotesreal/yuzdebirmedya` (herkese açık, **asla gizli bilgi koyma**) |
 | Ses | ElevenLabs, ses `J17lijyP1BHYcM7ld0Rg` (Adam, Türkçe), model `eleven_v4`, `language_code=tr` |
 | ElevenLabs anahtarı | Sadece görev talimatında; `ELEVEN_API_KEY` ortam değişkeni olarak kullan, dosyaya/depoya yazma |
-| Paylaşım saati | Her gün **07:00** (Europe/Istanbul) — Instagram Reel + YouTube Short |
+| Paylaşım günleri | **Çarşamba hariç** her gün **07:00** (Europe/Istanbul) — Instagram Reel + YouTube Short (tek gönderi) |
 | Format | 1080×1920, **60 fps**, 2x süper örnekleme, CRF 16, AAC 320k, -14 LUFS |
 
 ## Marka
@@ -43,8 +43,12 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
    - **Ekli sayılar yazıyla**: "iki bin yirmi yediye", "yüzde seksen dördü", "on iki kitap". Yüzde işareti yerine "yüzde".
    - Kısa, konuşma dilinde cümleler. İlk cümle merak uyandıran kanca. Son cümle CTA.
    Sonra: `ELEVEN_API_KEY=... python3 tools/tts.py ~/work/<tarih>` → `vo.mp3` + `timing.json` (cümle ve kelime zamanları).
-6. **Görsel** `~/work/<tarih>/index.html`: `templates/` altındaki örneklerden en uygun olanı kopyalayıp sahneleri yeni
-   metne göre yeniden yaz. Motor: `engine/engine.js` (`boot({dur,scene(t),...})`, `split`, `charsIn`, `slam`, `maskLine`,
+6. **Görsel** `~/work/<tarih>/index.html` — **HER VİDEO YENİ TASARIM** (YouTube "tekrarlayan içerik" riskine karşı):
+   `designs.json`'u oku; son 30 günde kullanılan **ana görsel fikri, yerleşim ve vurgu rengini tekrar etme**.
+   Her gün farklı bir ana metafor seç (ör. kum saati, yol/harita, merdiven, pil, nabız grafiği, takvim yırtılması, kitap
+   rafı, termometre, şehir silüeti dolumu, satranç, damla damla dolan bardak, fitil/mum, yörünge, bar yarışı, sayaç
+   kilidi…), sahne geçişlerini ve tipografi düzenini de çeşitlendir. `templates/` sadece **kod/teknik örneği**dir,
+   kompozisyonları kopyalanmaz. Tasarımı bitirince `designs.json`'a {date, metafor, yerlesim, vurgu, gecisler} ekle. Motor: `engine/engine.js` (`boot({dur,scene(t),...})`, `split`, `charsIn`, `slam`, `maskLine`,
    `fadeBlock`, `sweep`, `ENG.mid` canvas, `pulse`, `k`, `E` easing'leri). Zamanları **doğrudan timing.json'dan** al
    (videoda ses `offset=0.3` sn gecikmeli başlar: ekran zamanı = 0.3 + cümle/kelime başlangıcı). `dur` = 0.3 + ses süresi + 1.3.
    Engine yolu: `<script src="file:///home/.../yuzdebirmedya/engine/engine.js">` gibi **mutlak yol** kullan (CSS için de).
@@ -58,12 +62,13 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 8. **Render + yükleme**: `tools/render_parallel.sh index.html <dur> mix.wav reel_<tarih>.mp4 reels` (~30–40 dk) →
    `tools/publish.sh reel_<tarih>.mp4 <tarih>.mp4` → `VIDEO_URL=...`. Kapak karesi: kanca yazısının tam göründüğü an (ms).
    Render hata verirse bir kez `FPS=30 SCALE=1` ile tekrar dene.
-9. **Metricool'a planla** (07:00 Europe/Istanbul; saat geçtiyse şimdi+15 dk). **İki ayrı gönderi**:
-   - Instagram: `providers=[instagram]`, `instagramData={"type":"REEL","showReelOnFeed":true,"isAiGenerated":true}`,
-     `videoCoverMilliseconds=<kapak ms>`, `text`=açıklama + hashtagler.
-   - YouTube: `providers=[youtube]`, `youtubeData={"title":"... #shorts" (≤100 karakter),"type":"short","privacy":"public",
-     "tags":[...],"category":"EDUCATION","madeForKids":false,"isAiGeneratedContent":false}`, `text`=açıklama. Kapak gönderme.
-   - `media=[VIDEO_URL]`, `autoPublish=true`, diğer alanlar boş/varsayılan. Yanıttaki `media` metricool adresine dönmeli.
+9. **Metricool'a planla** (07:00 Europe/Istanbul; saat geçtiyse şimdi+15 dk). **TEK gönderi** (ücretsiz planda ayda 20
+   yayın sınırı var; iki ağı tek gönderide birleştir): `providers=[{"network":"instagram"},{"network":"youtube"}]`,
+   `media=[VIDEO_URL]`, `autoPublish=true`, `videoCoverMilliseconds=<kapak ms>`, `text`=açıklama + hashtagler,
+   `instagramData={"type":"REEL","showReelOnFeed":true,"isAiGenerated":true}`,
+   `youtubeData={"title":"... #shorts" (≤100 karakter),"type":"short","privacy":"public","tags":[...],"category":"EDUCATION",
+   "madeForKids":false,"isAiGeneratedContent":false}`. Kapak yüzünden reddedilirse kapak alanını çıkarıp bir kez tekrar dene.
+   Yanıttaki `media` metricool adresine dönmeli. Ayın kaçıncı yayını olduğunu `posts.json`'dan say; 18'i geçtiyse raporda uyar.
    Açıklama: 2–3 cümle (kanca + değer + CTA), sonra 6–8 Türkçe hashtag.
 10. **İstatistik** (her gün kısa, pazar günleri detaylı): Metricool `getAnalyticsAvailableMetrics` (instagram/reels,
     youtube) → son 7 günün izlenme/erişim/kaydetme/paylaşım değerlerini çek; `insights.md`'ye tarihli kısa not düş

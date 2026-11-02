@@ -1,102 +1,110 @@
 {
- "template": "v06_kitap",
- "orig_dur": 21,
- "cover_orig": 9.6,
+ "template": "v05_disiplin",
+ "orig_dur": 16,
+ "cover_orig": 10.6,
  "script": [
-  "Günde sadece on sayfa okusan,",
-  "Yılda kaç kitap eder?",
-  "Bir yıl boyunca, her gün on sayfa.",
-  "Üç bin altı yüz elli sayfa.",
-  "Yani on iki kitap. On iki farklı akıl.",
-  "Peki on yılda?",
-  "Yüz yirmi kitap. Bir kütüphane rafı dolusu.",
-  "Okuduğun her sayfa, seni dünkü halinden ayırır.",
-  "Bugünkü on sayfan hangi kitaptan? Yorumlara yaz."
+  "Motivasyon gelir.",
+  "Gider.",
+  "Canın istediği gün çalışmak kolay.",
+  "Fark, canın istemediği o günlerde açılır.",
+  "Yağmur yağsa da.",
+  "Yorgun olsan da.",
+  "Kimse izlemese de.",
+  "Her gün.",
+  "Çünkü disiplin, motivasyonun bittiği yerde başlar.",
+  "Canın istemese de başla.",
+  "Kaydet, zor bir günde tekrar izle."
  ],
  "cues": [
   [
    0,
    0,
-   0.1
+   0.05
   ],
   [
    0,
-   0.5,
-   0.4
+   0.75,
+   0.9
   ],
   [
    1,
    0,
-   0.95
+   1.6
   ],
   [
    2,
    0,
-   3.4
+   2.3
+  ],
+  [
+   2,
+   0.8,
+   3.6
   ],
   [
    3,
    0,
-   8.0
+   4.65
+  ],
+  [
+   3,
+   0.85,
+   6.0
   ],
   [
    4,
    0,
-   9.3
-  ],
-  [
-   4,
-   1,
-   10.6
+   7.4
   ],
   [
    5,
    0,
-   11.6
+   7.85
   ],
   [
    6,
    0,
-   12.4
+   8.3
   ],
   [
-   6,
+   7,
+   0,
+   9.05
+  ],
+  [
+   7,
    0.5,
-   13.1
-  ],
-  [
-   7,
-   0,
-   14.7
-  ],
-  [
-   7,
-   0.45,
-   15.0
-  ],
-  [
-   7,
-   0.7,
-   15.4
+   9.45
   ],
   [
    8,
    0,
-   17.7
+   10.05
   ],
   [
-   8,
-   0.75,
-   18.7
+   9,
+   0,
+   12.6
+  ],
+  [
+   9,
+   0.8,
+   13.0
+  ],
+  [
+   10,
+   0,
+   13.7
   ]
  ],
- "caption": "Günde sadece 10 sayfa okursan yılda 3.650 sayfa, yani 300 sayfalık 12 kitap eder. 10 yılda 120 kitap. Bugünkü 10 sayfan hangi kitaptan? Yorumlara yaz 📚\n\n#kitap #kitapokumak #okuma #alışkanlık #motivasyon #kitaptavsiyesi #kişiselgelişim",
- "yt_title": "Günde 10 sayfa = yılda 12 kitap #shorts",
+ "caption": "Canın istediği gün çalışmak kolay. Fark, canın istemediği günlerde açılır. Kaydet, zor bir günde tekrar izle.\n\n#disiplin #motivasyon #başarı #hedef #mindset #çalış #kişiselgelişim",
+ "yt_title": "Motivasyon gelir, gider. Disiplin kalır. #shorts",
  "tags": [
-  "kitap",
-  "kitap okumak",
-  "okuma alışkanlığı",
+  "disiplin",
   "motivasyon",
+  "başarı",
+  "hedef",
+  "çalışma motivasyonu",
   "kişisel gelişim"
  ]
 }
