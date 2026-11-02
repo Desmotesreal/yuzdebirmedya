@@ -1,5 +1,49 @@
 [
- {"date":"2026-11-02","topic":"YKSye 229 gün","format":"gündem+simülasyon","hook":"YKSye 229 gün kaldı","platforms":["instagram"],"note":"elle paylaşıldı, sessiz"},
- {"date":"2026-11-02","topic":"YKS 229 gün long video","format":"long 4dk","platforms":["youtube"],"note":"19:00 Metricool, elle"},
- {"date":"2026-11-03","topic":"2026nın %84ü bitti","format":"gündem+simülasyon","hook":"2026nın yüzde seksen dördü bitti","platforms":["instagram","youtube"],"metricool_ids":["414113151"],"note":"seslendirmeli"}
+ {
+  "date": "2026-11-02",
+  "topic": "YKSye 229 gün",
+  "format": "gündem+simülasyon",
+  "hook": "YKSye 229 gün kaldı",
+  "platforms": [
+   "instagram"
+  ],
+  "note": "elle paylaşıldı, sessiz"
+ },
+ {
+  "date": "2026-11-02",
+  "topic": "YKS 229 gün long video",
+  "format": "long 4dk",
+  "platforms": [
+   "youtube"
+  ],
+  "note": "19:00 Metricool, elle"
+ },
+ {
+  "date": "2026-11-03",
+  "topic": "2026nın %84ü bitti",
+  "format": "gündem+simülasyon",
+  "hook": "2026nın yüzde seksen dördü bitti",
+  "platforms": [
+   "instagram",
+   "youtube"
+  ],
+  "metricool_ids": [
+   "414113151"
+  ],
+  "note": "seslendirmeli"
+ },
+ {
+  "date": "2026-11-05",
+  "topic": "Günde 4 saat telefon",
+  "format": "simülasyon",
+  "hook": "Günde dört saat telefon",
+  "platforms": [
+   "instagram",
+   "youtube"
+  ],
+  "metricool_ids": [
+   "414173009"
+  ],
+  "note": "seslendirmeli, 60fps 2x, şablon v04_telefon (elle üretildi)"
+ }
 ]

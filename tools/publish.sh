@@ -4,7 +4,7 @@
 # Metricool gönderi oluşturulurken videoyu kendi sunucusuna kopyalar; sonraki gün dosyanın silinmesi sorun değil.
 # Kullanım: tools/publish.sh <video.mp4> <hedef_ad.mp4> [kapak.jpg]
 set -euo pipefail
-SRC="$1"; NAME="$2"; COVER="${3:-}"
+SRC="$(readlink -f "$1")"; NAME="$2"; COVER="${3:+$(readlink -f "$3")}"
 REPO_URL="https://github.com/Desmotesreal/yuzdebirmedya"
 TMP=$(mktemp -d)
 cd "$TMP"

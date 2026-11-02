@@ -1,1 +1,16 @@
-[]
+[
+ {
+  "date": "2026-11-03",
+  "metafor": "yıl ilerleme çubuğu (ay ay)",
+  "yerlesim": "yatay çubuk + dev sayaç",
+  "vurgu": "gold",
+  "gecisler": "bugün noktasına zoom"
+ },
+ {
+  "date": "2026-11-05",
+  "metafor": "telefon ekranı + ekran süresi grafiği + 24 saat halkası",
+  "yerlesim": "merkez telefon, sonra halka",
+  "vurgu": "cyan",
+  "gecisler": "yukarı zoom geçişi"
+ }
+]
