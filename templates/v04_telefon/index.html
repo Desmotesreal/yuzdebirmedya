@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../engine/base.css">
+<style>
+#phone{position:absolute;left:260px;top:400px;width:560px;height:1100px;border-radius:84px;border:3px solid rgba(255,255,255,.22);
+  background:linear-gradient(180deg,#0e1628,#070a12);box-shadow:0 0 120px rgba(59,227,255,.18),inset 0 0 60px rgba(59,227,255,.06);overflow:hidden}
+#phone .in{position:absolute;left:0;width:560px;text-align:center}
+#notch{position:absolute;left:200px;top:26px;width:160px;height:40px;border-radius:30px;background:#000}
+.bar{position:absolute;bottom:250px;width:44px;border-radius:12px;background:linear-gradient(#7ff0ff,#1d79b0);box-shadow:0 0 24px rgba(59,227,255,.5);transform-origin:bottom}
+.dl{position:absolute;bottom:200px;width:44px;text-align:center;font-weight:700;font-size:22px;color:#6f7896}
+</style></head><body>
+<div id="cam">
+  <div class="abs mask body" id="a1" style="top:700px;font-size:72px"><span>Günde</span></div>
+  <div class="abs h1 cyan" id="a2" style="top:800px;font-size:250px;letter-spacing:-10px">4 SAAT</div>
+  <div class="abs mask h2" id="a3" style="top:1100px;font-size:100px"><span>telefon.</span></div>
+  <div class="abs mask body" id="a4" style="top:820px;font-size:72px"><span>Masum görünüyor,</span></div>
+  <div class="abs mask h2" id="a5" style="top:910px;font-size:124px"><span>değil mi?</span></div>
+
+  <div id="phone">
+    <div id="notch"></div>
+    <div class="in kick" id="p0" style="top:130px;font-size:26px;letter-spacing:8px">EKRAN SÜRESİ</div>
+    <div class="in dim" id="p1" style="top:200px;font-size:26px;font-weight:600;letter-spacing:2px">GÜNLÜK ORTALAMA</div>
+    <div class="in h1" id="p2" style="top:250px;font-size:120px;letter-spacing:-4px">4s 0dk</div>
+    <div class="in h2 cyan" id="p3" style="top:400px;font-size:96px">= 61 GÜN</div>
+    <div id="bars"></div>
+  </div>
+  <div class="abs mask body" id="b1" style="top:1560px;font-size:56px"><span>Bir yılın 2 ayı. <span class="cyanc">Kesintisiz.</span></span></div>
+
+  <div class="abs mask body" id="c1" style="top:330px;font-size:62px"><span>Günde 16 saat uyanıksın.</span></div>
+  <div class="abs h1 cyan" id="c2" style="top:790px;font-size:200px;letter-spacing:-8px">%25</div>
+  <div class="abs mask h2" id="c3" style="top:1380px;font-size:84px"><span>Bunun <span class="cyanc">4'te 1'i</span> ekranda.</span></div>
+</div>
+<div id="screen">
+  <div class="abs mask body" id="d1" style="top:680px;font-size:70px"><span>Bu tempoyla 10 yılda</span></div>
+  <div class="abs h1 cyan" id="d2" style="top:790px;font-size:260px;letter-spacing:-10px">2,5 YIL</div>
+  <div class="abs mask h2" id="d3" style="top:1080px;font-size:88px"><span>uyanık geçen ömür.</span></div>
+  <div class="abs mask body dim" id="d4" style="top:1210px;font-size:52px"><span>Sadece ekrana bakarak.</span></div>
+
+  <div class="abs mask h2" id="e1" style="top:720px;font-size:120px"><span>Bugün</span></div>
+  <div class="abs mask h1" id="e2" style="top:850px;font-size:124px;letter-spacing:-4px"><span class="cyan">1 saatini geri al.</span></div>
+  <div class="abs" id="e3" style="top:1150px;--pill:rgba(59,227,255,.7);--pillc:#9ff4ff"><span class="pill">EKRAN SÜRENİ YORUMA YAZ</span></div>
+</div>
+<script src="../../engine/engine.js"></script>
+<script>
+let A2,C2,D2,P3;const BH=[.62,.8,.7,.95,.75,1,.88],DL=['P','S','Ç','P','C','C','P'];
+boot({dur:20,bg:'radial-gradient(120% 80% at 50% 40%,#0c1422 0%,#060910 55%,#020305 100%)',leaks:['60,200,255','120,80,255'],
+  init(){A2=split('a2');C2=split('c2');D2=split('d2');P3=split('p3');
+    const bw=$('bars');BH.forEach((h,i)=>{const b=document.createElement('div');b.className='bar';b.style.left=(70+i*64)+'px';b.style.height=(h*260)+'px';b.id='bar'+i;bw.appendChild(b);
+      const l=document.createElement('div');l.className='dl';l.style.left=(70+i*64)+'px';l.textContent=DL[i];l.id='dl'+i;bw.appendChild(l)})},
+  bokeh:t=>'120,190,255',
+  shakes:[[.6,24],[6.8,16],[8.72,20],[13.4,30]],
+  flashes:[[.6,.3],[8.72,.7,6],[13.4,.4]],
+  sparks:[[.6,540,940,.45,'cyan'],[13.4,540,900,.9,'cyan'],[10.6,540,880,.35,'cyan']],
+  cam(t){const z=P(t,8.1,8.72);
+    if(z>0&&t<8.72)return{fx:540,fy:L(960,700,E.ioC(z)),s:L(1,9,E.iE(z)),blur:E.iE(z)*14};
+    if(t>=8.72&&t<12.75)return{s:L(1.15,1,k(t,8.72,9.6,E.oC))};
+    return{s:1+.03*Math.sin(t*.5),o:t>12.75?0:1}},
+  scene(t){
+    // S1
+    maskLine('a1',t,.1,1.85);
+    slam(A2,t,.35,{st:.05,dur:.45,out:1.85});sweep(A2,L(100,0,k(t,.5,1.9,E.ioC)));
+    maskLine('a3',t,.8,1.9);maskLine('a4',t,2.1,3.0);maskLine('a5',t,2.4,3.05);
+    // S2 telefon
+    const pi=k(t,3.4,4.3,E.oC),po=t>8.72?1:0;
+    set('phone',{o:C(pi*1.5)*(1-po),y:(1-pi)*500,rx:(1-pi)*35,s:L(.85,1,pi)});$('phone').parentElement.style.perspective='1400px';
+    fadeBlock('p0',t,4.0,null,{dy:20});fadeBlock('p1',t,4.1,null,{dy:20});
+    const yr=k(t,5.2,6.4,E.ioC);
+    if(t<5.15){$('p2').textContent='4s 0dk';$('p1').textContent='GÜNLÜK ORTALAMA'}else{$('p2').textContent=fmt(L(4,1460,yr))+' sa';$('p1').textContent='YILLIK TOPLAM'}
+    set('p2',{o:k(t,4.2,4.6)*(1-.8*pulse(t,5.15,25)),y:(1-k(t,4.2,4.6))*30,s:1+.08*pulse(t,6.4,6)});
+    slam(P3,t,6.8,{st:.04,dur:.45,s0:1.8});
+    BH.forEach((h,i)=>{const p=k(t,4.4+i*.07,5.0+i*.07,E.oB);$('bar'+i).style.transform=`scaleY(${Math.max(0,p)})`;
+      $('bar'+i).style.opacity=1-k(t,5.2,5.6)*.65;$('dl'+i).style.opacity=k(t,4.4+i*.07,4.8+i*.07)});
+    maskLine('b1',t,7.15,8.0);
+    // S3 halka
+    maskLine('c1',t,8.85,12.3);
+    const g=ENG.mid;g.clearRect(0,0,1080,1920);
+    if(t>8.7&&t<12.8){const a=k(t,8.75,9.3)*(1-k(t,12.3,12.7,E.iC)),cx=540,cy=880,R=330;
+      g.save();g.globalAlpha=a;g.lineCap='butt';
+      for(let i=0;i<16;i++){const a0=-Math.PI/2+i*Math.PI*2/16+.03,a1=a0+Math.PI*2/16-.06;
+        const lit=k(t,9.4+i*.3,9.7+i*.3,E.oC)*(i<4?1:0);
+        g.beginPath();g.arc(cx,cy,R,a0,a1);g.lineWidth=46;g.strokeStyle='rgba(255,255,255,.08)';g.shadowBlur=0;g.stroke();
+        const ap=k(t,8.9+i*.03,9.3+i*.03);g.beginPath();g.arc(cx,cy,R,a0,a1);g.lineWidth=46*ap;g.strokeStyle=`rgba(255,255,255,${.1*ap})`;g.stroke();
+        if(lit>0){g.beginPath();g.arc(cx,cy,R,a0,a0+(a1-a0)*lit);g.lineWidth=52;g.strokeStyle='#3be3ff';g.shadowColor='rgba(59,227,255,.9)';g.shadowBlur=40;g.stroke()}}
+      // saat etiketleri
+      g.shadowBlur=0;g.font='700 24px "Inter Display"';g.textAlign='center';g.fillStyle='rgba(255,255,255,.4)';
+      ['08','12','16','20'].forEach((s,i)=>{const an=-Math.PI/2+i*Math.PI/2;g.fillText(s,cx+Math.cos(an)*(R+70),cy+Math.sin(an)*(R+70)+8)});
+      g.restore()}
+    const pv=Math.round(25*k(t,9.4,10.6,E.lin));C2[1].textContent=pv>=10?String(pv)[0]:'';C2[2].textContent=String(pv).slice(-1);
+    set('c2',{o:k(t,9.3,9.6)*(1-k(t,12.3,12.6,E.iC)),s:1+.12*pulse(t,10.6,6)});sweep(C2,L(100,0,P(t,9.4,12)));
+    C2.forEach(c=>set(c,{}));
+    maskLine('c3',t,10.85,12.35);
+    // S4
+    maskLine('d1',t,12.8,15.9);slam(D2,t,13.4,{st:.05,dur:.5,out:15.9});sweep(D2,L(100,0,k(t,13.6,15.8,E.ioC)));
+    maskLine('d3',t,14.0,15.95);maskLine('d4',t,14.7,16.0);
+    // S5
+    maskLine('e1',t,16.4,19.45);maskLine('e2',t,16.7,19.5);
+    $('e2').firstElementChild.style.backgroundPosition=`${L(140,-40,k(t,17,19,E.ioC))}% 0`;
+    fadeBlock('e3',t,17.5,19.5,{dy:40});$('e3').style.transform+=` scale(${1+.03*Math.sin(t*5)*(t>18?1:0)})`;
+  }});
+</script></body></html>

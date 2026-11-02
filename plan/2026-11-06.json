@@ -1,0 +1,102 @@
+{
+ "template": "v06_kitap",
+ "orig_dur": 21,
+ "cover_orig": 9.6,
+ "script": [
+  "Günde sadece on sayfa okusan,",
+  "Yılda kaç kitap eder?",
+  "Bir yıl boyunca, her gün on sayfa.",
+  "Üç bin altı yüz elli sayfa.",
+  "Yani on iki kitap. On iki farklı akıl.",
+  "Peki on yılda?",
+  "Yüz yirmi kitap. Bir kütüphane rafı dolusu.",
+  "Okuduğun her sayfa, seni dünkü halinden ayırır.",
+  "Bugünkü on sayfan hangi kitaptan? Yorumlara yaz."
+ ],
+ "cues": [
+  [
+   0,
+   0,
+   0.1
+  ],
+  [
+   0,
+   0.5,
+   0.4
+  ],
+  [
+   1,
+   0,
+   0.95
+  ],
+  [
+   2,
+   0,
+   3.4
+  ],
+  [
+   3,
+   0,
+   8.0
+  ],
+  [
+   4,
+   0,
+   9.3
+  ],
+  [
+   4,
+   1,
+   10.6
+  ],
+  [
+   5,
+   0,
+   11.6
+  ],
+  [
+   6,
+   0,
+   12.4
+  ],
+  [
+   6,
+   0.5,
+   13.1
+  ],
+  [
+   7,
+   0,
+   14.7
+  ],
+  [
+   7,
+   0.45,
+   15.0
+  ],
+  [
+   7,
+   0.7,
+   15.4
+  ],
+  [
+   8,
+   0,
+   17.7
+  ],
+  [
+   8,
+   0.75,
+   18.7
+  ]
+ ],
+ "caption": "Günde sadece 10 sayfa okursan yılda 3.650 sayfa, yani 300 sayfalık 12 kitap eder. 10 yılda 120 kitap. Bugünkü 10 sayfan hangi kitaptan? Yorumlara yaz 📚\n\n#kitap #kitapokumak #okuma #alışkanlık #motivasyon #kitaptavsiyesi #kişiselgelişim",
+ "yt_title": "Günde 10 sayfa = yılda 12 kitap #shorts",
+ "tags": [
+  "kitap",
+  "kitap okumak",
+  "okuma alışkanlığı",
+  "motivasyon",
+  "kişisel gelişim"
+ ]
+}

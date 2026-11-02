@@ -1,0 +1,281 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../engine/base.css">
+<style>
+html,body{width:1920px;height:1080px}
+#cam,#screen{width:1920px;height:1080px}
+.abs{width:1920px}
+.lane-name{position:absolute;left:150px;font-weight:800;font-size:44px;letter-spacing:1px}
+.lane-sub{position:absolute;left:150px;font-weight:600;font-size:22px;letter-spacing:3px;color:#8d93a8}
+.cnt{position:absolute;right:150px;width:360px;text-align:right;font-weight:900;font-size:92px;letter-spacing:-3px;line-height:1}
+.rate{position:absolute;left:150px;font-weight:700;font-size:22px;letter-spacing:2px;padding:6px 14px;border-radius:30px;border:1.5px solid}
+#subs{position:absolute;left:260px;width:1400px;top:968px;text-align:center;font-weight:600;font-size:38px;line-height:1.25;color:#f4f2ee;
+  text-shadow:0 2px 18px rgba(0,0,0,.9),0 0 4px rgba(0,0,0,.9)}
+#subs b{color:#ffd77a;font-weight:800}
+.card{position:absolute;top:330px;width:500px;height:520px;border-radius:32px;padding:44px 42px;background:rgba(255,255,255,.045);border:1.5px solid rgba(255,255,255,.12)}
+.card .no{font-weight:700;font-size:24px;letter-spacing:6px;color:#8d93a8}
+.card .ttl{margin-top:16px;font-weight:900;font-size:84px;letter-spacing:-3px;line-height:1}
+.card .when{margin-top:14px;font-weight:700;font-size:28px;letter-spacing:2px;color:#ffd77a}
+.card ul{margin-top:34px;list-style:none;display:flex;flex-direction:column;gap:18px}
+.card li{font-weight:600;font-size:30px;line-height:1.25;color:#e9e6df;padding-left:34px;position:relative}
+.card li:before{content:"";position:absolute;left:0;top:14px;width:14px;height:14px;border-radius:4px;background:#ffc24b}
+.half{position:absolute;top:0;width:960px;height:1080px}
+.pill2{display:inline-block;font-weight:800;font-size:40px;letter-spacing:3px;padding:26px 54px;border-radius:90px;border:2.5px solid rgba(255,194,75,.8);color:#ffd77a;background:rgba(255,194,75,.08)}
+</style></head><body>
+<div id="cam">
+  <!-- P0 soğuk açılış -->
+  <div class="abs kick" id="o0" style="top:150px;font-size:30px">19 HAZİRAN 2027 · SABAH</div>
+  <div class="abs h2" id="o1" style="top:200px;font-size:84px">TYT BAŞLAMAK ÜZERE</div>
+  <div class="abs mask h2" id="o2" style="top:780px;font-size:70px"><span>Aralarındaki fark <span class="goldc">zekâ değil.</span></span></div>
+  <div class="abs kick" id="o3" style="top:330px;font-size:30px;color:#ff3d57">◀◀ GERİ SAR</div>
+  <div class="abs h1 gold" id="o4" style="top:400px;font-size:220px;letter-spacing:-8px">19 HAZİRAN</div>
+  <div class="abs h2" id="o5" style="top:660px;font-size:64px;letter-spacing:4px">229 GÜN ÖNCE</div>
+  <!-- P1 giriş -->
+  <div class="abs kick" id="i0" style="top:150px">229 GÜNLÜK</div>
+  <div class="abs h1 gold" id="i1" style="top:195px;font-size:150px;letter-spacing:-5px">SİMÜLASYON</div>
+  <div class="abs h2" id="i4" style="top:800px;font-size:52px;letter-spacing:2px">AYNI HEDEF · AYNI KAPASİTE</div>
+  <div class="abs h2" id="i5" style="top:880px;font-size:60px">Tek fark: <span class="goldc">başlama günü.</span></div>
+  <!-- P2 kural -->
+  <div class="abs kick" id="r0" style="top:250px">KURAL</div>
+  <div class="abs h1 gold" id="r1" style="top:310px;font-size:200px;letter-spacing:-8px">GÜNDE 50 SORU</div>
+  <div class="abs h2" id="r2" style="top:740px;font-size:56px;letter-spacing:3px">NE FAZLA, NE EKSİK.</div>
+  <div class="abs h1" id="r3" style="top:820px;font-size:110px;letter-spacing:-3px">HER GÜN.</div>
+  <!-- P11 -->
+  <div class="abs mask h2" id="z1" style="top:150px;font-size:70px"><span>Zaman kimseyi beklemiyor.</span></div>
+  <div class="abs mask h2" id="z2" style="top:800px;font-size:70px"><span class="goldc">Sadece biriktiriyor.</span></div>
+  <div class="abs mask h2" id="z3" style="top:800px;font-size:70px"><span>Ya senin <span class="goldc">lehine</span>, ya <span class="red">aleyhine.</span></span></div>
+  <!-- P12-15 -->
+  <div class="abs mask h2" id="d1" style="top:150px;font-size:76px"><span>229 gün nasıl görünmeli?</span></div>
+  <div class="abs kick" id="d2" style="top:250px">ÜÇ DÖNEM</div>
+  <div class="card" id="k1" style="left:150px"><div class="no">1. DÖNEM</div><div class="ttl gold">TEMEL</div><div class="when">KASIM → OCAK</div>
+    <ul><li>Konu eksiklerini kapat</li><li>Günde 50 soruyu alışkanlık yap</li></ul></div>
+  <div class="card" id="k2" style="left:710px"><div class="no">2. DÖNEM</div><div class="ttl gold">HIZ</div><div class="when">ŞUBAT → NİSAN</div>
+    <ul><li>Haftada en az 1 deneme</li><li>Yanlışları deftere yaz</li><li>Zayıf konulara yüklen</li></ul></div>
+  <div class="card" id="k3" style="left:1270px"><div class="no">3. DÖNEM</div><div class="ttl gold">PROVA</div><div class="when">MAYIS → HAZİRAN</div>
+    <ul><li>Deneme sayısını artır</li><li>Sınav saatine göre uyu, uyan</li><li>Yeni konu açma</li></ul></div>
+</div>
+<div id="screen">
+  <!-- simülasyon katmanı -->
+  <div class="abs kick" id="sDate0" style="top:70px;left:150px;width:800px;text-align:left;font-size:24px">SİMÜLASYON TARİHİ</div>
+  <div class="abs h2" id="sDate" style="top:104px;left:150px;width:900px;text-align:left;font-size:64px">2 KASIM 2026</div>
+  <div class="abs h2" id="sDay" style="top:104px;left:970px;width:800px;text-align:right;font-size:64px;color:#8d93a8">GÜN 1 / 229</div>
+  <div class="abs kick" id="sDay0" style="top:70px;left:970px;width:800px;text-align:right;font-size:24px">SINAVA KALAN</div>
+  <div class="lane-name goldc" id="nA" style="top:380px">AYŞE</div>
+  <div class="lane-sub" id="sA" style="top:438px">2 KASIM'DA BAŞLADI</div>
+  <div class="cnt gold" id="cA" style="top:400px">0</div>
+  <div class="lane-name" id="nM" style="top:640px;color:#ff6b7e">MERT</div>
+  <div class="lane-sub" id="sM" style="top:698px">1 OCAK'TA BAŞLAYACAK</div>
+  <div class="cnt" id="cM" style="top:660px;color:#ff8a98">0</div>
+  <div class="rate" id="rA" style="top:478px;color:#ffd77a;border-color:rgba(255,194,75,.6)">50 / GÜN</div>
+  <div class="rate" id="rM" style="top:738px;color:#ff8a98;border-color:rgba(255,61,87,.6)">BEKLİYOR</div>
+  <div class="abs h1 gold" id="mBig" style="top:330px;font-size:300px;letter-spacing:-10px;opacity:0">KASIM</div>
+  <!-- olay etiketleri -->
+  <div class="abs" id="gap" style="top:560px;left:0;width:auto;font-weight:800;font-size:30px;letter-spacing:3px;color:#ff3d57">AÇIK: 3.000 SORU</div>
+  <div class="abs" id="need" style="top:820px;font-weight:900;font-size:54px;letter-spacing:1px;color:#ff3d57">YETİŞMEK İÇİN: 68 SORU / GÜN</div>
+  <div class="abs" id="pinF" style="top:224px;left:0;width:auto;font-weight:700;font-size:20px;letter-spacing:2px;color:#9aa1b8">YKS BAŞVURULARI</div>
+  <div class="abs" id="bad" style="top:214px;left:0;width:auto;font-weight:800;font-size:24px;letter-spacing:3px;color:#ff3d57">KÖTÜ HAFTA</div>
+  <div class="abs" id="shA" style="top:520px;left:150px;width:auto;font-weight:800;font-size:28px;letter-spacing:2px;color:#ffd77a">🛡 TAMPON: 60 GÜN</div>
+  <div class="abs" id="shM" style="top:780px;left:150px;width:auto;font-weight:800;font-size:28px;letter-spacing:2px;color:#ff6b7e">TAMPON: 0 · GÜNLÜK YÜK ↑</div>
+  <div class="abs" id="last" style="top:820px;font-weight:800;font-size:40px;letter-spacing:3px;color:#ffd77a">SON 14 GÜN · SADECE TEKRAR + DENEME</div>
+  <!-- P6 paneli -->
+  <div class="abs h2" id="w0" style="top:250px;font-size:72px">Kâğıt üstünde: <span class="red">+18 soru / gün</span></div>
+  <div class="abs h2 dim" id="w1" style="top:450px;font-size:58px">Her gün daha geç yatmak.</div>
+  <div class="abs h2 dim" id="w2" style="top:550px;font-size:58px">Daha çok yorulmak.</div>
+  <div class="abs h2" id="w3" style="top:650px;font-size:58px;color:#ff6b7e">Sürekli geride olma hissi.</div>
+  <!-- P10 final -->
+  <div class="abs h1 red" id="f1" style="top:150px;font-size:150px;letter-spacing:-5px">FARK: 3.000 SORU</div>
+  <div class="abs h1 gold" id="f2" style="top:150px;font-size:150px;letter-spacing:-5px">= 60 GÜN</div>
+  <div class="abs h1 gold" id="f3" style="top:150px;font-size:150px;letter-spacing:-5px">= TEK BİR KARAR</div>
+  <!-- P16 -->
+  <div class="half" id="hA" style="left:0;background:radial-gradient(70% 60% at 50% 50%,rgba(255,194,75,.18),transparent 70%)"></div>
+  <div class="half" id="hM" style="left:960px;background:radial-gradient(70% 60% at 50% 50%,rgba(255,61,87,.16),transparent 70%)"></div>
+  <div class="abs h1 gold" id="aa" style="top:380px;left:0;width:960px;font-size:180px">AYŞE</div>
+  <div class="abs h2" id="aa2" style="top:590px;left:0;width:960px;font-size:44px;color:#ffd77a">bugün başlar</div>
+  <div class="abs h1" id="mm" style="top:380px;left:960px;width:960px;font-size:180px;color:#ff6b7e">MERT</div>
+  <div class="abs h2" id="mm2" style="top:590px;left:960px;width:960px;font-size:44px;color:#ff8a98">yılbaşını bekler</div>
+  <div class="abs h1" id="qq" style="top:360px;font-size:240px">?</div>
+  <div class="abs mask h2" id="qm" style="top:170px;font-size:80px"><span>Ayşe mi olacaksın, Mert mi?</span></div>
+  <!-- P17 -->
+  <div class="abs mask h2" id="c1" style="top:230px;font-size:72px"><span>Bugünkü 50 sorunu çözdüysen</span></div>
+  <div class="abs" id="c2" style="top:350px"><span class="pill2">YORUMLARA YAZ: “GÜN 1”</span></div>
+  <div class="abs mask body dim" id="c3" style="top:520px;font-size:46px"><span>229 gün sonra bu yoruma geri dön.</span></div>
+  <div class="abs h1 gold" id="c4" style="top:610px;font-size:170px;letter-spacing:-8px">%1</div>
+  <div class="abs h2" id="c5" style="top:810px;font-size:44px;letter-spacing:4px">HER SABAH 07:00 · YENİ SİMÜLASYON</div>
+  <div class="abs" id="c6" style="top:880px"><span class="tag" style="font-size:30px">ABONE OL</span></div>
+  <div id="subs"></div>
+</div>
+<script>window.EW=1920;window.EH=1080;</script>
+<script src="../../engine/engine.js"></script>
+<script>
+const SUBS=__SUBS__;
+const MON=['KASIM','ARALIK','OCAK','ŞUBAT','MART','NİSAN','MAYIS','HAZİRAN'];
+// gün indeksi -> tarih (0 = 2 Kasım 2026)
+const MD=[[2026,10,30],[2026,11,31],[2027,0,31],[2027,1,28],[2027,2,31],[2027,3,30],[2027,4,31],[2027,5,30]];
+const TRM=['OCAK','ŞUBAT','MART','NİSAN','MAYIS','HAZİRAN','TEMMUZ','AĞUSTOS','EYLÜL','EKİM','KASIM','ARALIK'];
+function dateOf(d){const dt=new Date(Date.UTC(2026,10,2+Math.floor(d)));return `${dt.getUTCDate()} ${TRM[dt.getUTCMonth()]} ${dt.getUTCFullYear()}`}
+// simülasyonda tamamlanan gün sayısı D(t)
+const DK=[[44.18,0],[55.0,29],[58.9,29],[66.0,60],[108.07,60],[113.0,94],[118.45,94],[140.0,150],[145.98,150],[150.5,215],[157.75,215],[160.2,229]];
+function D(t){if(t<=DK[0][0])return 0;for(let i=1;i<DK.length;i++){if(t<=DK[i][0]){const[a,da]=DK[i-1],[b,db]=DK[i];return L(da,db,E.ioQ((t-a)/(b-a)))}}return 229}
+const TL={x:150,w:1620,y:280};const dx=d=>TL.x+TL.w*d/229;
+const BAR={x:420,w:1000,h:56,yA:388,yM:648};const qx=q=>BAR.x+BAR.w*q/11450;
+let O4,I1,R1,F1,F2,F3,C4,AA,MM,MB;
+boot({dur:245.7,
+  init(){O4=split('o4');I1=split('i1');R1=split('r1');C4=split('c4');AA=split('aa');MB=split('mBig')},
+  bokeh:t=>t<20?'200,190,230':(t>157&&t<174)||t>227?'255,190,110':'255,190,110',
+  leakAmt:t=>t<15?.5:1,
+  shakes:[[15.38,22],[44.18,10],[72.24,14],[87.33,12],[160.2,30],[167.07,20],[230.69,16]],
+  flashes:[[15.38,.35],[44.18,.25,8],[160.2,.6,5],[167.07,.25]],
+  sparks:[[160.2,960,520,1,'gold'],[39.26,960,420,.5,'gold'],[239.97,960,700,.6,'gold']],
+  cam(t){let s=1+.015*Math.sin(t*.4);return{s}},
+  scene(t){
+    const g=ENG.mid;g.clearRect(0,0,1920,1080);const fx=ENG.fx;
+    // ---------- P0 ----------
+    fadeBlock('o0',t,.2,12.6,{dy:-20});charsIn(split.o1||(split.o1=split('o1')),t,.6,{st:.02,dur:.5,dy:50,out:12.4});
+    if(t<16){const a=k(t,6.2,7.0)*(1-k(t,15.2,15.8,E.iC));
+      [[700,'#ffc24b','AYŞE',0],[1220,'#ff3d57','MERT',1]].forEach(([x,c,n,j])=>{
+        const calm=j===0, y=560, br=calm?1+.04*Math.sin(t*1.6):1+.03*Math.sin(t*9)+.05*pulse(t,11.03,3);
+        const jx=calm?0:Math.sin(t*37)*3*k(t,11,11.4), hl=calm?k(t,9.81,10.3):k(t,11.03,11.5);
+        g.save();g.globalAlpha=a;g.translate(x+jx,y);g.scale(br,br);
+        g.shadowColor=c;g.shadowBlur=30+40*hl;g.strokeStyle=c;g.lineWidth=6;g.beginPath();g.arc(0,0,120,0,7);g.stroke();
+        g.shadowBlur=0;g.fillStyle=c+'22';g.fill();
+        g.fillStyle='#f4f2ee';g.font='800 44px "Inter Display"';g.textAlign='center';g.fillText(n,0,16);
+        g.font='700 26px "Inter Display"';g.fillStyle=c;g.globalAlpha=a*hl;g.fillText(calm?'SAKİN':'PANİKTE',0,200);
+        if(!calm){// nabız çizgisi
+          g.globalAlpha=a*hl*.8;g.strokeStyle=c;g.lineWidth=3;g.beginPath();for(let i=0;i<=60;i++){const u=i/60,xx=-150+300*u;const ph=(u*3+t*2.2)%1;const yy=ph>.45&&ph<.55?-60*Math.sin((ph-.45)*31.4):0;i?g.lineTo(xx,250+yy):g.moveTo(xx,250+yy)}g.stroke()}
+        g.restore()});}
+    maskLine('o2',t,13.0,15.1,{outDur:.3});
+    fadeBlock('o3',t,15.4,19.9,{dy:-10});$('o3').style.opacity*=(.55+.45*Math.sin(t*12));
+    const rw=k(t,15.6,18.2,E.ioC);
+    if(t>15.3&&t<20.5){const dd=Math.round(L(229,0,rw));const txt=rw<1?dateOf(dd).split(' ').slice(0,2).join(' '):'2 KASIM';
+      if(O4.map(c=>c.textContent).join('')!==txt){$('o4').textContent='';O4.length=0;[...txt].forEach(ch=>{const s=document.createElement('span');s.className='ch gold';s.textContent=ch===' '?NB:ch;$('o4').appendChild(s);O4.push(s)});O4.W=0}
+      sweep(O4,L(100,0,P(t,15.5,19.8)))}
+    set('o4',{o:k(t,15.4,15.7)*(1-k(t,19.7,20.3,E.iC)),s:1+.06*Math.sin(rw*40)*(rw>0&&rw<1?1:0),b:(rw>0&&rw<1?3:0)+k(t,19.7,20.3,E.iC)*20});
+    $('o5').textContent=rw<1?`${Math.round(L(0,229,rw))} GÜN ÖNCE`:'229 GÜN ÖNCE';
+    fadeBlock('o5',t,15.6,19.9,{dy:20});
+    // ---------- P1 ----------
+    fadeBlock('i0',t,20.7,36.6,{dy:-20});charsIn(I1,t,20.8,{st:.04,dur:.6,dy:80,out:36.6});sweep(I1,L(100,0,P(t,21,36)));
+    if(t>24.8&&t<37.2){const out=1-k(t,36.4,37.0,E.iC);
+      [[150+0,25.4,'#ffc24b','AYŞE','BUGÜN BAŞLIYOR','2 KASIM'],[1010,27.2,'#ff6b7e','MERT','"YILBAŞINDAN SONRA"','1 OCAK']].forEach(([x,t0,c,n,s1,s2])=>{
+        const p=k(t,t0,t0+.6,E.oB);if(p<=0)return;g.save();g.globalAlpha=C(p)*out;g.translate(x+380,560);g.scale(L(.9,1,C(p)),L(.9,1,C(p)));g.translate(-380,-150);
+        rr(g,0,0,760,300,36);g.fillStyle='rgba(255,255,255,.045)';g.fill();g.lineWidth=2;g.strokeStyle=c+'88';g.stroke();
+        g.fillStyle=c;g.font='900 96px "Inter Display"';g.textAlign='left';g.fillText(n,56,128);
+        g.fillStyle='#f4f2ee';g.font='700 40px "Inter Display"';g.fillText(s1,56,200);
+        g.fillStyle='#8d93a8';g.font='600 26px "Inter Display"';g.fillText('BAŞLANGIÇ: '+s2,56,250);g.restore()})}
+    fadeBlock('i4',t,31.0,36.6,{dy:20});fadeBlock('i5',t,34.4,36.6,{dy:20});
+    // ---------- P2 ----------
+    fadeBlock('r0',t,37.1,43.6,{dy:-20});slam(R1,t,39.2,{st:.03,dur:.45,s0:1.8,out:43.7});sweep(R1,L(100,0,k(t,39.4,43.4,E.ioC)));
+    if(t>39&&t<44){const a=1-k(t,43.5,43.95,E.iC);for(let i=0;i<50;i++){const p=k(t,39.5+i*.02,39.8+i*.02,E.oB);if(p<=0)continue;
+      const x=960-24*24.5+(i%25)*49+24.5,y=600+Math.floor(i/25)*52;g.save();g.globalAlpha=C(p)*a;g.fillStyle='#ffc24b';g.shadowColor='rgba(255,194,75,.8)';g.shadowBlur=14;
+      rr(g,x-17*p,y-17*p,34*p,34*p,8);g.fill();g.restore()}}
+    fadeBlock('r2',t,40.85,43.6,{dy:20});slam([$('r3')],t,42.8,{dur:.35,s0:1.6,out:43.7,outDur:.3});
+    // ---------- SİMÜLASYON (P3-P10) ----------
+    const simA=k(t,43.9,44.6)*(1-k(t,173.8,174.6,E.iC));
+    const panel6=k(t,96.9,97.5)*(1-k(t,107.3,107.9,E.iC));      // P6 karartma
+    const fin=k(t,166.9,167.4);                                    // P10 son yazı
+    const simO=simA*(1-.82*panel6);
+    ['sDate0','sDate','sDay','sDay0','nA','sA','cA','nM','sM','cM','rA','rM'].forEach(id=>{$(id).style.opacity=simO});
+    if(simA>0){
+      const d=D(t), dd=Math.min(228,Math.floor(d)), qa=50*d, qm=50*Math.max(0,d-60), mOn=d>=60||t>=72.24;
+      $('sDate').textContent=d>=229?'19 HAZİRAN 2027 · SINAV':dateOf(dd);
+      $('sDay').textContent=d>=229?'SINAV GÜNÜ':`${229-Math.floor(d)} GÜN`;
+      $('cA').textContent=fmt(qa);$('cM').textContent=fmt(qm);
+      $('sM').textContent=mOn?'1 OCAK\'TA BAŞLADI':'1 OCAK\'TA BAŞLAYACAK';
+      $('rM').textContent=t>=87.33?'68 / GÜN':mOn?'50 / GÜN':'BEKLİYOR';
+      $('cA').style.transform=`scale(${1+.08*(pulse(t,55,5)+pulse(t,66,5)+pulse(t,113,5)+pulse(t,150.5,5)+pulse(t,160.2,4))})`;
+      $('cM').style.transform=`scale(${1+.08*(pulse(t,113,5)+pulse(t,160.2,4))})`;
+      g.save();g.globalAlpha=simO*(1-.92*fin);
+      // zaman çizelgesi
+      g.fillStyle='rgba(255,255,255,.08)';rr(g,TL.x,TL.y-5,TL.w,10,5);g.fill();
+      const gr=g.createLinearGradient(TL.x,0,dx(d),0);gr.addColorStop(0,'#9a6a1c');gr.addColorStop(1,'#ffd77a');g.fillStyle=gr;rr(g,TL.x,TL.y-5,Math.max(10,dx(d)-TL.x),10,5);g.fill();
+      let acc=0;g.font='700 20px "Inter Display"';g.textAlign='center';
+      MD.forEach(([y,m,n],i)=>{const n2=i===0?29:i===7?18:n;const x0=dx(acc),x1=dx(acc+n2);acc+=n2;
+        g.fillStyle=d>=acc-n2/2?'#ffd77a':'rgba(255,255,255,.35)';g.fillText(MON[i],(x0+x1)/2,TL.y+42);
+        if(i<7){g.fillStyle='rgba(255,255,255,.25)';g.fillRect(x1-1,TL.y-14,2,28)}});
+      g.shadowColor='#ffd77a';g.shadowBlur=24;g.fillStyle='#fff3cf';g.beginPath();g.arc(dx(d),TL.y,11,0,7);g.fill();g.shadowBlur=0;
+      // Mert başlangıç pini
+      g.fillStyle='#ff6b7e';g.beginPath();g.moveTo(dx(60),TL.y-16);g.lineTo(dx(60)-9,TL.y-30);g.lineTo(dx(60)+9,TL.y-30);g.fill();
+      g.globalAlpha=simO;
+      // şeritler
+      [[BAR.yA,qa,'#ffc24b','#9a6a1c'],[BAR.yM,qm,'#ff3d57','#8a1f2e']].forEach(([y,q,c1,c0],j)=>{
+        g.fillStyle='rgba(255,255,255,.06)';rr(g,BAR.x,y,BAR.w,BAR.h,16);g.fill();g.lineWidth=1.5;g.strokeStyle='rgba(255,255,255,.12)';g.stroke();
+        if(j===1&&!mOn){g.setLineDash([10,10]);g.strokeStyle='rgba(255,107,126,.5)';rr(g,BAR.x,y,BAR.w,BAR.h,16);g.stroke();g.setLineDash([])}
+        if(q>0){const w=Math.max(BAR.h*.6,qx(q)-BAR.x);const lg=g.createLinearGradient(BAR.x,0,BAR.x+w,0);lg.addColorStop(0,c0);lg.addColorStop(1,c1);
+          g.save();g.shadowColor=c1;g.shadowBlur=26;g.fillStyle=lg;rr(g,BAR.x,y,w,BAR.h,16);g.fill();g.restore()}
+        // ay işaretleri (soru ölçeği: 1.000'lik)
+        g.fillStyle='rgba(255,255,255,.18)';for(let m=1000;m<11450;m+=1000){g.fillRect(qx(m)-1,y+BAR.h+6,2,10)}});
+      // Mert projeksiyonu (hayalet bar)
+      const gh=k(t,81.05,82.2)*(1-k(t,107.5,108.0));
+      if(gh>0){const w=(qx(8450)-BAR.x)*E.oC(gh);g.save();g.setLineDash([12,10]);g.lineWidth=3;g.strokeStyle=`rgba(255,107,126,${.8*gh})`;rr(g,BAR.x,BAR.yM,w,BAR.h,16);g.stroke();g.setLineDash([]);
+        g.fillStyle=`rgba(255,138,152,${gh})`;g.font='800 26px "Inter Display"';g.textAlign='left';g.fillText('50/GÜN DEVAM → 8.450',BAR.x+w+18,BAR.yM+38);g.restore()}
+      // açık parantezi
+      const ga=k(t,75.3,76.0)*(1-k(t,107.5,108.0))+(t>160.5?k(t,163.7,164.4)*(1-k(t,173.8,174.4)):0);
+      if(ga>0){const xa=qx(qa),xm=qx(Math.max(qm,0));const x0=Math.max(BAR.x,xm),x1=xa;g.save();g.globalAlpha=ga;g.strokeStyle='#ff3d57';g.lineWidth=3;
+        g.beginPath();g.moveTo(x0,BAR.yA+BAR.h+18);g.lineTo(x0,BAR.yM-14);g.moveTo(x1,BAR.yA+BAR.h+18);g.lineTo(x1,BAR.yM-14);g.stroke();
+        g.setLineDash([8,8]);g.beginPath();g.moveTo(x0,(BAR.yA+BAR.yM+BAR.h)/2);g.lineTo(x1,(BAR.yA+BAR.yM+BAR.h)/2);g.stroke();g.restore();
+        set('gap',{o:ga,x:(x0+x1)/2-$('gap').offsetWidth/2,y:0})}else $('gap').style.opacity=0;
+      // kötü hafta (Mart)
+      const bw=k(t,119.7,120.4)*(1-k(t,144.8,145.6));
+      if(bw>0){g.save();g.globalAlpha=bw*.9;const x0=dx(130),x1=dx(137);g.fillStyle='rgba(255,61,87,.25)';g.fillRect(x0,TL.y-26,x1-x0,52);g.strokeStyle='#ff3d57';g.lineWidth=2;g.strokeRect(x0,TL.y-26,x1-x0,52);g.restore();
+        set('bad',{o:bw,x:(dx(130)+dx(137))/2-$('bad').offsetWidth/2})}else $('bad').style.opacity=0;
+      // 4 Şubat pini
+      const pf=k(t,109.2,109.8)*(1-k(t,118,118.5));if(pf>0){g.save();g.globalAlpha=pf;g.fillStyle='#9aa1b8';g.fillRect(dx(94)-1,TL.y-30,2,24);g.restore();set('pinF',{o:pf,x:dx(94)-$('pinF').offsetWidth/2})}else $('pinF').style.opacity=0;
+      g.restore();
+    } else ['gap','bad','pinF'].forEach(id=>$(id).style.opacity=0);
+    // büyük ay yazıları
+    const MT=[[44.18,'KASIM'],[58.9,'ARALIK'],[72.24,'1 OCAK'],[108.07,'ŞUBAT'],[118.45,'MART'],[145.98,'HAZİRAN'],[157.75,'19 HAZİRAN']];
+    let mt=null;MT.forEach(([t0,n])=>{if(t>=t0-.1&&t<t0+1.9)mt=[t0,n]});
+    if(mt){if($('mBig').dataset.n!==mt[1]){$('mBig').dataset.n=mt[1];$('mBig').textContent='';MB.length=0;[...mt[1]].forEach(ch=>{const s=document.createElement('span');s.className='ch gold';s.textContent=ch===' '?NB:ch;$('mBig').appendChild(s);MB.push(s)});MB.W=0;MB.g='gold'}
+      const p=k(t,mt[0],mt[0]+.45),po=k(t,mt[0]+1.3,mt[0]+1.85,E.iC);$('mBig').style.opacity=1;
+      MB.forEach((c,i)=>set(c,{o:C(p*2)*(1-po),s:L(1.6,1,p)*(1+po*.2),b:(1-p)*24+po*24}));sweep(MB,L(100,0,P(t,mt[0],mt[0]+1.8)));
+      ['sDate','cA','cM'].forEach(id=>$(id).style.opacity=simO*.25)}else $('mBig').style.opacity=0;
+    // olay etiketleri
+    const nd=k(t,87.4,88.0)*(1-k(t,96.5,97.0,E.iC));set('need',{o:nd,s:1+.04*Math.sin(t*6)*nd,y:(1-nd)*20});
+    set('shA',{o:k(t,135.1,135.7)*(1-k(t,145.4,145.9,E.iC)),x:BAR.x-270+0,y:0});$('shA').style.left='1050px';$('shA').style.top='460px';
+    set('shM',{o:k(t,139.4,140.0)*(1-k(t,145.4,145.9,E.iC))});$('shM').style.left='1050px';$('shM').style.top='720px';
+    fadeBlock('last',t,147.2,157.2,{dy:20});
+    // P6 paneli
+    fadeBlock('w0',t,97.0,107.3,{dy:30});fadeBlock('w1',t,100.6,107.3,{dy:20,x0:-60});fadeBlock('w2',t,102.6,107.3,{dy:20,x0:-60});fadeBlock('w3',t,104.4,107.3,{dy:20,x0:-60});
+    // P10 final yazıları
+    [['f1',167.07,169.15],['f2',169.24,170.95],['f3',171.01,173.8]].forEach(([id,a,b])=>{const p=k(t,a,a+.4),po=k(t,b,b+.3,E.iC);set(id,{o:C(p*2)*(1-po),s:L(1.5,1,p),b:(1-p)*20+po*16})});
+    ['sDate0','sDate','sDay','sDay0'].forEach(id=>{$(id).style.opacity=parseFloat($(id).style.opacity)*(1-fin*(t<174?1:0))});
+    // ---------- P11 ----------
+    maskLine('z1',t,181.7,191.4);maskLine('z2',t,186.9,188.6,{outDur:.25});maskLine('z3',t,188.8,191.4);
+    if(t>174.5&&t<191.9){const a=k(t,174.6,175.4)*(1-k(t,191.2,191.8,E.iC));const cols=23,cell=50,x0=960-cols*cell/2,y0=250;
+      for(let i=0;i<229;i++){const c=i%cols,r=Math.floor(i/cols),x=x0+c*cell+cell/2,y=y0+r*cell+cell/2;
+        const ap=k(t,174.7+(c+r)*.03,175.2+(c+r)*.03,E.oB);if(ap<=0)continue;
+        const fillG=k(t,186.9+i*.006,187.3+i*.006), half=t>188.8&&i>=115?k(t,189.0+(i-115)*.008,189.3+(i-115)*.008):0;
+        let col=`rgba(255,255,255,${.12})`;if(fillG>0)col=`rgba(255,194,75,${L(.12,.95,fillG)})`;if(half>0)col=`rgba(255,61,87,${L(.95,.85,half)})`;
+        g.save();g.globalAlpha=a*C(ap);g.fillStyle=col;if(fillG>.5){g.shadowColor=half>.5?'rgba(255,61,87,.7)':'rgba(255,194,75,.7)';g.shadowBlur=10}
+        rr(g,x-17*C(ap,0,1.2),y-17*C(ap,0,1.2),34*C(ap,0,1.2),34*C(ap,0,1.2),8);g.fill();g.restore()}
+      // 177-181: konu eksikleri/deneme/uyku etiketleri
+      ['KONU EKSİKLERİ','DENEME ANALİZİ','UYKU'].forEach((s,i)=>{const p=k(t,177.3+i*.9,177.8+i*.9)*(1-k(t,181.2,181.6,E.iC));if(p<=0)return;
+        g.save();g.globalAlpha=p;g.font='800 40px "Inter Display"';g.textAlign='center';const w=g.measureText(s).width+60,x=[520,960,1330][i],y=840;
+        rr(g,x-w/2,y-46,w,70,35);g.fillStyle='rgba(10,10,16,.85)';g.fill();g.strokeStyle='rgba(255,255,255,.3)';g.lineWidth=2;g.stroke();g.fillStyle='#f4f2ee';g.fillText(s,x,y+2);g.restore()});}
+    // ---------- P12-15 ----------
+    maskLine('d1',t,192.0,226.8);fadeBlock('d2',t,197.9,226.8,{dy:-10});
+    [['k1',197.9,199.63,209.46],['k2',198.1,209.46,218.19],['k3',198.3,218.19,226.9]].forEach(([id,a,on,off])=>{
+      const p=k(t,a,a+.6,E.oB),po=k(t,226.6,227.2,E.iC),act=k(t,on,on+.5)*(1-k(t,off,off+.5));
+      set(id,{o:C(p)*(1-po)*(L(.45,1,act)),y:(1-C(p))*80-act*14,s:1+act*.03,b:po*14});
+      $(id).style.borderColor=act>.5?'rgba(255,194,75,.7)':'rgba(255,255,255,.12)';
+      $(id).style.background=act>.5?'rgba(255,194,75,.07)':'rgba(255,255,255,.045)';
+      [...$(id).querySelectorAll('li')].forEach((li,j)=>{const lp=k(t,on+1.2+j*1.3,on+1.6+j*1.3);li.style.opacity=t<on?.5:L(.5,1,lp)})});
+    // ---------- P16 ----------
+    const sp=k(t,227.4,228.2,E.oC),spo=k(t,232.4,232.95,E.iC);
+    set('hA',{o:sp*(1-spo),x:(1-sp)*-200});set('hM',{o:sp*(1-spo),x:(1-sp)*200});
+    slam(AA,t,227.7,{st:.05,dur:.45,out:232.4});sweep(AA,L(100,0,P(t,228,232)));
+    set('mm',{o:k(t,228.4,228.9)*(1-spo),s:L(1.5,1,k(t,228.4,228.9)),b:(1-k(t,228.4,228.9))*20+spo*16});
+    fadeBlock('aa2',t,228.6,232.4,{dy:20});fadeBlock('mm2',t,229.0,232.4,{dy:20});
+    set('qq',{o:k(t,230.7,231.1)*(1-spo)*.9,s:L(2,1,k(t,230.7,231.1))});maskLine('qm',t,230.7,232.4);
+    if(t>227.4&&t<233){g.save();g.globalAlpha=sp*(1-spo);g.strokeStyle='rgba(255,255,255,.25)';g.lineWidth=2;g.beginPath();g.moveTo(960,120);g.lineTo(960,960);g.stroke();g.restore()}
+    // ---------- P17 ----------
+    maskLine('c1',t,233.0,245.1);fadeBlock('c2',t,233.6,245.1,{dy:30,s0:.9});$('c2').style.transform+=` scale(${1+.025*Math.sin(t*5)*(t>234.2?1:0)})`;
+    maskLine('c3',t,237.0,245.1);slam(C4,t,239.97,{st:.06,dur:.5,out:245.1});sweep(C4,L(100,0,P(t,240,245)));
+    fadeBlock('c5',t,240.5,245.1,{dy:20});fadeBlock('c6',t,243.7,245.2,{dy:20,s0:1.3});
+    // ---------- altyazı ----------
+    let cur=null;for(const s of SUBS){if(t>=s[0]-.08&&t<s[1]+.25){cur=s;break}}
+    const sb=$('subs');
+    if(cur){const html=cur[2].replace(/(\d[\d.:]*)/g,'<b>$1</b>');if(sb.dataset.k!==String(cur[0])){sb.dataset.k=cur[0];sb.innerHTML=html}
+      const a=k(t,cur[0]-.08,cur[0]+.12)*(1-k(t,cur[1]+.05,cur[1]+.25));sb.style.opacity=a;sb.style.transform=`translateY(${(1-k(t,cur[0]-.08,cur[0]+.15))*10}px)`}
+    else sb.style.opacity=0;
+    sb.style.top=(t>197.5&&t<227)?'1000px':'968px';
+  }});
+</script></body></html>

@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../engine/base.css"></head><body>
+<div id="cam">
+  <div class="abs h1" id="m1" style="top:880px;font-size:140px;letter-spacing:-3px">MOTİVASYON</div>
+  <div class="abs h1" id="m2" style="top:820px;font-size:260px;letter-spacing:-10px">GELİR.</div>
+  <div class="abs h1 red" id="m3" style="top:820px;font-size:260px;letter-spacing:-10px">GİDER.</div>
+  <div class="abs mask body" id="m4" style="top:800px;font-size:72px"><span>Canın istediği gün</span></div>
+  <div class="abs mask h2" id="m5" style="top:890px;font-size:124px"><span>çalışmak</span></div>
+  <div class="abs h1" id="m6" style="top:790px;font-size:250px;letter-spacing:-10px;color:#0a0a0c">KOLAY.</div>
+  <div class="abs h2" id="m7" style="top:600px;font-size:120px">Fark,</div>
+  <div class="abs mask h2" id="m8" style="top:740px;font-size:100px"><span>canın istemediği</span></div>
+  <div class="abs mask body" id="m9" style="top:870px;font-size:76px"><span>o günlerde</span></div>
+  <div class="abs h1 gold" id="m10" style="top:990px;font-size:240px;letter-spacing:-10px">AÇILIR.</div>
+  <div class="abs h2" id="l1" style="top:700px;font-size:88px">Yağmur yağsa da.</div>
+  <div class="abs h2" id="l2" style="top:830px;font-size:88px">Yorgun olsan da.</div>
+  <div class="abs h2" id="l3" style="top:960px;font-size:88px">Kimse izlemese de.</div>
+  <div class="abs h1" id="w1" style="top:540px;font-size:400px;letter-spacing:-20px">HER</div>
+  <div class="abs h1 gold" id="w2" style="top:940px;font-size:400px;letter-spacing:-20px">GÜN.</div>
+  <div class="abs h1 gold" id="r1" style="top:800px;font-size:200px;letter-spacing:-8px">DİSİPLİN</div>
+  <div class="abs mask body" id="r2" style="top:1030px;font-size:50px"><span>motivasyonun bittiği yerde başlar.</span></div>
+  <div class="abs mask body" id="e1" style="top:760px;font-size:76px"><span>Canın istemese de</span></div>
+  <div class="abs h1 gold" id="e2" style="top:850px;font-size:260px;letter-spacing:-10px">BAŞLA.</div>
+  <div class="abs" id="e3" style="top:1160px"><span class="pill">KAYDET · ZOR GÜNDE TEKRAR İZLE</span></div>
+</div>
+<script src="../../engine/engine.js"></script>
+<script>
+let M1,M2,M3,M6,M10,R1,E2;
+const HITS=[[.9,.05],[1.6,.06],[3.6,.07],[6.0,.08],[9.05,.06],[9.45,.06],[10.05,.1],[13.0,.06]];
+boot({dur:16,
+  init(){M1=split('m1');M2=split('m2');M3=split('m3');M6=split('m6');M10=split('m10');R1=split('r1');E2=split('e2')},
+  bokeh:t=>t<10?'200,200,220':'255,190,110',
+  leakAmt:t=>t<10?.6:1.1,
+  shakes:[[.9,18],[1.6,26],[3.6,20],[6.0,30],[9.05,16],[9.45,16],[10.05,36],[13.0,18]],
+  flashes:[[.9,.25,14],[1.6,.3,14],[6.0,.4],[10.05,.6,6],[13.0,.25]],
+  sparks:[[6.0,540,1100,.6,'gold'],[10.05,540,900,1,'gold'],[13.0,540,960,.4,'gold']],
+  cam(t){let s=1+.02*Math.sin(t*.7);HITS.forEach(([h,a])=>{s+=a*pulse(t,h,7)});return{s}},
+  scene(t){
+    // ters çevirme (beyaz zemin)
+    const inv=t>=3.58&&t<4.55;
+    $('stage').style.background=inv?'#efece6':'';
+    $('bokeh').style.opacity=inv?0:1;$('vig').style.opacity=inv?.35:1;
+    charsIn(M1,t,.05,{st:.025,dur:.45,dy:80,out:.82,outDur:.12});
+    slam(M2,t,.9,{st:.03,dur:.35,s0:1.9,out:1.52,outDur:.1});
+    slam(M3,t,1.6,{st:.03,dur:.35,s0:1.9,out:2.2,outDur:.12});
+    const gl=t>1.6&&t<2.25?(Math.sin(t*120)>0?1:-1)*14*pulse(t,1.6,3):0;
+    $('m3').style.textShadow=`${gl}px 0 rgba(0,230,255,.8),${-gl}px 0 rgba(255,0,80,.8)`;
+    maskLine('m4',t,2.3,3.4,{outDur:.2});maskLine('m5',t,2.55,3.45,{outDur:.2});
+    slam(M6,t,3.6,{st:.04,dur:.35,s0:1.7,bl:20,out:4.42,outDur:.12});
+    slam([$("m7")],t,4.65,{dur:.4,s0:1.8,out:7.15,outDur:.25});
+    maskLine("m8",t,4.95,7.15,{outDur:.3});maskLine("m9",t,5.35,7.15,{outDur:.3});
+    slam(M10,t,6.0,{st:.05,dur:.45,out:7.2});sweep(M10,L(100,0,k(t,6.2,7.2,E.ioC)));
+    // satırlar soldan/sağdan
+    [['l1',7.4,-1],['l2',7.85,1],['l3',8.3,-1]].forEach(([id,t0,d],i)=>{
+      const p=k(t,t0,t0+.4),po=k(t,8.9,9.05,E.iC),dimv=t>t0+.45?.45+.55*(i===2?1:0):1;
+      set(id,{o:p*(1-po)*(t>t0+.45&&i<2?.45:1),x:(1-p)*d*260,b:(1-p)*12+po*20})});
+    // HER / GÜN gerdirme
+    [['w1',9.05],['w2',9.45]].forEach(([id,t0])=>{const p=k(t,t0,t0+.35,E.oE),po=k(t,9.9,10.02,E.iC);
+      set(id,{o:C(p*3)*(1-po),sx:1,sy:L(3.2,1,p)*(1+po*2),b:(1-p)*16+po*24})});
+    $('w2').style.backgroundPosition='40% 0';
+    slam(R1,t,10.05,{st:.06,dur:.6,s0:2.6,out:12.4});sweep(R1,L(100,0,k(t,10.3,12.2,E.ioC)));
+    maskLine('r2',t,10.8,12.45);
+    maskLine('e1',t,12.6,15.4);slam(E2,t,13.0,{st:.05,dur:.45,out:15.4});sweep(E2,L(100,0,k(t,13.2,15,E.ioC)));
+    fadeBlock('e3',t,13.7,15.45,{dy:40});$('e3').style.transform+=` scale(${1+.03*Math.sin(t*5)*(t>14.2?1:0)})`;
+  }});
+</script></body></html>

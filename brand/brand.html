@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#05060a;font-family:'Inter Display','Inter',sans-serif;-webkit-font-smoothing:antialiased}
+.gold{background:linear-gradient(110deg,#9a6a1c 0%,#ffd77a 28%,#fff3cf 38%,#ffc24b 52%,#b47b22 78%,#ffe3a0 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+#logo{position:relative;width:1080px;height:1080px;overflow:hidden;background:radial-gradient(60% 60% at 50% 45%,#1a1626 0%,#0a0a10 60%,#040406 100%)}
+#logo canvas{position:absolute;inset:0}
+#logo .mark{position:absolute;left:0;right:0;top:300px;text-align:center;font-weight:900;font-size:440px;letter-spacing:-26px;line-height:1;filter:drop-shadow(0 0 60px rgba(255,194,75,.45))}
+#banner{position:relative;width:2560px;height:1440px;overflow:hidden;background:radial-gradient(70% 90% at 50% 50%,#15131f 0%,#08080d 60%,#030305 100%)}
+#banner canvas{position:absolute;inset:0}
+#banner .row{position:absolute;left:507px;top:509px;width:1546px;height:423px;display:flex;align-items:center;gap:70px}
+#banner .m{font-weight:900;font-size:300px;letter-spacing:-18px;line-height:1;filter:drop-shadow(0 0 50px rgba(255,194,75,.45))}
+#banner .t1{font-weight:800;font-size:96px;letter-spacing:-2px;color:#f4f2ee;line-height:1}
+#banner .t2{margin-top:24px;font-weight:600;font-size:46px;color:#9aa1b8}
+#banner .t2 b{color:#ffd77a;font-weight:700}
+</style></head><body>
+<div id="logo"><canvas id="lc" width="1080" height="1080"></canvas><div class="mark gold">%1</div></div>
+<div id="banner"><canvas id="bc" width="2560" height="1440"></canvas>
+  <div class="row"><div class="m gold">%1</div><div><div class="t1">Her gün %1 daha iyi.</div><div class="t2">Her sabah <b>07:00</b>'de yeni bir simülasyon.</div></div></div></div>
+<script>
+// logo: ince halka + %1'lik altın yay + bokeh
+(()=>{const g=document.getElementById('lc').getContext('2d');const cx=540,cy=540,R=470;
+ g.lineWidth=10;g.strokeStyle='rgba(255,255,255,.08)';g.beginPath();g.arc(cx,cy,R,0,7);g.stroke();
+ for(let i=0;i<100;i++){const a=-Math.PI/2+i*Math.PI*2/100;if(i===0)continue;g.strokeStyle='rgba(255,255,255,.10)';g.lineWidth=4;
+   const r0=i===0?R-30:R-14,r1=R+(i===0?14:0);g.beginPath();g.moveTo(cx+Math.cos(a)*r0,cy+Math.sin(a)*r0);g.lineTo(cx+Math.cos(a)*r1,cy+Math.sin(a)*r1);g.stroke()}
+ g.shadowColor='rgba(255,194,75,.9)';g.shadowBlur=40;g.strokeStyle='#ffd77a';g.lineWidth=14;g.beginPath();g.arc(cx,cy,R,-Math.PI/2-.06,-Math.PI/2+.06);g.stroke();
+})();
+// banner: nokta ızgarası (her nokta bir gün), %1'i altın
+(()=>{const g=document.getElementById('bc').getContext('2d');let s=7;const R=()=>(s=(s*1664525+1013904223)>>>0)/4294967296;
+ for(let y=60;y<1440;y+=44)for(let x=60;x<2560;x+=44){const d=Math.hypot((x-1280)/1280,(y-720)/720);const lit=R()<.012;
+   g.fillStyle=lit?`rgba(255,194,75,${.9-d*.4})`:`rgba(255,255,255,${Math.max(0,.10-d*.06)})`;
+   if(lit){g.shadowColor='rgba(255,194,75,.8)';g.shadowBlur=16}else g.shadowBlur=0;
+   g.beginPath();g.arc(x,y,lit?6:4,0,7);g.fill()}
+ const v=g.createRadialGradient(1280,720,300,1280,720,1400);v.addColorStop(0,'rgba(5,6,10,0)');v.addColorStop(.35,'rgba(5,6,10,.55)');v.addColorStop(1,'rgba(5,6,10,0)');
+ g.shadowBlur=0;g.save();g.translate(1280,720);g.scale(1.9,.6);const sh=g.createRadialGradient(0,0,0,0,0,560);sh.addColorStop(0,'rgba(5,6,10,.92)');sh.addColorStop(.7,'rgba(5,6,10,.6)');sh.addColorStop(1,'rgba(5,6,10,0)');g.fillStyle=sh;g.beginPath();g.arc(0,0,560,0,7);g.fill();g.restore();
+})();
+</script></body></html>

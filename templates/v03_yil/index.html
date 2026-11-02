@@ -1,0 +1,106 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../engine/base.css"></head><body>
+<div id="cam">
+  <div class="abs kick" id="a0" style="top:650px">3 KASIM 2026</div>
+  <div class="abs h2" id="a1" style="top:730px;font-size:96px;letter-spacing:2px">2026'NIN</div>
+  <div class="abs h1 gold" id="a2" style="top:840px;font-size:380px;letter-spacing:-16px">%84</div>
+  <div class="abs h2 red" id="a3" style="top:1240px;font-size:96px;letter-spacing:2px">BİTTİ.</div>
+  <div class="abs mask body" id="a4" style="top:800px;font-size:72px"><span>Ocak'ta kendine</span></div>
+  <div class="abs mask h2" id="a5" style="top:900px;font-size:116px"><span>söz vermiştin.</span></div>
+
+  <div class="abs mask body" id="b1" style="top:560px;font-size:66px"><span>Yıl böyle geçti:</span></div>
+  <div class="abs h2 gold" id="pct" style="top:740px;left:0;width:auto;font-size:84px">%0</div>
+  <div class="abs body" id="todayl" style="top:1110px;left:0;width:auto;font-size:28px;font-weight:800;letter-spacing:4px">▲ BUGÜN</div>
+  <div class="abs h2 red" id="b2" style="top:1270px;font-size:104px">KALAN: 59 GÜN</div>
+</div>
+<div id="screen">
+  <div class="abs kick" id="c0" style="top:690px">GÜN</div>
+  <div class="abs h1 gold" id="cnum" style="top:740px;font-size:250px;letter-spacing:-8px">59</div>
+  <div class="abs mask body dim" id="c1" style="top:1080px;font-size:48px"><span>8 saat uykuyu çıkar.</span></div>
+  <div class="abs mask body" id="c2" style="top:1250px;font-size:60px"><span>Yeni bir alışkanlık kurmaya</span></div>
+  <div class="abs mask h2 gold" id="c3" style="top:1340px;font-size:96px"><span class="gold">fazlasıyla yeter.</span></div>
+
+  <div class="abs mask body" id="d1" style="top:700px;font-size:74px"><span>Yılı nasıl bitirirsen,</span></div>
+  <div class="abs h1 gold" id="d2" style="top:810px;font-size:210px;letter-spacing:-8px">2027'YE</div>
+  <div class="abs mask h2" id="d3" style="top:1060px;font-size:100px"><span>öyle başlarsın.</span></div>
+
+  <div class="abs mask h2" id="e1" style="top:740px;font-size:118px"><span>Son 59 günün</span></div>
+  <div class="abs mask h1" id="e2" style="top:880px;font-size:122px;letter-spacing:-4px"><span class="gold">ilk günü: bugün.</span></div>
+  <div class="abs" id="e3" style="top:1170px"><span class="pill">KAYDET · 31 ARALIK'TA TEKRAR İZLE</span></div>
+</div>
+<script src="../../engine/engine.js"></script>
+<script>
+const BAR={x:90,y:880,w:900,h:120}, FILL=306/365; // 3 Kasım'a kadar geçen gün
+const MONTHS=['OCA','ŞUB','MAR','NİS','MAY','HAZ','TEM','AĞU','EYL','EKİ','KAS','ARA'];
+const MD=[31,28,31,30,31,30,31,31,30,31,30,31];
+let A1,A2,A3,D2;
+boot({dur:21,
+  init(){A1=split('a1');A2=split('a2');A3=split('a3');D2=split('d2')},
+  bokeh:t=>t<8.7?'255,190,110':t<14.3?'255,200,120':'255,180,90',
+  shakes:[[.85,26],[7.0,16],[8.72,24],[15.0,32]],
+  flashes:[[.85,.35],[8.72,.8,6],[15.0,.4]],
+  sparks:[[.85,540,1030,.5,'gold'],[15.0,540,920,.9,'gold']],
+  cam(t){const z=P(t,8.05,8.72);const hx=BAR.x+BAR.w*(FILL+(1-FILL)/2);
+    if(z>0)return{fx:L(540,hx,E.ioC(z)),fy:L(960,BAR.y+BAR.h/2,E.ioC(z)),s:L(1,14,E.iE(z)),blur:E.iE(z)*14,o:t>8.72?0:1};
+    return{s:1+.03*Math.sin(t*.5)}},
+  scene(t){
+    // S1
+    const o1=k(t,1.85,2.25,E.iC);
+    fadeBlock('a0',t,.05,1.85,{dy:-30});
+    charsIn(A1,t,.15,{st:.03,dur:.55,dy:60});
+    A2.forEach((c,i)=>{const p=k(t,.35+i*.07,.8+i*.07);set(c,{o:C(p*2),s:L(2.4,1,p),b:(1-p)*40,y:(1-p)*-40})});
+    const v=String(Math.round(L(0,84,k(t,.3,.85,E.oC))));A2[1].textContent=v.length>1?v[0]:'';A2[2].textContent=v[v.length-1];
+    sweep(A2,L(100,0,k(t,.6,2,E.ioC)));
+    charsIn(A3,t,.95,{st:.04,dur:.5,dy:60});
+    ['a1','a2','a3'].forEach(id=>{$(id).style.opacity=1-o1;$(id).style.transform=`translateY(${-o1*120}px) scale(${1-o1*.08})`;$(id).style.filter=o1>.02?`blur(${o1*18}px)`:''});
+    maskLine('a4',t,2.05,3.0);maskLine('a5',t,2.3,3.05);
+    // S2: yıl çubuğu
+    maskLine('b1',t,3.35,8.0);
+    const g=ENG.mid;g.clearRect(0,0,1080,1920);
+    const fp=FILL*k(t,3.9,6.4,E.ioC), ba=k(t,3.4,3.9);
+    if(t>3.3&&t<8.8){
+      g.save();g.globalAlpha=ba;
+      rr(g,BAR.x,BAR.y,BAR.w,BAR.h,28);g.fillStyle='rgba(255,255,255,.06)';g.fill();g.lineWidth=2;g.strokeStyle='rgba(255,255,255,.18)';g.stroke();
+      // dolu kısım
+      if(fp>0){g.save();rr(g,BAR.x,BAR.y,BAR.w,BAR.h,28);g.clip();
+        const gr=g.createLinearGradient(BAR.x,0,BAR.x+BAR.w*fp,0);gr.addColorStop(0,'#9a6a1c');gr.addColorStop(.7,'#ffc24b');gr.addColorStop(1,'#fff1c9');
+        g.shadowColor='rgba(255,194,75,.9)';g.shadowBlur=40;g.fillStyle=gr;g.fillRect(BAR.x,BAR.y,BAR.w*fp,BAR.h);
+        // parlama bandı
+        const sx=BAR.x+((t*500)%1400)-300;const sg=g.createLinearGradient(sx,0,sx+160,0);sg.addColorStop(0,'rgba(255,255,255,0)');sg.addColorStop(.5,'rgba(255,255,255,.35)');sg.addColorStop(1,'rgba(255,255,255,0)');
+        g.fillStyle=sg;g.fillRect(BAR.x,BAR.y,Math.max(0,Math.min(BAR.w*fp,sx+160-BAR.x)),BAR.h);g.restore()}
+      // kalan kısım kırmızı nabız
+      const rp=k(t,6.9,7.3)*(.6+.4*Math.sin(t*9));
+      if(rp>0){g.save();rr(g,BAR.x+BAR.w*FILL+6,BAR.y+6,BAR.w*(1-FILL)-12,BAR.h-12,22);g.fillStyle=`rgba(255,61,87,${.25*rp})`;g.shadowColor='rgba(255,61,87,.9)';g.shadowBlur=30*rp;g.fill();
+        g.lineWidth=3;g.strokeStyle=`rgba(255,61,87,${rp})`;g.setLineDash([12,8]);g.lineDashOffset=-t*30;g.stroke();g.restore()}
+      // ay çizgileri ve etiketleri
+      let acc=0;g.font='700 22px "Inter Display"';g.textAlign='center';
+      MONTHS.forEach((m,i)=>{const x0=BAR.x+BAR.w*acc/365;acc+=MD[i];const x1=BAR.x+BAR.w*acc/365;
+        if(i<11){g.strokeStyle='rgba(255,255,255,.18)';g.lineWidth=2;g.beginPath();g.moveTo(x1,BAR.y+14);g.lineTo(x1,BAR.y+BAR.h-14);g.stroke()}
+        const lit=fp*365>=acc-MD[i]*.5, la=k(t,3.6+i*.05,4.1+i*.05);
+        g.globalAlpha=ba*la;g.fillStyle=lit?'#ffd77a':'rgba(255,255,255,.35)';g.fillText(m,(x0+x1)/2,BAR.y+BAR.h+44);g.globalAlpha=ba});
+      g.restore();
+    }
+    const hx=BAR.x+BAR.w*fp;
+    $('pct').textContent='%'+Math.round(fp*100);
+    set('pct',{o:k(t,3.9,4.3)*(1-k(t,7.9,8.2,E.iC)),x:hx-$('pct').offsetWidth/2,y:0});
+    set('todayl',{o:k(t,6.5,6.9)*(1-k(t,7.9,8.2,E.iC)),x:BAR.x+BAR.w*FILL-$('todayl').offsetWidth/2,y:(1-k(t,6.5,6.9))*20});
+    const b2=k(t,7.0,7.45);set('b2',{o:b2*(1-k(t,7.9,8.2,E.iC)),s:L(1.6,1,b2),b:(1-b2)*24});
+    // S3
+    const n1=k(t,9.6,10.4,E.ioC), n2=k(t,11.2,11.9,E.ioC);
+    let val=59, lab='GÜN'; if(t>9.55){val=L(59,1416,n1);lab='SAAT'} if(t>11.1){val=L(1416,944,n2);lab='UYANIK SAAT'}
+    $('cnum').textContent=fmt(val);$('c0').textContent=lab;
+    const cin=k(t,8.75,9.3),cout=k(t,13.85,14.25,E.iC);
+    set('cnum',{o:cin*(1-cout),s:L(1.5,1,cin)*(1+.1*pulse(t,10.4,6)+.1*pulse(t,11.9,6)),b:(1-cin)*30+cout*20,y:-cout*80});
+    set('c0',{o:k(t,9.0,9.4)*(1-cout)*(1-.7*(pulse(t,9.55,30)+pulse(t,11.1,30)))});
+    maskLine('c1',t,10.9,13.8);maskLine('c2',t,12.35,13.85);maskLine('c3',t,12.65,13.9);
+    $('c3').firstElementChild.style.backgroundPosition=`${L(140,-40,P(t,12.7,13.9))}% 0`;
+    // S4
+    maskLine('d1',t,14.4,16.95);
+    slam(D2,t,15.0,{st:.05,dur:.5,out:16.95});sweep(D2,L(100,0,k(t,15.2,16.9,E.ioC)));
+    maskLine('d3',t,15.55,17.0);
+    // S5
+    maskLine('e1',t,17.5,20.4);maskLine('e2',t,17.8,20.45);
+    $('e2').firstElementChild.style.backgroundPosition=`${L(140,-40,k(t,18,20,E.ioC))}% 0`;
+    fadeBlock('e3',t,18.6,20.45,{dy:40});$('e3').style.transform+=` scale(${1+.03*Math.sin(t*5)*(t>19.1?1:0)})`;
+  }});
+</script></body></html>

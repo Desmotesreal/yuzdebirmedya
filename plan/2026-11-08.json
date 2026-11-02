@@ -1,0 +1,104 @@
+{
+ "template": "v08_pazartesi",
+ "orig_dur": 21,
+ "cover_orig": 7.2,
+ "script": [
+  "Pazartesi başlarım.",
+  "Bunu kaçıncı kez söylüyorsun?",
+  "Seksen yıllık bir ömürde, yaklaşık dört bin yüz altmış pazartesi var.",
+  "Yirmi yaşındaysan, bin kırkı çoktan geçti.",
+  "Geriye üç bin yüz yirmi pazartesi kalıyor.",
+  "Kulağa çok geliyor.",
+  "Ama kaç tanesini, haftaya diye harcadın?",
+  "Her biri bir başlangıç fırsatıydı.",
+  "Yarın pazartesi.",
+  "Bu sefer gerçekten başla.",
+  "Yarın neye başlıyorsun? Yorumlara yaz."
+ ],
+ "cues": [
+  [
+   0,
+   0,
+   0.1
+  ],
+  [
+   0,
+   1,
+   1.0
+  ],
+  [
+   1,
+   0,
+   1.5
+  ],
+  [
+   2,
+   0,
+   3.6
+  ],
+  [
+   2,
+   0.55,
+   4.0
+  ],
+  [
+   3,
+   0,
+   5.4
+  ],
+  [
+   4,
+   0,
+   6.5
+  ],
+  [
+   4,
+   0.35,
+   6.6
+  ],
+  [
+   5,
+   0,
+   8.0
+  ],
+  [
+   6,
+   0,
+   10.0
+  ],
+  [
+   7,
+   0,
+   12.9
+  ],
+  [
+   8,
+   0,
+   14.4
+  ],
+  [
+   8,
+   0.4,
+   14.8
+  ],
+  [
+   9,
+   0,
+   15.5
+  ],
+  [
+   10,
+   0,
+   17.6
+  ]
+ ],
+ "caption": "80 yıllık bir ömürde yaklaşık 4.160 pazartesi var. 20 yaşındaysan yaklaşık 3.120'si kaldı. Kaçını \"haftaya\" diye harcadın? Yarın pazartesi. Yarın neye başlıyorsun? 👇\n\n#pazartesi #motivasyon #erteleme #başla #disiplin #hedef #kişiselgelişim",
+ "yt_title": "Kaç pazartesin kaldı? #shorts",
+ "tags": [
+  "pazartesi",
+  "motivasyon",
+  "erteleme",
+  "disiplin",
+  "hedef"
+ ]
+}

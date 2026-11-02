@@ -1,0 +1,78 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;font-family:'Inter Display',sans-serif;-webkit-font-smoothing:antialiased}
+.th{position:relative;width:1280px;height:720px;overflow:hidden}
+canvas{position:absolute;inset:0}
+.a{position:absolute;white-space:nowrap;line-height:.85}
+.gold{background:linear-gradient(170deg,#fff6d8 0%,#ffd77a 30%,#ffb52e 60%,#b06d12 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.redg{background:linear-gradient(170deg,#ffd0d6 0%,#ff6b7e 35%,#ff1f3d 65%,#8a0f22 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stroke{-webkit-text-stroke:3px rgba(0,0,0,.35)}
+.sh{filter:drop-shadow(0 10px 0 rgba(0,0,0,.55)) drop-shadow(0 0 40px rgba(255,170,40,.55))}
+.shr{filter:drop-shadow(0 10px 0 rgba(0,0,0,.55)) drop-shadow(0 0 40px rgba(255,40,70,.6))}
+.badge{position:absolute;font-weight:900;color:#fff;border-radius:16px;padding:10px 26px;white-space:nowrap}
+</style></head><body>
+
+<!-- A: ikiye bölünmüş -->
+<div class="th" id="A"><canvas id="cA" width="1280" height="720"></canvas>
+  <div class="a" style="left:40px;top:40px;font-weight:800;font-size:46px;color:#fff3d6;letter-spacing:1px">BUGÜN BAŞLARSAN</div>
+  <div class="a gold sh" style="left:30px;top:110px;font-weight:900;font-size:230px;letter-spacing:-12px">11.450</div>
+  <div class="a" style="left:690px;top:400px;font-weight:800;font-size:46px;color:#ffd6dc;letter-spacing:1px">OCAK'TA BAŞLARSAN</div>
+  <div class="a redg shr" style="left:680px;top:465px;font-weight:900;font-size:230px;letter-spacing:-12px">8.450</div>
+  <div class="badge" style="left:40px;top:560px;font-size:56px;background:#111;border:4px solid #ffc24b;color:#ffd77a">YKS'YE 229 GÜN</div>
+</div>
+
+<!-- B: dev kayıp -->
+<div class="th" id="B"><canvas id="cB" width="1280" height="720"></canvas>
+  <div class="a" style="left:0;width:1280px;text-align:center;top:58px;font-weight:900;font-size:78px;color:#fff;letter-spacing:-1px">OCAK'I BEKLERSEN</div>
+  <div class="a redg shr" style="left:0;width:1280px;text-align:center;top:170px;font-weight:900;font-size:360px;letter-spacing:-20px">−60</div>
+  <div class="a" style="left:0;width:1280px;text-align:center;top:520px;font-weight:900;font-size:110px;color:#fff;letter-spacing:4px">GÜN KAYIP</div>
+</div>
+
+<!-- C: takvim -->
+<div class="th" id="C"><canvas id="cC" width="1280" height="720"></canvas>
+  <div class="a" style="left:640px;top:70px;font-weight:900;font-size:84px;color:#fff;letter-spacing:-1px">YKS'YE</div>
+  <div class="a gold sh" style="left:630px;top:150px;font-weight:900;font-size:330px;letter-spacing:-18px">229</div>
+  <div class="a" style="left:648px;top:450px;font-weight:900;font-size:84px;color:#fff;letter-spacing:-1px">GÜN KALDI</div>
+  <div class="badge" style="left:640px;top:580px;font-size:42px;background:#ff2b47;box-shadow:0 0 40px rgba(255,43,71,.6)">BUGÜN Mİ, OCAK'TA MI?</div>
+</div>
+
+<script>
+function rnd(s){return()=>(s=(s*1664525+1013904223)>>>0)/4294967296}
+function glow(g,x,y,r,c,a){const gr=g.createRadialGradient(x,y,0,x,y,r);gr.addColorStop(0,`rgba(${c},${a})`);gr.addColorStop(1,`rgba(${c},0)`);g.fillStyle=gr;g.fillRect(0,0,1280,720)}
+function grain(g,a){const d=g.getImageData(0,0,1280,720),R=rnd(5);for(let i=0;i<d.data.length;i+=4){const n=(R()-.5)*a;d.data[i]+=n;d.data[i+1]+=n;d.data[i+2]+=n}g.putImageData(d,0,0)}
+function bokeh(g,c,n,seed){const R=rnd(seed);for(let i=0;i<n;i++){const x=R()*1280,y=R()*720,r=4+R()*R()*40;const gr=g.createRadialGradient(x,y,0,x,y,r);gr.addColorStop(0,`rgba(${c},${.15+.25*R()})`);gr.addColorStop(1,`rgba(${c},0)`);g.fillStyle=gr;g.beginPath();g.arc(x,y,r,0,7);g.fill()}}
+// A
+(()=>{const g=document.getElementById('cA').getContext('2d');
+ g.fillStyle='#120c04';g.fillRect(0,0,1280,720);
+ g.save();g.beginPath();g.moveTo(760,0);g.lineTo(1280,0);g.lineTo(1280,720);g.lineTo(520,720);g.closePath();g.clip();
+ g.fillStyle='#14060a';g.fillRect(0,0,1280,720);glow(g,1020,560,700,'255,30,60',.45);bokeh(g,'255,80,100',30,4);g.restore();
+ g.save();g.beginPath();g.moveTo(0,0);g.lineTo(760,0);g.lineTo(520,720);g.lineTo(0,720);g.closePath();g.clip();
+ glow(g,300,240,720,'255,170,40',.55);bokeh(g,'255,200,120',30,2);g.restore();
+ // ayırıcı şimşek çizgisi
+ g.save();g.shadowColor='#fff';g.shadowBlur=30;g.strokeStyle='#fff';g.lineWidth=8;g.beginPath();g.moveTo(760,-10);g.lineTo(660,300);g.lineTo(700,320);g.lineTo(520,730);g.stroke();g.restore();
+ // oklar
+ g.save();g.fillStyle='#5dff9c';g.shadowColor='rgba(93,255,156,.8)';g.shadowBlur=30;g.translate(420,430);g.beginPath();g.moveTo(0,-70);g.lineTo(60,10);g.lineTo(22,10);g.lineTo(22,80);g.lineTo(-22,80);g.lineTo(-22,10);g.lineTo(-60,10);g.closePath();g.fill();g.restore();
+ g.save();g.fillStyle='#ff2b47';g.shadowColor='rgba(255,43,71,.9)';g.shadowBlur=30;g.translate(1180,300);g.rotate(Math.PI);g.beginPath();g.moveTo(0,-70);g.lineTo(60,10);g.lineTo(22,10);g.lineTo(22,80);g.lineTo(-22,80);g.lineTo(-22,10);g.lineTo(-60,10);g.closePath();g.fill();g.restore();
+ const v=g.createRadialGradient(640,360,300,640,360,800);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.6)');g.fillStyle=v;g.fillRect(0,0,1280,720);grain(g,16)})();
+// B
+(()=>{const g=document.getElementById('cB').getContext('2d');g.fillStyle='#0b0306';g.fillRect(0,0,1280,720);
+ glow(g,640,380,620,'255,25,55',.6);
+ // takvim sayfaları uçuşuyor
+ const R=rnd(9);for(let i=0;i<14;i++){const x=R()*1280,y=R()*720,s=60+R()*70,r=(R()-.5)*1.2;const edge=(Math.abs(x-640)>400&&y>160)||y>640;if(!edge)continue;
+   g.save();g.translate(x,y);g.rotate(r);g.globalAlpha=.85;g.fillStyle='#f4efe6';g.fillRect(-s/2,-s*.6,s,s*1.2);g.fillStyle='#ff2b47';g.fillRect(-s/2,-s*.6,s,s*.3);
+   g.fillStyle='#222';g.font=`900 ${s*.55}px "Inter Display"`;g.textAlign='center';g.fillText(String(1+Math.floor(R()*31)),0,s*.42);g.restore()}
+ bokeh(g,'255,90,110',40,7);
+ const v=g.createRadialGradient(640,360,300,640,360,800);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.7)');g.fillStyle=v;g.fillRect(0,0,1280,720);grain(g,16)})();
+// C
+(()=>{const g=document.getElementById('cC').getContext('2d');g.fillStyle='#0c0904';g.fillRect(0,0,1280,720);
+ glow(g,900,330,620,'255,170,40',.5);bokeh(g,'255,200,120',40,3);
+ // büyük takvim sayfası
+ g.save();g.translate(330,380);g.rotate(-.08);g.shadowColor='rgba(0,0,0,.7)';g.shadowBlur=50;g.shadowOffsetY=20;
+ g.fillStyle='#f6f1e7';g.beginPath();g.roundRect(-240,-290,480,580,28);g.fill();g.shadowColor='transparent';
+ g.fillStyle='#ff2b47';g.beginPath();g.roundRect(-240,-290,480,150,[28,28,0,0]);g.fill();
+ g.fillStyle='#fff';g.font='900 78px "Inter Display"';g.textAlign='center';g.fillText('KASIM',0,-188);
+ g.fillStyle='#16110a';g.font='900 330px "Inter Display"';g.fillText('2',0,190);
+ for(let i=-200;i<=200;i+=80){g.fillStyle='#8f8a80';g.beginPath();g.arc(i,-292,12,0,7);g.fill()}
+ g.fillStyle='#ff2b47';g.font='900 46px "Inter Display"';g.fillText('BAŞLA',0,262);g.restore();
+ const v=g.createRadialGradient(640,360,300,640,360,800);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.55)');g.fillStyle=v;g.fillRect(0,0,1280,720);grain(g,14)})();
+</script></body></html>

@@ -1,0 +1,73 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../engine/base.css">
+<style>
+#phone{position:absolute;left:240px;top:360px;width:600px;height:1200px;border-radius:90px;border:3px solid rgba(255,255,255,.22);
+  background:radial-gradient(120% 70% at 50% 0%,#2a1f55 0%,#120d26 45%,#07060e 100%);box-shadow:0 0 140px rgba(143,117,255,.25);overflow:hidden}
+#notch{position:absolute;left:220px;top:28px;width:160px;height:42px;border-radius:30px;background:#000}
+#clock{position:absolute;left:0;width:600px;top:130px;text-align:center;font-weight:200;font-size:170px;letter-spacing:-4px;color:#efeaff}
+#date{position:absolute;left:0;width:600px;top:110px;text-align:center;font-weight:600;font-size:30px;color:#c9c0ef}
+.card{position:absolute;left:28px;width:544px;border-radius:34px;padding:22px 26px 26px 26px;background:rgba(255,255,255,.11);
+  border:1px solid rgba(255,255,255,.14);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.ic{position:absolute;left:24px;top:22px;width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#b7a1ff,#5236b0);box-shadow:0 0 20px rgba(143,117,255,.6)}
+.ttl{margin-left:74px;font-weight:800;font-size:26px;letter-spacing:1px;color:#fff;display:flex;justify-content:space-between}
+.ttl span{font-weight:500;color:#b9b2d6;letter-spacing:0}
+.msg{margin-left:74px;margin-top:8px;font-weight:600;font-size:37px;line-height:1.22;color:#f1eeff;min-height:40px}
+.dots{margin-left:74px;margin-top:12px;height:30px}
+.dots i{display:inline-block;width:14px;height:14px;border-radius:50%;background:#cfc6ff;margin-right:8px}
+</style></head><body>
+<div id="cam">
+  <div class="abs mask h2" id="a1" style="top:740px;font-size:110px"><span>1 yıl sonraki sen</span></div>
+  <div class="abs mask body" id="a2" style="top:870px;font-size:78px"><span>sana tek mesaj</span></div>
+  <div class="abs h1 violet" id="a3" style="top:980px;font-size:150px;letter-spacing:-5px">atabilseydi?</div>
+  <div id="phone"><div id="notch"></div><div id="date">Cumartesi, 7 Kasım</div><div id="clock">07:00</div><div id="cards"></div></div>
+</div>
+<div id="screen">
+  <div class="abs mask body" id="c1" style="top:740px;font-size:72px"><span>Bu mesajı alabilmen için</span></div>
+  <div class="abs h1 violet" id="c2" style="top:840px;font-size:250px;letter-spacing:-10px">bugün</div>
+  <div class="abs mask h2" id="c3" style="top:1110px;font-size:104px"><span>başlaman lazım.</span></div>
+  <div class="abs mask h2" id="e1" style="top:740px;font-size:112px"><span>Gelecekteki sana</span></div>
+  <div class="abs mask h1" id="e2" style="top:880px;font-size:150px;letter-spacing:-5px"><span class="violet">ne yazardın?</span></div>
+  <div class="abs" id="e3" style="top:1170px;--pill:rgba(143,117,255,.75);--pillc:#d6ccff"><span class="pill">YORUMA YAZ · 1 YIL SONRA OKU</span></div>
+</div>
+<script src="../../engine/engine.js"></script>
+<script>
+const MSG=[[5.2,'O gün başladığın için teşekkür ederim.'],[7.4,'İlk haftalar çok zordu, biliyorum.'],[9.3,'Ama bak, buradayım.'],[10.9,'Lütfen bugün bırakma.']];
+const TY=.034;let A3,C2;
+boot({dur:21,bg:'radial-gradient(120% 80% at 50% 40%,#141029 0%,#08070f 55%,#030305 100%)',leaks:['150,100,255','255,110,170'],
+  init(){A3=split('a3');C2=split('c2');const w=$('cards');
+    MSG.forEach(([t0,txt],i)=>{const c=document.createElement('div');c.className='card';c.id='card'+i;
+      c.innerHTML=`<div class="ic"></div><div class="ttl">GELECEKTEKİ SEN<span>şimdi</span></div><div class="msg" id="msg${i}"></div><div class="dots" id="dots${i}"><i></i><i></i><i></i></div>`;w.appendChild(c)})},
+  bokeh:t=>'170,140,255',
+  shakes:[[.9,18],[13.4,24]],flashes:[[.9,.25],[13.4,.35]],
+  sparks:[[13.4,540,960,.7,'violet']],
+  cam(t){const pi=k(t,3.7,12.4,E.ioQ);return{s:L(1,1.2,pi)*(1+.015*Math.sin(t*.6)),fy:L(960,880,pi)}},
+  scene(t){
+    maskLine('a1',t,.1,3.2);maskLine('a2',t,.5,3.25);slam(A3,t,.9,{st:.04,dur:.45,out:3.25});sweep(A3,L(100,0,k(t,1.1,3.1,E.ioC)));
+    // telefon
+    const pi=k(t,3.6,4.4,E.oC),po=k(t,12.4,12.85,E.iC);
+    set('phone',{o:C(pi*1.4)*(1-po),y:(1-pi)*420+po*300,s:L(.9,1,pi),b:po*20});
+    const clk=k(t,4.3,4.8)*(1-k(t,4.9,5.3)*.0);set('clock',{o:clk*(1-k(t,4.6,5.0)*.0),y:(1-clk)*20});set('date',{o:k(t,4.2,4.7)});
+    // kartlar yukarı kayar: her yeni kart üsttekileri aşağı iter (bildirim yığını)
+    let yOff=400;
+    MSG.forEach(([t0,txt],i)=>{
+      const ap=k(t,t0-.75,t0-.35,E.oB), el=$('card'+i);
+      const n=Math.floor(C((t-t0)/(TY*txt.length))*txt.length), typing=t>=t0&&n<txt.length;
+      $('msg'+i).textContent=t<t0?'':txt.slice(0,n)+(typing&&Math.floor(t*6)%2?'|':'');
+      const dots=t>=t0-.6&&t<t0;$('dots'+i).style.display=dots?'block':'none';$('msg'+i).style.display=dots?'none':'block';
+      if(dots)[...$('dots'+i).children].forEach((d,j)=>{d.style.transform=`translateY(${-8*Math.max(0,Math.sin(t*12-j*.9))}px)`});
+      const newer=MSG.filter(m=>t>m[0]-.75&&m[0]>t0).length;
+      el.style.top=yOff+'px';
+      set(el,{o:C(ap*1.3)*(i===3?1:1-.35*C(newer)),y:(1-C(ap))*-60,s:L(.92,1,C(ap)),b:(1-C(ap))*10});
+      el.style.background=i===3&&t>t0?`rgba(143,117,255,${.18+.12*pulse(t,t0+TY*txt.length,3)})`:'rgba(255,255,255,.11)';
+      el.style.borderColor=i===3&&t>t0?'rgba(183,161,255,.7)':'rgba(255,255,255,.14)';
+      if(ap>0)yOff+=el.offsetHeight*C(ap)+18;
+    });
+    // S3
+    maskLine('c1',t,12.8,16.2);slam(C2,t,13.4,{st:.06,dur:.5,out:16.2});sweep(C2,L(100,0,k(t,13.6,16,E.ioC)));
+    maskLine('c3',t,14.0,16.25);
+    // S4
+    maskLine('e1',t,16.5,20.45);maskLine('e2',t,16.85,20.5);
+    $('e2').firstElementChild.style.backgroundPosition=`${L(140,-40,k(t,17,20,E.ioC))}% 0`;
+    fadeBlock('e3',t,17.6,20.5,{dy:40});$('e3').style.transform+=` scale(${1+.03*Math.sin(t*5)*(t>18.1?1:0)})`;
+  }});
+</script></body></html>
