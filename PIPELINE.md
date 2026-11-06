@@ -20,7 +20,7 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 - Görsel dil: koyu sinematik zemin, kinetik tipografi (Inter Display 800–900), bokeh + ışık sızıntısı + film grain,
   her videoda **tek vurgu rengi** (gold / cyan / ember / violet; kırmızı sadece kayıp/uyarı), swoosh/impact/riser ses tasarımı.
 - Yapı: **kanca (0–2 sn)** → simülasyon/veri ya da güçlü tek fikir → yüzleşme → CTA (kaydet / yorumlara yaz).
-- Süre 22–35 sn. 9–12 cümle. Her cümlenin ekranda karşılığı olur; sayılar **söylendiği anda** ekrana gelir.
+- Süre hedefi **24–26 sn** (üst sınır 35). 8–10 cümle. Her cümlenin ekranda karşılığı olur; sayılar **söylendiği anda** ekrana gelir.
 
 ## Her sabahki adımlar
 0. **Hazırlık**: Bu depo klonlu değilse `add_repo` (owner `Desmotesreal`, repo `yuzdebirmedya`, access `push`) ile ekle ve
@@ -29,13 +29,28 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 1. **Tarih**: Bugünün tarihini (Europe/Istanbul) al. `posts.json` oku: aynı konuyu/kancayı son 30 günde tekrar etme.
    **Çift paylaşım kontrolü**: Metricool `getScheduledPosts` (brandId 7823005, bugün 00:00–23:59, Europe/Istanbul) —
    bugüne zaten planlı bir Reel/Short varsa yenisini üretme; sadece adım 10 (istatistik) ve 12 (rapor) yap.
-2. **Plan var mı?** `plan/<YYYY-MM-DD>.json` varsa → `ELEVEN_API_KEY=... python3 tools/run_plan.py <tarih> --no-render`,
+2b. **Son 14 günün sonuçları → konu/kanca seçimi** (konu seçmeden ve plan kullanmadan ÖNCE; analiz yayını asla durdurmaz):
+   Metricool `getAnalyticsDataByMetrics` (brandId 7823005, bugün−14 gün 00:00 → bugün 23:59, `+03:00`):
+   IG Reels `IGRE01,IGRE03,IGRE23,IGRE11,IGRE12,IGRE21,IGRE24` (tarih, metin, izlenme, erişim, kaydetme, paylaşım, ort. izlenme süresi);
+   YT Shorts `YTVP01,YTVP17,YTVP06,YTVP08,YTVP09,YTVP12` (tarih, başlık, izlenme, ort. izlenme süresi, beğeni, paylaşım).
+   Her videoyu `posts.json`'daki formatla eşleştir (YKS/LGS sayı kancası / gündem / simülasyon / genel motivasyon) ve
+   format başına ortalama izlenme + (kaydetme+paylaşım)/erişim hesapla (python). Konu ve kancayı en iyi gidene göre seç.
+   **Kurallar (veri azsa — izlenme değeri olan 3'ten az video ya da araç hata verirse — sadece bunları uygula):**
+   - Hafta (Pazartesi–Pazar) başına **en az 2 video YKS/LGS sayı kancası** ("YKSye X gün", "LGSye X gün: günde Y soru = Z soru"…).
+     Bu haftaki yayınlanmış + planlı YKS/LGS videolarını say; kalan gün sayısı ≤ eksik kota ise bugün **zorunlu** YKS/LGS.
+     Tarihleri her seferinde ÖSYM/MEB kaynağından doğrula; aynı sınavın sayı kancasını üst üste iki gün kullanma (YKS↔LGS dönüşümlü).
+   - **Genel motivasyonu azalt**: haftada en fazla 1–2 saf genel motivasyon (somut sayı/gündem kancası olmayan söz videosu).
+     `plan/<tarih>.json` genel motivasyonsa ve bugün YKS/LGS zorunluysa ya da bu hafta zaten genel motivasyon kotası dolduysa
+     planı **kullanma** (dosyayı silme; ileri bir boş güne kaydırılabilir) → adım 3'ten YKS/LGS ya da veri/gündem kancalı yeni içerik üret.
+   - **Süre 24–26 sn** (mümkünse): ~8–10 kısa cümle, ses ≈ 22–24 sn. Ses 24,5 sn'yi aşarsa metni kısalt ve TTS'i bir kez yeniden üret.
+   Analiz özetini (format bazında 1 satır) adım 10'daki `insights.md` notuna ve rapora ekle.
+2. **Plan var mı?** (2b izin veriyorsa) `plan/<YYYY-MM-DD>.json` varsa → `ELEVEN_API_KEY=... python3 tools/run_plan.py <tarih> --no-render`,
    `~/work/<tarih>/sheet.png`'ye **bak** (yazı taşması / çakışma yoksa) → `python3 tools/run_plan.py <tarih>` (render + yükleme) → adım 8.
    Plan yoksa adım 3'ten devam: **yeni içerik üret**.
 3. **Gündem + fikir** (WebSearch, Türkçe): bugünün/haftanın Türkiye gündemi — sınav tarihleri (ÖSYM/MEB), özel günler,
    mevsim/ay başı-sonu, büyük spor olayları, viral konular. Gündemi **kanca** olarak kullan, motivasyon mesajına bağla.
    Siyaset, trajedi, kişiler hakkında iddia **yok**. Uygun gündem yoksa `IDEAS.md` havuzundan seç.
-   Format karışımı: gündem kancalı (haftada 2–3), simülasyon/veri ("günde X = yılda Y"), kinetik tipografi (özgün söz),
+   Format karışımı (adım 2b kuralları önceliklidir): YKS/LGS sayı kancası (haftada en az 2), gündem kancalı (haftada 2–3), simülasyon/veri ("günde X = yılda Y"), kinetik tipografi (özgün söz),
    "ya … olsaydı" senaryosu. Haftalık istatistiklere göre iyi gideni artır (adım 10).
 4. **Rakamlar**: Her sayıyı python ile hesapla; tarihli bilgiyi (ör. sınav tarihi) kaynağıyla doğrula, kaynağı açıklamaya yaz.
 5. **Seslendirme metni** `~/work/<tarih>/script.txt` — her satır bir cümle. KURALLAR:
