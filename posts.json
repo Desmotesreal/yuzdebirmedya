@@ -98,5 +98,28 @@
   ],
   "scheduled": "2026-11-06T07:00:00+03:00",
   "cover_ms": 15917
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "LGSye 218 gün: günde 30 soru = 6.540 soru = 72 deneme",
+  "format": "YKS/LGS sayı kancası (LGS)",
+  "hook": "LGSye iki yüz on sekiz gün kaldı.",
+  "script": [
+   "LGSye iki yüz on sekiz gün kaldı.",
+   "Günde sadece otuz soru çözersen ne olur?",
+   "Sınava kadar altı bin beş yüz kırk soru.",
+   "Bu, yetmiş iki tam LGS denemesi demek.",
+   "Ama ocakta başlarsan,",
+   "bin altı yüz elli soru eksik kalıyor.",
+   "Fark, bugün açılan kitapta.",
+   "Kaydet. Her sabah otuz soruya başlamadan izle."
+  ],
+  "caption": "LGS'ye 218 gün kaldı (MEB: 13 Haziran 2027). Bugünden itibaren günde sadece 30 soru = sınava kadar 6.540 soru, yani 72 tam LGS denemesi. Ocak'ı beklersen 1.650 soru eksik kalıyor. Kaydet, her sabah 30 soruna başlamadan izle 👇",
+  "yt_title": "LGS'ye 218 gün: günde 30 soru = 72 deneme #shorts",
+  "video_url": "https://static.metricool.com/planner/202611/7823005-file-8816652262620080191.mp4",
+  "metricool_ids": [
+   419621592
+  ],
+  "source": "MEB LGS 13 Haziran 2027 (evrensel.net 30.10.2026, sabah.com.tr)"
  }
 ]

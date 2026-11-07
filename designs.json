@@ -26,5 +26,12 @@
   "yerlesim": "üstte yığılan satırlar, altta dev tek kelime",
   "vurgu": "gold (giriş kırmızı 'GİDER')",
   "gecisler": "bulanık slam, maske satırları, kıvılcım"
+ },
+ {
+  "date": "2026-11-07",
+  "metafor": "optik cevap kâğıdı (30 baloncuk dolar) → 6.540 noktalık alan → noktalar 72 deneme kitapçığından oluşan 3 sütunlu kuleye çöker; ocak kaybı = üst 18 kitapçık kırmızı düşer",
+  "yerlesim": "üstte dev sayaç/başlık, ortada kart/alan/kule, altta etiket",
+  "vurgu": "ember (kayıp kırmızı)",
+  "gecisler": "kart 3D giriş, karta bulanık zoom, nokta→kule morph, kırmızı düşüş, ışık patlaması"
  }
 ]
