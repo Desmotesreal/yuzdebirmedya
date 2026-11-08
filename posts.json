@@ -121,5 +121,30 @@
    419621592
   ],
   "source": "MEB LGS 13 Haziran 2027 (evrensel.net 30.10.2026, sabah.com.tr)"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Kaç pazartesin kaldı: 80 yılda ~4.160 pazartesi, 20 yaşında ~3.120 kaldı",
+  "format": "simülasyon (plan v08_pazartesi)",
+  "hook": "Pazartesi başlarım.",
+  "script": [
+   "Pazartesi başlarım.",
+   "Kaçıncı kez söylüyorsun?",
+   "Seksen yılda, yaklaşık dört bin yüz altmış pazartesi var.",
+   "Yirmi yaşındaysan, bin kırkı geçti.",
+   "Geriye üç bin yüz yirmi kalıyor.",
+   "Çok geliyor.",
+   "Ama kaç tanesini, haftaya diye harcadın?",
+   "Her biri bir başlangıçtı.",
+   "Yarın pazartesi.",
+   "Bu sefer başla.",
+   "Neye başlıyorsun? Yorumlara yaz."
+  ],
+  "caption": "80 yıllık bir ömürde yaklaşık 4.160 pazartesi var. 20 yaşındaysan yaklaşık 3.120'si kaldı. Kaçını \"haftaya\" diye harcadın? Yarın pazartesi. Yarın neye başlıyorsun? 👇\n\n#pazartesi #motivasyon #erteleme #başla #disiplin #hedef #kişiselgelişim #yüzdebir",
+  "yt_title": "Kaç pazartesin kaldı? #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-08.mp4",
+  "metricool_ids": [
+   420427247
+  ]
  }
 ]

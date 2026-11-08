@@ -21,3 +21,11 @@
 - YT Shorts: izlenme/beğeni hâlâ null → Metricool YouTube bağlantısı/veri gecikmesi kontrol edilmeli.
 - Karar: haftalık YKS/LGS kotası 1/2 idi ve sayı kancası izlenme süresinde en iyi → bugün LGS sayı kancası ("LGSye 218 gün: günde 30 soru = 6.540 soru = 72 deneme"). YKS↔LGS dönüşümü. Kitap planı (simülasyon) 12 Kasıma kaydırıldı.
 - Sonraki: sayı kancasına genel motivasyondaki "kaydet, zor günde izle" CTA'sını ekleyerek kaydetme oranı artırılmaya çalışılıyor.
+
+## 2026-11-08 (pazar — haftalık detay)
+- 14 gün analizi (IG Reels, 5 video): YKS/LGS sayı kancası (2) ort. 171 izlenme · (kaydet+paylaş)/erişim %2,5 · ort. izlenme 10,1 sn (en uzun) | gündem (1) 222 · %0,5 · 9,0 sn (en çok izlenme) | simülasyon (1) 135 · %2,6 · 8,0 sn | genel motivasyon (1) 132 · %5,2 · 6,5 sn.
+- 7 Kasım LGS 218 gün: 152 izlenme, 6 paylaşım (tek videoda en yüksek paylaşım) → sayı kancası + "kaydet, her sabah izle" CTA'sı paylaşımı artırdı.
+- Hafta özeti (2–8 Kasım): 6 yayın; YKS/LGS kotası 2/2 doldu, genel motivasyon 1. Haftalık toplam IG izlenme ≈ 831.
+- YT Shorts: izlenme/beğeni hâlâ null (6 gündür) → Metricool YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: plan v08_pazartesi (simülasyon: "kaç pazartesin kaldı", pazar akşamı/pazartesi sabahı gündemi). Ses 28,96 sn çıktı → metin kısaltılıp 24,8 sn'ye indirildi.
+- Sonraki hafta: gündem kancası (en çok izlenme) + sayı kancasını birleştir; YKS↔LGS dönüşümü (sıradaki YKS).
