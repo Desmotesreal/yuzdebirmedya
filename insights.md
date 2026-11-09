@@ -29,3 +29,10 @@
 - YT Shorts: izlenme/beğeni hâlâ null (6 gündür) → Metricool YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: plan v08_pazartesi (simülasyon: "kaç pazartesin kaldı", pazar akşamı/pazartesi sabahı gündemi). Ses 28,96 sn çıktı → metin kısaltılıp 24,8 sn'ye indirildi.
 - Sonraki hafta: gündem kancası (en çok izlenme) + sayı kancasını birleştir; YKS↔LGS dönüşümü (sıradaki YKS).
+
+## 2026-11-09
+- Bugün 07:00 için "Her sabah 5 dakika ertelemek = yılda 30 saat" (Metricool id 418207541, IG+YT, 5 Kasımda planlanmış) zaten planlı → yeni üretim yok (çift paylaşım kontrolü). Bu gönderi `posts.json`'da kayıtlı değil.
+- 14 gün analizi (IG Reels, 6 video): YKS/LGS sayı kancası (2) ort. 172 izlenme · (kaydet+paylaş)/erişim %2,5 · ort. izlenme 10,1 sn (en uzun) | gündem (1) 222 · %0,5 · 9,0 sn (en çok izlenme) | simülasyon (2) 140 · %1,2 · 7,1 sn | genel motivasyon (1) 133 · %5,2 · 6,5 sn.
+- 8 Kasım "kaç pazartesin kaldı": 144 izlenme, 0 kaydetme/paylaşım, ort. izlenme 6,2 sn (en kısa) → soyut ömür simülasyonu tutmadı.
+- YT Shorts: Metricool 3 Kasımdan sonraki hiçbir Shortu listelemiyor, eskiler için izlenme hâlâ null → 5–8 Kasım Shortları YouTube'a gerçekten çıktı mı Umut kontrol etmeli.
+- Bu hafta (9–15 Kasım) YKS/LGS kotası 0/2; 9, 10 ve 12 Kasım simülasyon/gündem → 13–15 Kasım arasında en az 2 YKS/LGS sayı kancası zorunlu (sıradaki YKS).
