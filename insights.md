@@ -36,3 +36,10 @@
 - 8 Kasım "kaç pazartesin kaldı": 144 izlenme, 0 kaydetme/paylaşım, ort. izlenme 6,2 sn (en kısa) → soyut ömür simülasyonu tutmadı.
 - YT Shorts: Metricool 3 Kasımdan sonraki hiçbir Shortu listelemiyor, eskiler için izlenme hâlâ null → 5–8 Kasım Shortları YouTube'a gerçekten çıktı mı Umut kontrol etmeli.
 - Bu hafta (9–15 Kasım) YKS/LGS kotası 0/2; 9, 10 ve 12 Kasım simülasyon/gündem → 13–15 Kasım arasında en az 2 YKS/LGS sayı kancası zorunlu (sıradaki YKS).
+
+## 2026-11-10
+- Bugün 07:00 için "9 günlük ara tatil: günde 2 saat = 18 saat önde" (Metricool id 414404199, IG+YT, 2 Kasımda planlanmış) zaten planlı → yeni üretim yok (çift paylaşım kontrolü).
+- 14 gün analizi (IG Reels, 7 video): YKS/LGS sayı kancası (2) ort. 173 izlenme · (kaydet+paylaş)/erişim %2,5 · ort. izlenme 10,0 sn | gündem (1) 222 · %0,5 · 9,0 sn (en çok izlenme) | simülasyon (3) 137 · %1,1 · 8,4 sn | genel motivasyon (1) 136 · %5,1 · 6,6 sn.
+- 9 Kasım "5 dakika ertelemek = yılda 30 saat": 131 izlenme, 116 erişim, 1 kaydetme, ort. izlenme 11,2 sn (şimdiye kadarki en uzun) → somut günlük alışkanlık simülasyonu, soyut ömür simülasyonundan (8 Kasım, 6,2 sn) çok daha iyi tutuyor.
+- YT Shorts: Metricool hâlâ 3 Kasımdan sonraki Shortları listelemiyor, izlenmeler null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bu hafta (9–15 Kasım) YKS/LGS kotası 0/2; 13–15 Kasım arasında en az 2 YKS/LGS sayı kancası zorunlu (sıradaki YKS). 11 Kasım çarşamba: paylaşım yok.
