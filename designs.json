@@ -40,5 +40,12 @@
   "yerlesim": "üstte başlık, ortada dev nokta alanı + ortada sayaç paneli, sonda ortalı tipografi",
   "vurgu": "gold (harcanan kırmızı)",
   "gecisler": "üstü çizili alıntı glitch, ızgara dolumu, panel sayaç, kırmızı boşa giden noktalar, ışık patlaması"
+ },
+ {
+  "date": "2026-11-12",
+  "metafor": "kitap yığını büyür (sayfa sayacı 0→3.650, 12 kitap) → 120 kitaplık dev kule/raf",
+  "yerlesim": "üstte sayaç + ortada kitap yığını, sonra sola yaslı sayaç + sağda dikey kule, sonda ortalı tipografi",
+  "vurgu": "ember",
+  "gecisler": "bulanık slam giriş, kitap düşüşü + kıvılcım, kuleye yatay geçiş, maske satırları (şablon v06_kitap, warp)"
  }
 ]

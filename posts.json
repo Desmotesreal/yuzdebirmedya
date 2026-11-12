@@ -146,5 +146,28 @@
   "metricool_ids": [
    420427247
   ]
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Günde 10 sayfa okumak = yılda 12 kitap, 10 yılda 120 kitap",
+  "format": "simülasyon (plan v06_kitap)",
+  "hook": "Günde sadece on sayfa okusan, yılda kaç kitap eder?",
+  "script": [
+   "Günde sadece on sayfa okusan,",
+   "Yılda kaç kitap eder?",
+   "Bir yıl boyunca.",
+   "Üç bin altı yüz elli sayfa.",
+   "Yani on iki kitap. On iki farklı akıl.",
+   "Peki on yılda?",
+   "Yüz yirmi kitap. Bir kütüphane rafı dolusu.",
+   "Okuduğun her sayfa, seni dünkü halinden ayırır.",
+   "Bugünkü on sayfan hangi kitaptan?"
+  ],
+  "caption": "Günde sadece 10 sayfa okursan yılda 3.650 sayfa, yani 300 sayfalık 12 kitap eder. 10 yılda 120 kitap. Bugünkü 10 sayfan hangi kitaptan? Yorumlara yaz, kaydet ve yarın sabah tekrar izle 📚\n\n#kitap #kitapokumak #okuma #alışkanlık #motivasyon #kitaptavsiyesi #kişiselgelişim #yüzdebir",
+  "yt_title": "Günde 10 sayfa = yılda 12 kitap #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-12.mp4",
+  "metricool_ids": [
+   425199309
+  ]
  }
 ]

@@ -43,3 +43,10 @@
 - 9 Kasım "5 dakika ertelemek = yılda 30 saat": 131 izlenme, 116 erişim, 1 kaydetme, ort. izlenme 11,2 sn (şimdiye kadarki en uzun) → somut günlük alışkanlık simülasyonu, soyut ömür simülasyonundan (8 Kasım, 6,2 sn) çok daha iyi tutuyor.
 - YT Shorts: Metricool hâlâ 3 Kasımdan sonraki Shortları listelemiyor, izlenmeler null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bu hafta (9–15 Kasım) YKS/LGS kotası 0/2; 13–15 Kasım arasında en az 2 YKS/LGS sayı kancası zorunlu (sıradaki YKS). 11 Kasım çarşamba: paylaşım yok.
+
+## 2026-11-12
+- 14 gün analizi (IG Reels, 8 video): YKS/LGS sayı kancası (2) ort. 172 izlenme · (kaydet+paylaş)/erişim %2,5 · ort. izlenme 10,0 sn | gündem (2) 212 · %3,4 · 13,8 sn (en iyi format) | simülasyon (3) 137 · %1,1 · 8,4 sn | genel motivasyon (1) 136 · %5,1 · 6,6 sn.
+- 10 Kasım "9 günlük ara tatil" (gündem kancalı simülasyon): 203 izlenme, 167 erişim, 3 kaydetme, 8 paylaşım, ort. izlenme 18,6 sn → şimdiye kadarki en iyi video. Gündem + somut sayı + "kaydet, tatilde tekrar izle" CTA'sı birlikte çalışıyor.
+- YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenme null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: plan v06_kitap (simülasyon, "günde 10 sayfa = yılda 12 kitap"); kural ihlali yok (YKS/LGS kotası 0/2, kalan 4 gün > 2). Ses 25,9 sn çıktı → 2 cümle kısaltılıp 23,2 sn'ye indirildi. Metricool id 425199309, 07:00.
+- 13–15 Kasım: en az 2 YKS/LGS sayı kancası ZORUNLU (sıradaki YKS); mümkünse gündem kancasıyla birleştir.
