@@ -169,5 +169,29 @@
   "metricool_ids": [
    425199309
   ]
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "YKSye 218 gün: günde 2 saat = 436 saat = aslında 18 gün (ara tatil arifesi)",
+  "format": "YKS/LGS sayı kancası (YKS) + gündem (ara tatil)",
+  "hook": "YKSye iki yüz on sekiz gün kaldı. Ama bu sayı seni kandırıyor.",
+  "script": [
+   "YKSye iki yüz on sekiz gün kaldı.",
+   "Ama bu sayı seni kandırıyor.",
+   "Günde iki saat çalışırsan, toplam dört yüz otuz altı saat.",
+   "Art arda koy: sadece on sekiz gün.",
+   "Yani aslında on sekiz günün var.",
+   "Boş geçen her gün, iki saat siler.",
+   "Ara tatil yarın, ilk iki saatin bugün.",
+   "Kaydet, masaya oturmadan izle."
+  ],
+  "caption": "YKS'ye 218 gün kaldı (ÖSYM: TYT 19 Haziran 2027). Günde 2 saat çalışırsan sınava kadar toplam 436 saat eder; art arda koyunca sadece 18 gün. Ara tatil yarın başlıyor, ilk 2 saatin bugün. Kaydet, her gün masaya oturmadan izle 👇 #yks #yks2027 #tyt #ayt #aratatil #dersçalışma #motivasyon #yüzdebir",
+  "yt_title": "YKS'ye 218 gün değil, aslında 18 günün var #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-13.mp4",
+  "metricool_ids": [
+   426478351
+  ],
+  "scheduled": "2026-11-13T07:00:00+03:00",
+  "duration_s": 26.2
  }
 ]

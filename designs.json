@@ -47,5 +47,12 @@
   "yerlesim": "üstte sayaç + ortada kitap yığını, sonra sola yaslı sayaç + sağda dikey kule, sonda ortalı tipografi",
   "vurgu": "ember",
   "gecisler": "bulanık slam giriş, kitap düşüşü + kıvılcım, kuleye yatay geçiş, maske satırları (şablon v06_kitap, warp)"
+ },
+ {
+  "date": "2026-11-13",
+  "metafor": "kum saati (436 kum tanesi = 436 saat) → taneler 24 sütunlu gün ızgarasına dizilir (18 gün + 4 saat); 218'in '2'si düşüp 18 kalır; boş gün = son 2 hücre kırmızı düşer",
+  "yerlesim": "üstte başlık + ortada dev sayı/kum saati/ızgara + altta sayaç; sonda ortalı tipografi",
+  "vurgu": "cyan (kayıp/kandırma kırmızı)",
+  "gecisler": "sayaç slam, RGB glitch, kum akışı, tane→ızgara morph, rakam düşürme, ızgara geri dönüşü + hücre düşüşü, maske satırları"
  }
 ]

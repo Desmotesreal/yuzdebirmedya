@@ -50,3 +50,10 @@
 - YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenme null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: plan v06_kitap (simülasyon, "günde 10 sayfa = yılda 12 kitap"); kural ihlali yok (YKS/LGS kotası 0/2, kalan 4 gün > 2). Ses 25,9 sn çıktı → 2 cümle kısaltılıp 23,2 sn'ye indirildi. Metricool id 425199309, 07:00.
 - 13–15 Kasım: en az 2 YKS/LGS sayı kancası ZORUNLU (sıradaki YKS); mümkünse gündem kancasıyla birleştir.
+
+## 2026-11-13
+- 14 gün analizi (IG Reels, 9 video): YKS/LGS sayı kancası (2) ort. 172 izlenme · (kaydet+paylaş)/erişim %2,5 · ort. izlenme 10,0 sn | gündem (2) 214 · %3,4 · 13,7 sn (en iyi format) | simülasyon (4) 135 · %0,8 · 8,4 sn (en zayıf) | genel motivasyon (1) 136 · %5,1 · 6,6 sn.
+- 12 Kasım "günde 10 sayfa = 12 kitap" (simülasyon): 128 izlenme, 0 kaydetme/paylaşım, ort. izlenme 8,1 sn → saf alışkanlık simülasyonları zayıflıyor; sayı kancasını gündemle birleştir.
+- YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenme null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: YKS sayı kancası + ara tatil gündemi ("218 gün = günde 2 saatle 436 saat = aslında 18 gün"). Ses ilk denemede 28,3 sn → kısaltıldı, 24,6 sn. Metricool id 426478351, 07:00. Bu hafta YKS/LGS kotası 1/2 → 14–15 Kasımdan en az biri LGS sayı kancası (YKS↔LGS dönüşümü).
+- Kasım ayı Metricool yayını: bugünkü dahil ~11 (ücretsiz plan sınırı 20).
