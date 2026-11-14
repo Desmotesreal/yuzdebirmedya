@@ -57,3 +57,10 @@
 - YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenme null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: YKS sayı kancası + ara tatil gündemi ("218 gün = günde 2 saatle 436 saat = aslında 18 gün"). Ses ilk denemede 28,3 sn → kısaltıldı, 24,6 sn. Metricool id 426478351, 07:00. Bu hafta YKS/LGS kotası 1/2 → 14–15 Kasımdan en az biri LGS sayı kancası (YKS↔LGS dönüşümü).
 - Kasım ayı Metricool yayını: bugünkü dahil ~11 (ücretsiz plan sınırı 20).
+
+## 2026-11-14
+- 14 gün analizi (IG Reels, 10 video): YKS/LGS sayı kancası (3) ort. 158 izlenme · (kaydet+paylaş)/erişim %1,8 · ort. izlenme 8,7 sn | gündem (2) 226 · %3,2 · 13,4 sn (en iyi format) | simülasyon (4) 135 · %0,8 · 8,4 sn (en zayıf) | genel motivasyon (1) 136 · %5,1 · 6,6 sn.
+- 13 Kasım "YKSye 218 gün = aslında 18 gün": 130 izlenme, 0 kaydetme/paylaşım, ort. izlenme 5,9 sn (en kısa) → "sayı seni kandırıyor" gibi soyut çevirme kancası tutmadı; somut eylem (günde X soru = Y deneme) + gündem daha güçlü.
+- YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenme null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: LGS sayı kancası + ara tatil gündemi (tatil bugün başladı): "LGSye 211 gün; 9 günlük tatilde günde 40 soru = 360 soru = 4 tam LGS denemesi". Ses ilk denemede 30,2 sn → kısaltıldı, 22,6 sn. Bu hafta YKS/LGS kotası 2/2 doldu.
+- Sonraki: gündem + somut sayı formatı en iyi; saf simülasyonları azalt. 15 Kasım pazar: tatil içi gündem (ör. tatilin 2. günü) + haftalık detay istatistik.

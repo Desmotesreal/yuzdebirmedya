@@ -193,5 +193,29 @@
   ],
   "scheduled": "2026-11-13T07:00:00+03:00",
   "duration_s": 26.2
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "LGSye 211 gün: 9 günlük ara tatilde günde 40 soru = 360 soru = 4 tam LGS denemesi",
+  "format": "YKS/LGS sayı kancası (LGS) + gündem (ara tatil başladı)",
+  "hook": "LGSye iki yüz on bir gün kaldı. Bugün dokuz günlük ara tatil başladı.",
+  "script": [
+   "LGSye iki yüz on bir gün kaldı.",
+   "Bugün dokuz günlük ara tatil başladı.",
+   "Az gibi görünüyor, değil mi?",
+   "Ama günde kırk soru çözersen, dokuz günde üç yüz altmış soru eder.",
+   "Tam dört LGS denemesi.",
+   "Herkes kaldığı yerden dönecek.",
+   "Sen dört deneme önde döneceksin.",
+   "Kaydet, her sabah masaya oturmadan izle."
+  ],
+  "caption": "LGS'ye 211 gün kaldı (MEB: 13 Haziran 2027) ve 9 günlük ara tatil bugün başladı. Tatilde günde sadece 40 soru = 9 günde 360 soru, yani 4 tam LGS denemesi (1 LGS = 90 soru). Herkes kaldığı yerden dönerken sen 4 deneme önde dön. Kaydet, tatilin her sabahı masaya oturmadan izle 👇 #lgs #lgs2027 #8sınıf #aratatil #dersçalışma #motivasyon #disiplin #yüzdebir",
+  "yt_title": "LGS'ye 211 gün: Ara tatilde günde 40 soru = 4 deneme önde #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-14.mp4",
+  "metricool_ids": [
+   427684061
+  ],
+  "scheduled": "2026-11-14T07:00:00+03:00",
+  "duration_s": 24.2
  }
 ]

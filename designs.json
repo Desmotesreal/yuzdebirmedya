@@ -54,5 +54,12 @@
   "yerlesim": "üstte başlık + ortada dev sayı/kum saati/ızgara + altta sayaç; sonda ortalı tipografi",
   "vurgu": "cyan (kayıp/kandırma kırmızı)",
   "gecisler": "sayaç slam, RGB glitch, kum akışı, tane→ızgara morph, rakam düşürme, ızgara geri dönüşü + hücre düşüşü, maske satırları"
+ },
+ {
+  "date": "2026-11-14",
+  "metafor": "merdiven: 9 takvim çipi (14–22 Kasım) → 211 dilimlik çubukta 9 mor dilim (%4) → 9 basamaklı merdiven (her basamak +40 soru, sayaç 0→360) → 4 deneme kartı (90 soru) → HERKES zeminde / SEN zirvede, kesikli fark çizgisi",
+  "yerlesim": "S1 ortada dev sayı; S2 ortada çip şeridi + yatay çubuk; S3 sola yaslı dev sayaç + altta sol-alttan sağ-üste merdiven; S4 yatay 4 kart; S5 merdiven + iki etiket; sonda ortalı CTA",
+  "vurgu": "violet",
+  "gecisler": "slam + kıvılcım, çip 3D yay girişi, çiplerin çubuğa çökmesi, hayalet basamak → basamak yükselişi, kartların yukarıdan dönerek düşmesi, işaretçinin basamak basamak zıplaması, maske satırları"
  }
 ]
