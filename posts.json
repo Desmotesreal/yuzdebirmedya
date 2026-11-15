@@ -217,5 +217,28 @@
   ],
   "scheduled": "2026-11-14T07:00:00+03:00",
   "duration_s": 24.2
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Ara tatilin 2. günü: kalan 8 günün 128 uyanık saatinden günde 1 saat = 8 saat (%6) = okula 8 saat önde",
+  "format": "gündem kancalı simülasyon (ara tatil, pil metaforu)",
+  "hook": "Dokuz günlük tatilin bir günü gitti bile.",
+  "script": [
+   "Dokuz günlük tatilin bir günü gitti bile.",
+   "Tatil pilin yüzde seksen dokuzda.",
+   "Kalan sekiz gün, uykuyu çıkarınca yüz yirmi sekiz saat.",
+   "Senden sadece sekizini istiyorum.",
+   "Günde bir saat. Tatilin yüzde altısı.",
+   "Gerisi senin. Uyu, gez, dinlen.",
+   "Ama okula sekiz saat önde dön.",
+   "Yarın ne çalışacaksın? Yorumlara yaz."
+  ],
+  "caption": "9 günlük ara tatilin 1 günü gitti, tatil pilin %89'da. Kalan 8 günde uykuyu çıkarınca 128 saat uyanıksın; senden sadece günde 1 saat, yani tatilin %6'sı. Gerisi senin, ama okula 8 saat önde dön. Yarınki 1 saatinde ne çalışacaksın? Yorumlara yaz, kaydet 👇\n\n#aratatil #yks #lgs #dersçalışma #motivasyon #disiplin #öğrenci #yüzdebir",
+  "yt_title": "Ara tatilin 1 günü gitti: kalan 8 günden sadece 8 saat #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-15.mp4",
+  "metricool_ids": [
+   428538513
+  ],
+  "source": "MEB 2026-2027 çalışma takvimi: 1. ara tatil 16–20 Kasım (hafta sonlarıyla 14–22 Kasım)"
  }
 ]

@@ -61,5 +61,12 @@
   "yerlesim": "S1 ortada dev sayı; S2 ortada çip şeridi + yatay çubuk; S3 sola yaslı dev sayaç + altta sol-alttan sağ-üste merdiven; S4 yatay 4 kart; S5 merdiven + iki etiket; sonda ortalı CTA",
   "vurgu": "violet",
   "gecisler": "slam + kıvılcım, çip 3D yay girişi, çiplerin çubuğa çökmesi, hayalet basamak → basamak yükselişi, kartların yukarıdan dönerek düşmesi, işaretçinin basamak basamak zıplaması, maske satırları"
+ },
+ {
+  "date": "2026-11-15",
+  "metafor": "dikey pil: 9 dilim (9 tatil günü), en üstteki kırmızıya dönüp düşer; %100→%89 sayaç; uyku dilimleri (1/3, lacivert, z) kesilir 192→128 saat; her dilimde parlayan 1 saatlik ışık şeridi (8 şerit, %6)",
+  "yerlesim": "sol dikey pil + sağa yaslı kicker/dev sayı/etiket sütunu; sonra ortalı üst üste dev kelimeler (UYU/GEZ/DİNLEN), ortalı CTA",
+  "vurgu": "gold (kayıp gün kırmızı)",
+  "gecisler": "pilin aşağıdan zıplayarak girişi, dilimin kırmızı düşüşü + kıvılcım, sayaç geri sayımı, uyku dilimlerinin kayıp silinmesi, pile hafif zoom, bulanık kamera çıkışı, harf girişleri, altın slam + ışık patlaması"
  }
 ]
