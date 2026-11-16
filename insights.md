@@ -73,3 +73,9 @@
 - YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenmeler null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: gündem kancalı simülasyon (ara tatilin 2. günü, pil metaforu): "9 günlük tatilin 1 günü gitti; kalan 8 günün 128 uyanık saatinden sadece 8i (günde 1 saat, %6) = okula 8 saat önde dön". Ses ilk denemede 29,0 sn → kısaltıldı, 23,2 sn.
 - Sonraki hafta (16–22 Kasım): YKS/LGS kotası 2 (sıradaki YKS); tatil sonu (22 Kasım pazar) ve okula dönüş (23 Kasım) gündem kancası; saf simülasyonları azalt.
+
+## 2026-11-16
+- 14 gün analizi (IG Reels, 12 video): YKS/LGS sayı kancası (4) ort. 152 izlenme · (kaydet+paylaş)/erişim %1,4 · ort. izlenme 8,3 sn | gündem (3) 201 · %2,6 · 13,3 sn (en iyi format) | simülasyon (4) 135 · %0,8 · 8,4 sn (en zayıf) | genel motivasyon (1) 136 · %5,1 · 6,6 sn.
+- 15 Kasım "tatilin 1 günü gitti" (pil): 142 izlenme, 118 erişim, 1 kaydetme, ort. izlenme 13,5 sn → izlenme düşük ama izlenme süresi iyi; gündem formatı izlenme süresini koruyor.
+- YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenmeler null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: YKS sayı kancası + gündem (ara tatil pazartesi, okul yok): "TYT'ye 215 gün; 5 iş günü × 2 saat = 10 saat = 3 TYT denemesi + analiz". Ses ilk denemede 27,0 sn → kısaltıldı, 20,9 sn. Metricool id 429526663, 07:00. Bu hafta YKS/LGS kotası 1/2 (sıradaki LGS).
