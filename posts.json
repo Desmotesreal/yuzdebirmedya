@@ -253,5 +253,18 @@
   "metricool_ids": [
    429526663
   ]
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Dünya Öğrenciler Günü + LGS'ye 208 gün: hata defteri, günde 5 yanlış = 1.040 soru = sınavda düşmeyeceğin 1.040 tuzak",
+  "format": "YKS/LGS sayı kancası (LGS) + gündem (Dünya Öğrenciler Günü)",
+  "hook": "Bugün Dünya Öğrenciler Günü. LGSye iki yüz sekiz gün kaldı.",
+  "script": "Bugün Dünya Öğrenciler Günü.\nLGSye iki yüz sekiz gün kaldı.\nTek bir alışkanlık: hata defteri.\nHer gün beş yanlışını yaz.\nDoğru cevabı ve nedeniyle.\nİki yüz sekiz günde bin kırk soru.\nSınavda düşmeyeceğin bin kırk tuzak.\nİlk yanlışın hangi dersten? Yorumlara yaz.",
+  "caption": "Bugün Dünya Öğrenciler Günü ve LGS'ye 208 gün kaldı (MEB: 13 Haziran 2027). Tek bir alışkanlık: hata defteri. Her gün 5 yanlışını doğru cevabı ve nedeniyle yaz: 208 günde 1.040 soru, sınavda bir daha düşmeyeceğin 1.040 tuzak. İlk yanlışın hangi dersten? Yorumlara yaz, kaydet 👇\n\n#lgs #lgs2027 #8sınıf #hatadefteri #öğrencilergünü #dersçalışma #motivasyon #yüzdebir",
+  "yt_title": "LGS'ye 208 gün: hata defteriyle 1.040 tuzaktan kurtul #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-17.mp4",
+  "metricool_ids": [
+   430933955
+  ]
  }
 ]

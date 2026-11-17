@@ -79,3 +79,11 @@
 - 15 Kasım "tatilin 1 günü gitti" (pil): 142 izlenme, 118 erişim, 1 kaydetme, ort. izlenme 13,5 sn → izlenme düşük ama izlenme süresi iyi; gündem formatı izlenme süresini koruyor.
 - YT Shorts: Metricool hâlâ yalnızca 2–3 Kasım Shortlarını listeliyor, izlenmeler null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: YKS sayı kancası + gündem (ara tatil pazartesi, okul yok): "TYT'ye 215 gün; 5 iş günü × 2 saat = 10 saat = 3 TYT denemesi + analiz". Ses ilk denemede 27,0 sn → kısaltıldı, 20,9 sn. Metricool id 429526663, 07:00. Bu hafta YKS/LGS kotası 1/2 (sıradaki LGS).
+
+## 2026-11-17
+- 14 gün analizi (IG Reels, 12 video): YKS/LGS sayı kancası (4) ort. 139 izlenme · (kaydet+paylaş)/erişim %1,2 · ort. izlenme 7,5 sn | gündem (3) 202 · %2,4 · 13,4 sn (en iyi format) | simülasyon (4) 135 · %0,8 · 8,4 sn (en zayıf) | genel motivasyon (1) 136 · %5,1 · 6,6 sn.
+- 16 Kasım "okul yok pazartesi, TYT'ye 215 gün" (YKS): 136 izlenme, 120 erişim, 0 kaydetme/paylaşım, ort. izlenme 7,3 sn → sınav sayı kancaları 130–140 bandında takılı; gündem kancası izlenme süresini neredeyse ikiye katlıyor.
+- YT Shorts: Metricool hâlâ yalnızca 3 Kasım Shortunu listeliyor, izlenme null → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: LGS sayı kancası + gündem (17 Kasım Dünya Öğrenciler Günü): "LGS'ye 208 gün; hata defteri, günde 5 yanlış = 1.040 soru = 1.040 tuzak". Kazanç anlatımı yeni: süre değil, somut çalışma yöntemi (hata defteri). Ses ilk denemede 30,0 sn → kısaltıldı, 22,2 sn. Metricool id 430933955, 07:00. Bu hafta YKS/LGS kotası 2/2 doldu.
+- Sonraki: 18 Kasım çarşamba paylaşım yok. Hafta sonu ara tatil bitişi (22 Kasım) / okula dönüş (23 Kasım) ve 24 Kasım Öğretmenler Günü gündem kancası; sınav sayısı yerine yöntem/somut kazanç kancalarını dene.
+- Kasım ayı Metricool yayını: bugünkü dahil 12 (ücretsiz plan sınırı 20).

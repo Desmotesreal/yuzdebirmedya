@@ -75,5 +75,12 @@
   "yerlesim": "üstte kicker + dev başlık, ortada ızgara; S2 ortada dev sayaç; S5 üstte başlık + yan yana 3 kitapçık; ortalı CTA",
   "vurgu": "ember",
   "gecisler": "hücrelerin sırayla düşmesi, bulanık kamera geçişi, hücre pop/çoğalma, hücre→kitapçık morph, kitapçıkların dönerek düşmesi, slam + kıvılcım"
+ },
+ {
+  "date": "2026-11-17",
+  "metafor": "hata defteri: kapaklı defter düşer, kapakta HATA DEFTERİ yazısı açılır; kapak menteşeden açılır, 5 satır kırmızı ✗ (ders · soru) → cyan ✓ + 'Doğru: X · neden' notu yazılır; sayfa küçülüp 208 mini sayfalık ızgaranın ilk karosu olur (sayaç 0→1.040); karolar 1.040 kırmızı ✗ tuzağa dağılır, çapraz cyan dalga tuzakları etkisizleştirir",
+  "yerlesim": "S0 ortada çip + iki satır başlık; S1 ortada dev sayı; S2–S4 üstte kicker/başlık + ortada defter sayfası; S5–S6 üstte sayaç + etiket, ortada 16x13 karo / 40x26 nokta alanı, altta formül satırı; ortalı CTA + ders listesi",
+  "vurgu": "cyan (yanlış/tuzak kırmızı)",
+  "gecisler": "maske satırları, slam + kıvılcım, defterin dönerek düşmesi, harf maskeli kapak yazısı, menteşe kapak açılışı, ✗→✓ dönüşü + yazı açılışı, sayfa→karo küçülme, karo pop, karo→nokta yay morph, çapraz renk dalgası + halka, bulanık kamera çıkışı"
  }
 ]
