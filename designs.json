@@ -82,5 +82,12 @@
   "yerlesim": "S0 ortada çip + iki satır başlık; S1 ortada dev sayı; S2–S4 üstte kicker/başlık + ortada defter sayfası; S5–S6 üstte sayaç + etiket, ortada 16x13 karo / 40x26 nokta alanı, altta formül satırı; ortalı CTA + ders listesi",
   "vurgu": "cyan (yanlış/tuzak kırmızı)",
   "gecisler": "maske satırları, slam + kıvılcım, defterin dönerek düşmesi, harf maskeli kapak yazısı, menteşe kapak açılışı, ✗→✓ dönüşü + yazı açılışı, sayfa→karo küçülme, karo pop, karo→nokta yay morph, çapraz renk dalgası + halka, bulanık kamera çıkışı"
+ },
+ {
+  "date": "2026-11-19",
+  "metafor": "bileşik büyüme grafiği: 44 okul günü tik şeridi (hafta başları vurgulu) + KARNE 22 OCAK etiketi → şerit grafik eksenine iner; mor 1,01^n eğrisi yükselir (+%55 sayaç), kırmızı 0,99^n eğrisi düşer (−%36), uçlar arası FARK köprüsü; zil halkaları; 4 takvim kartı (19–22 Kasım, BUGÜN yanar)",
+  "yerlesim": "S0 ortada kicker + dev sayı + başlık, altta tik şeridi; S1 ortada kelime + halkalar; S2 dev %1; S3–S5 sol üstte iki sayaç yığını, ortada tam genişlik grafik, sağda fark köprüsü; S6 üstte başlık + yatay 4 kart; ortalı CTA",
+  "vurgu": "violet (geri kalma kırmızı)",
+  "gecisler": "slam + kıvılcım, tiklerin oB ile sırayla belirmesi, zil halka dalgaları, tik şeridinin eksene kayması, eğri çizimi + uç parıltısı, köprü açılışı, bulanık zoom çıkışı, kartların 3D düşüşü + BUGÜN parlaması"
  }
 ]

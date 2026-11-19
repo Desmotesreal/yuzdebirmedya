@@ -266,5 +266,27 @@
   "metricool_ids": [
    430933955
   ]
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Okula dönüş + karneye 44 okul günü: her gün %1 daha iyi = 1,01^44 ≈ +%55; %1 geri = 0,99^44 ≈ −%36",
+  "format": "gündem kancalı simülasyon (okula dönüş / karne, %1 bileşik büyüme)",
+  "hook": "Karneye kırk dört okul günü kaldı.",
+  "script": [
+   "Karneye kırk dört okul günü kaldı.",
+   "Pazartesi zil çalıyor.",
+   "Her gün sadece yüzde bir daha iyi ol.",
+   "Kırk dört günde yüzde elli beş daha iyisin.",
+   "Her gün yüzde bir geri kalırsan, yüzde otuz altı geride.",
+   "Fark, karnende görünür.",
+   "İlk yüzde birini tatil bitmeden al.",
+   "Kaydet, pazartesi sabahı izle."
+  ],
+  "caption": "Pazartesi okullar açılıyor ve karneye sadece 44 okul günü kaldı (MEB takvimi: 1. dönem 22 Ocak 2027'de bitiyor). Her gün sadece %1 daha iyi olursan 44 günde 1,01⁴⁴ ≈ %55 daha iyisin; her gün %1 geri kalırsan 0,99⁴⁴ ≈ %36 geridesin. Fark karnende görünür. İlk %1'ini tatil bitmeden al; bugün hangi dersten başlıyorsun? Yorumlara yaz, kaydet 👇\n\n#karne #aratatil #okul #dersçalışma #yks #lgs #motivasyon #yüzdebir",
+  "yt_title": "Karneye 44 okul günü: her gün %1 daha iyi = %55 #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-19.mp4",
+  "metricool_ids": [
+   433691459
+  ]
  }
 ]
