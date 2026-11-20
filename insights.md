@@ -94,3 +94,10 @@
 - YT Shorts: Metricool son 14 günde hiç Short listelemedi (boş yanıt) → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: gündem kancalı simülasyon (okula dönüş 23 Kasım + karne 22 Ocak, MEB): "Karneye 44 okul günü; her gün %1 daha iyi = 1,01^44 ≈ +%55, %1 geri = 0,99^44 ≈ −%36". Markanın kendi fikri (%1) ilk kez doğrudan veri olarak işlendi. Ses ilk denemede 29,4 sn → kısaltıldı, 22,6 sn. Metricool id 433691459, 07:00. Bu hafta YKS/LGS kotası 2/2 (16, 17 Kasım).
 - Sonraki: 22 Kasım pazar (tatil son günü) + 24 Kasım Öğretmenler Günü gündem kancaları. Kasım ayı Metricool yayını: bugünkü dahil 13 (ücretsiz plan sınırı 20).
+
+## 2026-11-20
+- 14 gün analizi (IG Reels, 12 video): gündem kancalı simülasyon (3) ort. 176 izlenme · (kaydet+paylaş)/erişim %2,5 (en iyi format) | YKS/LGS sayı kancası (5) 141 · %1,0 | saf simülasyon (3) 135 · %0,3 (en zayıf) | genel motivasyon (1) 137 · %5,1.
+- 19 Kasım "karneye 44 okul günü, %1 bileşik büyüme": 141 izlenme, 124 erişim, 0 kaydetme/paylaşım, ort. izlenme 7,8 sn → markanın %1 fikri bile 130–155 bandını aşamadı; tek çıkış hâlâ 10 Kasım tarzı geniş kitleli gündem + saat hesabı.
+- YT Shorts: Metricool son 14 günde yine hiç Short listelemedi (boş yanıt) → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: gündem kancalı simülasyon (Kasımın son 11 günü, 3'ü ara tatil; okullar 23 Kasım, MEB): "günde 30 dk × 11 = 5,5 saat; Aralık'a ileriden başla". Ses ilk denemede 26,2 sn → kısaltıldı, 23,2 sn. Metricool id 435052818, 07:00. Bu hafta YKS/LGS kotası 2/2, genel motivasyon 0.
+- Sonraki: 22 Kasım pazar (tatil son günü) + 23 Kasım okula dönüş + 24 Kasım Öğretmenler Günü. Yeni hafta (23–29 Kasım) YKS/LGS kotası 2 (sıradaki YKS). Kasım ayı Metricool yayını: bugünkü dahil 14 (ücretsiz plan sınırı 20).

@@ -288,5 +288,27 @@
   "metricool_ids": [
    433691459
   ]
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Kasımın son 11 günü (20–30 Kasım, 3'ü ara tatil): günde 30 dk × 11 = 330 dk = 5,5 saat; Aralık'a sıfırdan değil ileriden başla",
+  "format": "gündem kancalı simülasyon (ay sonu geri sayımı + ara tatilin son 3 günü)",
+  "hook": "Kasım bitmeden önünde on bir gün var.",
+  "script": [
+   "Kasım bitmeden önünde on bir gün var.",
+   "Üçü hâlâ tatil.",
+   "Çoğu kişi başlamak için Aralığı bekleyecek.",
+   "Ama on bir gün, on bir başlangıç demek.",
+   "Her gün sadece yarım saat ayır.",
+   "Ay bittiğinde beş buçuk saat öndesin.",
+   "Aralığa sıfırdan değil, ileriden başla.",
+   "Hangi dersten başlıyorsun? Yorumlara yaz."
+  ],
+  "caption": "Kasım bitmeden önünde 11 gün var (20–30 Kasım) ve üçü hâlâ tatil; okullar 23 Kasım'da açılıyor (MEB). Aralık'ı beklemek yerine her gün sadece 30 dakika ayır: 11 × 30 dk = 330 dk, yani ay bittiğinde 5,5 saat öndesin. Aralık'a sıfırdan değil, ileriden başla. Hangi dersten başlıyorsun? Yorumlara yaz, kaydet 👇\n\n#aratatil #kasım #dersçalışma #yks #lgs #motivasyon #disiplin #yüzdebir",
+  "yt_title": "Kasım bitmeden 11 gün: günde 30 dk = 5,5 saat önde #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-20.mp4",
+  "metricool_ids": [
+   435052818
+  ]
  }
 ]

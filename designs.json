@@ -89,5 +89,12 @@
   "yerlesim": "S0 ortada kicker + dev sayı + başlık, altta tik şeridi; S1 ortada kelime + halkalar; S2 dev %1; S3–S5 sol üstte iki sayaç yığını, ortada tam genişlik grafik, sağda fark köprüsü; S6 üstte başlık + yatay 4 kart; ortalı CTA",
   "vurgu": "violet (geri kalma kırmızı)",
   "gecisler": "slam + kıvılcım, tiklerin oB ile sırayla belirmesi, zil halka dalgaları, tik şeridinin eksene kayması, eğri çizimi + uç parıltısı, köprü açılışı, bulanık zoom çıkışı, kartların 3D düşüşü + BUGÜN parlaması"
+ },
+ {
+  "date": "2026-11-20",
+  "metafor": "koparmalı takvim karoları (20–30 Kasım, 11 karo; ilk 3'ü TATİL) → gri bekleyiş + düşen '1 ARALIK' takvim kartı → karolar sırayla altın yanar (11 başlangıç) → 60 dakikalık kadranda yarım tur (30 dk) → 11 yarım turluk altın sarmal dolar (0,0→5,5 saat) → '1 ARALIK' başlangıç çizgisi: ONLAR 0'da, SEN altın çubukla +5,5 saat önde",
+  "yerlesim": "S0 üstte satır + dev sayı, altta yatay 11 karo şeridi; S2 üstte başlık + ortada tek dev takvim kartı + altta gri şerit; S3 ortada başlık + şerit; S4–S5 ortada kadran/sarmal + merkezde sayaç, altta dev kelime; S6 üstte başlık, ortada iki yatay pist + kesikli dikey başlangıç çizgisi, altta altın satır; ortalı CTA",
+  "vurgu": "gold",
+  "gecisler": "slam + kıvılcım, karoların zıplayarak dizilmesi, TATİL çerçevesi, karoların gri düşüp aşağı kayması, kartın yukarıdan elastik düşüşü ve dönerek çıkışı, karoların sırayla yanması, karoların merkeze çökmesi, kadran yay dolumu, sarmal çizimi + parlayan uç, bulanık kamera kesmesi, pist çubuğu açılışı, maske satırları"
  }
 ]
