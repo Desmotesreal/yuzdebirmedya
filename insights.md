@@ -101,3 +101,10 @@
 - YT Shorts: Metricool son 14 günde yine hiç Short listelemedi (boş yanıt) → YouTube bağlantısı Umut tarafından kontrol edilmeli.
 - Bugün: gündem kancalı simülasyon (Kasımın son 11 günü, 3'ü ara tatil; okullar 23 Kasım, MEB): "günde 30 dk × 11 = 5,5 saat; Aralık'a ileriden başla". Ses ilk denemede 26,2 sn → kısaltıldı, 23,2 sn. Metricool id 435052818, 07:00. Bu hafta YKS/LGS kotası 2/2, genel motivasyon 0.
 - Sonraki: 22 Kasım pazar (tatil son günü) + 23 Kasım okula dönüş + 24 Kasım Öğretmenler Günü. Yeni hafta (23–29 Kasım) YKS/LGS kotası 2 (sıradaki YKS). Kasım ayı Metricool yayını: bugünkü dahil 14 (ücretsiz plan sınırı 20).
+
+## 2026-11-21
+- 14 gün analizi (IG Reels, 12 video): gündem kancalı simülasyon (4) ort. 166 izlenme · (kaydet+paylaş)/erişim %2,1 · ort. izlenme 11,5 sn (en iyi format) | YKS/LGS sayı kancası (5) 141 · %1,0 · 7,4 sn | saf simülasyon/genel (3) 135 · %0,3 · 8,5 sn (en zayıf).
+- 20 Kasım "Kasımın son 11 günü": 137 izlenme, 115 erişim, 1 paylaşım, ort. izlenme 7,6 sn → son 6 video 130–146 bandında; 10 Kasım (244 izlenme, 17,4 sn) hâlâ tek kırılma.
+- YT Shorts: Metricool son 14 günde yine hiç Short listelemedi (boş yanıt) → YouTube bağlantısı Umut tarafından kontrol edilmeli.
+- Bugün: gündem kancalı simülasyon (ara tatilin son hafta sonu, okullar 23 Kasım, MEB): "Pazartesi alarm 06:30; tatilde 02:00–10:00 uyuduysan 3,5 saat jet lag; günde 1 saat kaydır → pazartesi 1,5 saat". Ders dışı, herkese hitap eden pratik kazanç (10 Kasım tarzı geniş kitle denemesi). Ses ilk denemede 27,8 sn → kısaltıldı, 24,3 sn. Metricool id 436326168, 07:00. Bu hafta YKS/LGS kotası 2/2, genel motivasyon 0.
+- Sonraki: 22 Kasım pazar (tatilin son günü, haftalık detay) + 24 Kasım Öğretmenler Günü. Yeni hafta (23–29 Kasım) YKS/LGS kotası 2 (sıradaki YKS). Kasım ayı Metricool yayını: bugünkü dahil 15 (ücretsiz plan sınırı 20).

@@ -310,5 +310,27 @@
   "metricool_ids": [
    435052818
   ]
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Okula dönüş öncesi uyku düzeni: tatilde 02:00–10:00 uyku vs okul 22:30–06:30 = 3,5 saat 'jet lag'; vücut saati günde ~1 saat kayar → bu gece ve yarın 1'er saat erken yat, pazartesi fark 1,5 saat",
+  "format": "gündem kancalı simülasyon (ara tatilin son hafta sonu / 23 Kasım okula dönüş)",
+  "hook": "Pazartesi alarm altı buçukta çalacak.",
+  "script": [
+   "Pazartesi alarm altı buçukta çalacak.",
+   "Ama vücudun hâlâ tatilde.",
+   "Gece ikide yatıp onda kalktıysan, fark üç buçuk saat.",
+   "Bu, uçmadan yaşanan bir jet lag.",
+   "Vücut saatin günde ancak bir saat kayar.",
+   "Bu gece bir saat erken yat, yarın bir saat daha.",
+   "Pazartesi fark sadece bir buçuk saat.",
+   "Kaçta yatıyorsun? Yorumlara yaz."
+  ],
+  "caption": "Pazartesi okullar açılıyor (MEB: 23 Kasım) ve alarm 06:30'da çalacak. Tatilde 02:00'de yatıp 10:00'da kalktıysan vücudun 3,5 saat geride: uçmadan yaşanan bir jet lag. Vücut saati günde ancak 1 saat kadar kayabiliyor; bu gece 1 saat erken yat, yarın 1 saat daha. Pazartesi fark 3,5 değil, 1,5 saat. Kaçta yatıyorsun? Yorumlara yaz, kaydet 👇\n\n#aratatil #okul #uyku #dersçalışma #yks #lgs #motivasyon #yüzdebir",
+  "yt_title": "Pazartesi alarm 06:30: vücudun hâlâ tatilde (3,5 saat jet lag) #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-21.mp4",
+  "metricool_ids": [
+   436326168
+  ]
  }
 ]

@@ -96,5 +96,12 @@
   "yerlesim": "S0 üstte satır + dev sayı, altta yatay 11 karo şeridi; S2 üstte başlık + ortada tek dev takvim kartı + altta gri şerit; S3 ortada başlık + şerit; S4–S5 ortada kadran/sarmal + merkezde sayaç, altta dev kelime; S6 üstte başlık, ortada iki yatay pist + kesikli dikey başlangıç çizgisi, altta altın satır; ortalı CTA",
   "vurgu": "gold",
   "gecisler": "slam + kıvılcım, karoların zıplayarak dizilmesi, TATİL çerçevesi, karoların gri düşüp aşağı kayması, kartın yukarıdan elastik düşüşü ve dönerek çıkışı, karoların sırayla yanması, karoların merkeze çökmesi, kadran yay dolumu, sarmal çizimi + parlayan uç, bulanık kamera kesmesi, pist çubuğu açılışı, maske satırları"
+ },
+ {
+  "date": "2026-11-21",
+  "metafor": "uyku düzeni zaman çizelgesi (21:00–11:00): OKUL bloğu 22:30–06:30 ve TATİL bloğu 02:00–10:00 iki şerit; 06:30 kesikli alarm çizgisi; aradaki fark kırmızı taralı dilim (3,5 saat); kesikli yay üzerinde uçan uçak (uçmadan jet lag); tatil bloğu iki kez 1'er saat sola kayar, fark 3,5→2,5→1,5, kırmızı → ember",
+  "yerlesim": "S0 ortada kicker + dev dijital saat 06:30 + alt satır; S1 ortada satır + dev kelime; S2–S6 üstte kicker/başlık, ortada tam genişlik iki şeritli zaman çizelgesi, altta FARK sayacı; ortalı CTA",
+  "vurgu": "ember (fark kırmızı)",
+  "gecisler": "slam + kıvılcım, alarm saati titremesi, şeritlerin soldan dolması, alarm çizgisinin dikey açılışı, taralı fark diliminin büyümesi, uçağın kesikli yay çizerek uçuşu, bulanık kamera kesmesi, bloğun elastik kayması + sayaç düşüşü, hue geçişi, harf girişleri"
  }
 ]
