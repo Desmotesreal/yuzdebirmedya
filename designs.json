@@ -103,5 +103,12 @@
   "yerlesim": "S0 ortada kicker + dev dijital saat 06:30 + alt satır; S1 ortada satır + dev kelime; S2–S6 üstte kicker/başlık, ortada tam genişlik iki şeritli zaman çizelgesi, altta FARK sayacı; ortalı CTA",
   "vurgu": "ember (fark kırmızı)",
   "gecisler": "slam + kıvılcım, alarm saati titremesi, şeritlerin soldan dolması, alarm çizgisinin dikey açılışı, taralı fark diliminin büyümesi, uçağın kesikli yay çizerek uçuşu, bulanık kamera kesmesi, bloğun elastik kayması + sayaç düşüşü, hue geçişi, harf girişleri"
+ },
+ {
+  "date": "2026-11-22",
+  "metafor": "yükselen hilal ay + ufuk çizgisi (son akşam) → 6x6 sıra ızgarası, her sırada beliren '?' (herkes aynı soruyla) → 5 günlük (PZT–CUM) kırmızı kayıp sütunları 15'er dk, sayaç 0→75 DK → 5 cyan yapışkan not yukarıdan sallanarak düşer, üzerine görev yazılır (soldan sağa açılan yazı) → diğer notlar düşer, PZT notu merkeze büyür, ✓ damgası + BAŞLARSIN → +65 DK sayaç + 75 − 10 = 65",
+  "yerlesim": "S0 üstte kicker + ortada iki satır başlık + altta ufuk/ay; S1 üstte iki satır, ortada ızgara, altta dev soru; S2 üstte satır + dev kırmızı 15 DK, ortada sütun grafiği, altta HAFTADA 75 DK; S3 üstte başlık, ortada 3+2 not panosu; S4 üstte üstü çizilen satır, ortada tek not, altta dev kelime; S5 ortalı yığın sayaç; ortalı CTA",
+  "vurgu": "cyan (kayıp kırmızı)",
+  "gecisler": "maske satırları, slam + kıvılcım, ayın ufuktan yükselişi, sıraların çapraz dalga ile zıplaması, soru işaretlerinin pop + renk değişimi, sütunların sırayla yükselmesi, notların sarkaç salınımlı düşüşü, yazının clip-path ile açılması, notların dönerek düşmesi, notun merkeze büyümesi, ✓ damgası, üstü çizme, bulanık kamera kesmeleri"
  }
 ]

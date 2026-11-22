@@ -332,5 +332,27 @@
   "metricool_ids": [
    436326168
   ]
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Tatilin son akşamı / 23 Kasım okula dönüş: 'nereden başlasam?' günde 15 dk × 5 okul günü = 75 dk; bu akşam 10 dk'da 5 yapışkan not (her güne tek görev) → 65 dk geri al",
+  "format": "gündem kancalı simülasyon (ara tatilin son günü / haftalık plan)",
+  "hook": "Tatilin son akşamı.",
+  "script": [
+   "Tatilin son akşamı.",
+   "Yarın herkes aynı soruyla oturacak: Nereden başlasam?",
+   "Bu soru günde on beş dakika yerse, haftada yetmiş beş dakika eder.",
+   "Bu akşam beş yapışkan not al.",
+   "Her okul gününe tek görev yaz.",
+   "Yarın düşünmezsin, başlarsın.",
+   "On dakika ver, altmış beş dakika geri al.",
+   "Pazartesi notunu yorumlara yaz."
+  ],
+  "caption": "Tatilin son akşamı; yarın okullar açılıyor (MEB: 23 Kasım). Masada \"nereden başlasam?\" diye her gün 15 dakika kaybedersen, 5 okul gününde 75 dakika eder. Bu akşam 10 dakika ayır: 5 yapışkan not al, her okul gününe tek görev yaz. 10 dakika ver, 65 dakika geri al. Pazartesi notun ne? Yorumlara yaz, kaydet 👇\n\n#okul #aratatil #dersçalışma #planlama #yks #lgs #motivasyon #yüzdebir",
+  "yt_title": "Tatilin son akşamı: 10 dakika ver, 65 dakika geri al #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-22.mp4",
+  "metricool_ids": [
+   437218635
+  ]
  }
 ]
