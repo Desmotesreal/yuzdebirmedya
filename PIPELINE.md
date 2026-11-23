@@ -104,6 +104,19 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
    Açıklama: 2–3 cümle (kanca + değer + CTA), sonra 6–8 Türkçe hashtag.
    YouTube başlığı: sınav videolarında sınav adı + gün sayısıyla başla ("LGS'ye N gün: <somut kazanç>"); en çok izlenen
    iki Short bu kalıpta. LGS videolarında etiketlere `lgs`, `lgs 2027`, `8. sınıf` ekle.
+   **Aylık kota bitince: elle paylaşım modu** (Umut'un kararı, 24 Kasım 2026: ücretli plana geçilmeyecek, kota bitince
+   Umut kendisi paylaşacak). Video her yayın günü yine **üretilir** (adım 1–8 aynen); yalnızca bu adım değişir:
+   - Her gün önce Metricool'a planlamayı **bir kez** dene. Gönderi kabul edildiyse (yanıtta gönderi id'si var ve `media`
+     metricool adresine dönmüş) normal akış.
+   - Metricool aylık gönderi sınırı / plan hatası döndürürse **elle paylaşım moduna** geç. Tekrar deneme, metni değiştirip
+     yeniden gönderme, başka bir yoldan yüklemeye çalışma. Bu bir hata değildir, beklenen durumdur.
+   - Elle modda rapor (adım 12) ilk satırda **"BUGÜN ELLE PAYLAŞ"** yazar ve sırayla verir: (1) video indirme linki
+     (`VIDEO_URL`; ertesi sabahki üretimde silinir, **aynı gün** indirilmeli), (2) YouTube Shorts başlığı, (3) açıklama +
+     hashtagler tek blok hâlinde (Instagram Reel ve YouTube için aynı metin), (4) önerilen saat 07:00–09:00.
+   - `posts.json` kaydına `"manual": true` ve `"metricool_ids": []` yaz. Haftalık karışım sayımında bu video da sayılır.
+   - Ayın 1'inde kota yenilenir; her gün önce Metricool denendiği için normal akışa kendiliğinden dönülür.
+   - Ertesi gün adım 1'de dünkü Metricool gönderisinin durumuna bak (`getScheduledPosts`, `providers[].status`):
+     `PUBLISHED` değilse raporun başında uyar.
 10. **İstatistik** (her gün kısa, pazar günleri detaylı): Metricool `getAnalyticsAvailableMetrics` (instagram/reels,
     youtube) → son 7 günün izlenme/erişim/kaydetme/paylaşım değerlerini çek; `insights.md`'ye tarihli kısa not düş
     (hangi format/kanca iyi gitti, ne değişecek). YouTube kanal izlenmesini ve abone sayısını da yaz (`YTEV01,YTEV02,YTEV05`).
@@ -112,6 +125,7 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 11. **Kayıt**: `posts.json`'a ekle `{date, topic, format, hook, script, caption, yt_title, video_url, metricool_ids}` →
     `git add -A && git commit -m "<tarih> reels" && git push origin main` (yalnızca main; videolar main'e girmez).
 12. **Rapor**: Son mesajda Türkçe 3–5 satır: konu, kanca, planlanan saat, Metricool linkleri, varsa sorun.
+    Elle paylaşım modunda rapor adım 9'daki "BUGÜN ELLE PAYLAŞ" biçimiyle başlar (link, başlık, açıklama, saat).
     ElevenLabs kredisi 3.000'in altına düştüyse ya da bir adım başarısızsa bunu açıkça yaz. (Kredi `GET /v1/user/subscription`
     ile okunur; anahtarda `user_read` izni yoksa 401 döner → "kredi okunamadı" yaz, adımı atla.)
 
@@ -119,4 +133,5 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 - TTS hata (402/401): anahtar/plan sorunu → rapor et, o gün dünkü değil **yedek plan**: `plan/` altında kullanılmamış bir
   plan varsa onu sessiz şablonla değil, yine seslendirmeli üretmeye çalış; olmazsa rapor et, paylaşım yapma.
 - Metricool hata: hatayı olduğu gibi raporla, metni değiştirip tekrar deneme döngüsüne girme (en fazla 1 tekrar).
+  Aylık gönderi sınırı hatası bunun dışındadır: tekrar deneme, adım 9'daki elle paylaşım moduna geç.
 - Asla: gizli anahtarı depoya yazma, telifli müzik/görsel/söz kullanma, gerçek kişiler adına söz uydurma.

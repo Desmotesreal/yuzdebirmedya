@@ -130,3 +130,4 @@
 - Tür ortalaması (13–22 Kasım, YouTube): LGS 5,1K (2 video) | okul gündemi 2,0K (5 video) | YKS/TYT 1,7K (2 video).
 - Karar: format kararı artık yalnızca YouTube'a göre. Haftalık karışım LGS 3 · YKS/TYT 1 · okul gündemi 2; öğrenci dışı genel motivasyon yok; CTA'da "yorumlara yaz" yerine kaydet / arkadaşına gönder. Ayrıntı PIPELINE.md adım 2b.
 - Not: önceki günlerin "sınav sayı kancası zayıf, gündem en iyi" sonuçları yalnızca Instagram'a dayanıyordu; YouTube tersini gösteriyor.
+- Metricool kararı (Umut, 24 Kasım): ücretli plana geçilmeyecek. Aylık 20 gönderi kotası bitince video yine üretilir, rapor "BUGÜN ELLE PAYLAŞ" biçiminde link + başlık + açıklama verir, Umut kendisi paylaşır; ayın 1'inde otomatik akışa dönülür (PIPELINE.md adım 9). Kasım'da Metricool'dan çıkan gönderi: 23 Kasım itibarıyla 18 (posts.json'da id'si olan 17 + kayıtsız 9 Kasım gönderisi); 2 Kasım kayıtları Metricool dışı. Kesin karar yine Metricool'un yanıtıdır.
