@@ -17,9 +17,11 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 
 ## Marka
 - İsim: **Yüzde Bir (%1)** — "Her gün %1 daha iyi." Motivasyon hesabı, haber hesabı değil.
+- Hedef kitle: **LGS ve YKS'ye hazırlanan öğrenciler** (YouTube'da tutan kitle bu; bkz. adım 2b).
 - Görsel dil: koyu sinematik zemin, kinetik tipografi (Inter Display 800–900), bokeh + ışık sızıntısı + film grain,
   her videoda **tek vurgu rengi** (gold / cyan / ember / violet; kırmızı sadece kayıp/uyarı), swoosh/impact/riser ses tasarımı.
-- Yapı: **kanca (0–2 sn)** → simülasyon/veri ya da güçlü tek fikir → yüzleşme → CTA (kaydet / yorumlara yaz).
+- Yapı: **kanca (0–2 sn)** → simülasyon/veri ya da güçlü tek fikir → yüzleşme → CTA (**kaydet / arkadaşına gönder**;
+  "yorumlara yaz" kullanma: 2–22 Kasım'daki 18 Reel'de 0 yorum geldi).
 - Süre hedefi **24–26 sn** (üst sınır 35). 8–10 cümle. Her cümlenin ekranda karşılığı olur; sayılar **söylendiği anda** ekrana gelir.
 
 ## Her sabahki adımlar
@@ -29,29 +31,40 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
 1. **Tarih**: Bugünün tarihini (Europe/Istanbul) al. `posts.json` oku: aynı konuyu/kancayı son 30 günde tekrar etme.
    **Çift paylaşım kontrolü**: Metricool `getScheduledPosts` (brandId 7823005, bugün 00:00–23:59, Europe/Istanbul) —
    bugüne zaten planlı bir Reel/Short varsa yenisini üretme; sadece adım 10 (istatistik) ve 12 (rapor) yap.
-2b. **Son 14 günün sonuçları → konu/kanca seçimi** (konu seçmeden ve plan kullanmadan ÖNCE; analiz yayını asla durdurmaz):
-   Metricool `getAnalyticsDataByMetrics` (brandId 7823005, bugün−14 gün 00:00 → bugün 23:59, `+03:00`):
-   IG Reels `IGRE01,IGRE03,IGRE23,IGRE11,IGRE12,IGRE21,IGRE24` (tarih, metin, izlenme, erişim, kaydetme, paylaşım, ort. izlenme süresi);
-   YT Shorts `YTVP01,YTVP17,YTVP06,YTVP08,YTVP09,YTVP12` (tarih, başlık, izlenme, ort. izlenme süresi, beğeni, paylaşım).
-   Her videoyu `posts.json`'daki formatla eşleştir (YKS/LGS sayı kancası / gündem / simülasyon / genel motivasyon) ve
-   format başına ortalama izlenme + (kaydetme+paylaşım)/erişim hesapla (python). Konu ve kancayı en iyi gidene göre seç.
-   **Kurallar (veri azsa — izlenme değeri olan 3'ten az video ya da araç hata verirse — sadece bunları uygula):**
-   - Hafta (Pazartesi–Pazar) başına **en az 2 video YKS/LGS sayı kancası** ("YKSye X gün", "LGSye X gün: günde Y soru = Z soru"…).
-     Bu haftaki yayınlanmış + planlı YKS/LGS videolarını say; kalan gün sayısı ≤ eksik kota ise bugün **zorunlu** YKS/LGS.
-     Tarihleri her seferinde ÖSYM/MEB kaynağından doğrula; aynı sınavın sayı kancasını üst üste iki gün kullanma (YKS↔LGS dönüşümlü).
-   - **Genel motivasyonu azalt**: haftada en fazla 1–2 saf genel motivasyon (somut sayı/gündem kancası olmayan söz videosu).
-     `plan/<tarih>.json` genel motivasyonsa ve bugün YKS/LGS zorunluysa ya da bu hafta zaten genel motivasyon kotası dolduysa
-     planı **kullanma** (dosyayı silme; ileri bir boş güne kaydırılabilir) → adım 3'ten YKS/LGS ya da veri/gündem kancalı yeni içerik üret.
-   - **Süre 24–26 sn** (mümkünse): ~8–10 kısa cümle, ses ≈ 22–24 sn. Ses 24,5 sn'yi aşarsa metni kısalt ve TTS'i bir kez yeniden üret.
-   Analiz özetini (format bazında 1 satır) adım 10'daki `insights.md` notuna ve rapora ekle.
+2b. **Konu/kanca seçimi: YouTube önceliklidir** (24 Kasım 2026 kararı; konu seçmeden ve plan kullanmadan ÖNCE; analiz yayını asla durdurmaz):
+   **Neden:** Aynı videolar Instagram'da format ne olursa olsun 130–160 izlenme bandında kalıyor (bu fark gürültüdür),
+   YouTube'da ise 13 Kasım'dan beri Short başına 1,3K–6,6K izleniyor. Bu yüzden format kararı **yalnızca YouTube
+   izlenmesine** göre verilir. Instagram sayıları raporlanır ama format sıralamak ya da konu seçmek için **kullanılmaz**.
+   **Veri:** Metricool `getAnalyticsDataByMetrics` (brandId 7823005, bugün−14 gün 00:00 → bugün 23:59, `+03:00`):
+   - YouTube kanal toplamı `YTEV01,YTEV02,YTEV05` (abone, günlük izlenme, kazanılan abone). Video bazlı YouTube listeleri
+     (`YTVP…`, `YTVV…`) boş dönüyor; onlara güvenme.
+   - Video bazlı YouTube izlenmesi `insights.md`'deki en son **"YouTube video bazlı"** nottadır (kanal sayfasından elle
+     alınır). Yeni not yoksa aşağıdaki karışımı aynen uygula.
+   - IG Reels `IGRE01,IGRE03,IGRE23,IGRE11,IGRE12,IGRE21,IGRE24` yalnızca rapor için.
+   **Haftalık karışım (Pazartesi–Pazar, çarşamba hariç 6 yayın günü), zorunlu:**
+   - **3 video LGS.** YouTube'da en iyi giden konu (17 Kasım hata defteri 6,6K, 14 Kasım ara tatil 3,6K). Her LGS videosu
+     son 3 LGS videosundan **farklı bir açı** kullanır: somut çalışma yöntemi (hata defteri gibi), "günde X soru = Y deneme"
+     hesabı, ders bazlı (paragraf, yeni nesil matematik, fen, inkılap), deneme analizi/net artırma, 8. sınıf günlük düzeni
+     (uyku, telefon) LGS'ye bağlanarak.
+   - **1 video YKS/TYT** (YouTube'da ortalama 1,7K).
+   - **2 video okul gündemi**: karne, okula dönüş, tatil, deneme haftası, özel gün gibi öğrencinin o haftaki gerçeği +
+     somut sayı (19 Kasım karne 2,8K, 22 Kasım tatilin son akşamı 2,3K).
+   - **Öğrenciye dönük olmayan genel motivasyon/alışkanlık videosu yok** (kitap, erteleme, telefon, pazartesi videoları
+     YouTube'da 7–110 izlenmede kaldı). `plan/<tarih>.json` bu karışıma uymuyorsa planı **kullanma** (dosyayı silme) →
+     adım 3'ten yeni içerik üret.
+   Bu haftaki yayınlanmış + planlı videoları türe göre say. Kalan yayın günü sayısı ≤ eksik LGS kotası ise bugün **zorunlu LGS**.
+   Aynı sınavı üst üste iki yayın gününde kullanma (kota zorunlu kılmadıkça). Sınav tarihlerini her seferinde ÖSYM/MEB
+   kaynağından doğrula. Gündem (özel gün, tatil) LGS/YKS videosuna kanca olarak eklenebilir; tür yine LGS/YKS sayılır.
+   **Süre 24–26 sn** (mümkünse): ~8–10 kısa cümle, ses ≈ 22–24 sn. Ses 24,5 sn'yi aşarsa metni kısalt ve TTS'i bir kez yeniden üret.
+   Haftalık sayımı (LGS x/3 · YKS x/1 · okul gündemi x/2) ve YouTube kanal özetini adım 10'daki `insights.md` notuna ve rapora ekle.
 2. **Plan var mı?** (2b izin veriyorsa) `plan/<YYYY-MM-DD>.json` varsa → `ELEVEN_API_KEY=... python3 tools/run_plan.py <tarih> --no-render`,
    `~/work/<tarih>/sheet.png`'ye **bak** (yazı taşması / çakışma yoksa) → `python3 tools/run_plan.py <tarih>` (render + yükleme) → adım 8.
    Plan yoksa adım 3'ten devam: **yeni içerik üret**.
 3. **Gündem + fikir** (WebSearch, Türkçe): bugünün/haftanın Türkiye gündemi — sınav tarihleri (ÖSYM/MEB), özel günler,
    mevsim/ay başı-sonu, büyük spor olayları, viral konular. Gündemi **kanca** olarak kullan, motivasyon mesajına bağla.
-   Siyaset, trajedi, kişiler hakkında iddia **yok**. Uygun gündem yoksa `IDEAS.md` havuzundan seç.
-   Format karışımı (adım 2b kuralları önceliklidir): YKS/LGS sayı kancası (haftada en az 2), gündem kancalı (haftada 2–3), simülasyon/veri ("günde X = yılda Y"), kinetik tipografi (özgün söz),
-   "ya … olsaydı" senaryosu. Haftalık istatistiklere göre iyi gideni artır (adım 10).
+   Siyaset, trajedi, kişiler hakkında iddia **yok**. Uygun gündem yoksa `IDEAS.md` havuzundan, 2b karışımına uyan bir fikir seç.
+   Format karışımı adım 2b'deki haftalık karışımdır (LGS 3 · YKS/TYT 1 · okul gündemi 2). Simülasyon/veri ("günde X = Y"),
+   kinetik tipografi ve "ya … olsaydı" senaryosu birer **anlatım biçimidir**; konu her zaman öğrenciye dönük kalır.
 4. **Rakamlar**: Her sayıyı python ile hesapla; tarihli bilgiyi (ör. sınav tarihi) kaynağıyla doğrula, kaynağı açıklamaya yaz.
 5. **Seslendirme metni** `~/work/<tarih>/script.txt` — her satır bir cümle. KURALLAR:
    - **Kesme işareti yok** ("Ocakta", "Aralıkta", "Mertin"), yoksa ses duraksar. `tools/tts.py` kesme görürse durur.
@@ -89,9 +102,13 @@ Her sabah çalışan görev bu dosyayı baştan sona okuyup adımları uygular. 
    "madeForKids":false,"isAiGeneratedContent":false}`. Kapak yüzünden reddedilirse kapak alanını çıkarıp bir kez tekrar dene.
    Yanıttaki `media` metricool adresine dönmeli. Ayın kaçıncı yayını olduğunu `posts.json`'dan say; 18'i geçtiyse raporda uyar.
    Açıklama: 2–3 cümle (kanca + değer + CTA), sonra 6–8 Türkçe hashtag.
+   YouTube başlığı: sınav videolarında sınav adı + gün sayısıyla başla ("LGS'ye N gün: <somut kazanç>"); en çok izlenen
+   iki Short bu kalıpta. LGS videolarında etiketlere `lgs`, `lgs 2027`, `8. sınıf` ekle.
 10. **İstatistik** (her gün kısa, pazar günleri detaylı): Metricool `getAnalyticsAvailableMetrics` (instagram/reels,
     youtube) → son 7 günün izlenme/erişim/kaydetme/paylaşım değerlerini çek; `insights.md`'ye tarihli kısa not düş
-    (hangi format/kanca iyi gitti, ne değişecek). Format karışımını buna göre kaydır.
+    (hangi format/kanca iyi gitti, ne değişecek). YouTube kanal izlenmesini ve abone sayısını da yaz (`YTEV01,YTEV02,YTEV05`).
+    Format karışımını Instagram verisine göre **değiştirme**: karışım 2b'de sabittir ve yalnızca `insights.md`'ye yeni bir
+    "YouTube video bazlı" not düşüldüğünde güncellenir.
 11. **Kayıt**: `posts.json`'a ekle `{date, topic, format, hook, script, caption, yt_title, video_url, metricool_ids}` →
     `git add -A && git commit -m "<tarih> reels" && git push origin main` (yalnızca main; videolar main'e girmez).
 12. **Rapor**: Son mesajda Türkçe 3–5 satır: konu, kanca, planlanan saat, Metricool linkleri, varsa sorun.

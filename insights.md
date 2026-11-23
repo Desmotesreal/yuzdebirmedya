@@ -123,3 +123,10 @@
 - YT Shorts: Metricool "published in range" yine boş yanıt → video bazında YouTube verisi yok; Umut Metricool YouTube bağlantısını kontrol etmeli.
 - Bugün: YKS sayı kancası + gündem (okula dönüş, 23 Kasım): "YKS'ye 208 gün ama sadece 29 pazar; her pazar 1 TYT = 29 deneme = 3.480 soru; ilk pazar 6 gün sonra" (ÖSYM: TYT 19 Haziran 2027). Zayıf YKS formatını gündem + 'gizli küçük sayı' kancasıyla (208 → 29) güçlendirme denemesi. Ses ilk denemede 25,3 sn → kısaltıldı, 23,5 sn. Metricool id 438214786, 07:00.
 - Ücretsiz plan: Kasım yayını bugünkü dahil 19/20 → ayda tek hak kaldı. Bu hafta (23–29 Kasım) YKS/LGS kotası 1/2; kalan tek Kasım hakkı 24 Kasım (Öğretmenler Günü + LGS) için düşünülebilir, sonra 30 Kasım'a kadar yayın yapılamaz (1 Aralık'ta yeni hak).
+
+## 2026-11-24 (elle analiz, Umut'la: YouTube video bazlı)
+- YouTube video bazlı (kanal sayfası, 24 Kasım 01:00): 23 Kas YKS 29 pazar 748 (henüz yeni) | 22 Kas tatilin son akşamı 2,3K | 21 Kas jet lag 1,3K | 20 Kas Kasımın 11 günü 1,3K | 19 Kas karne 2,8K | 17 Kas LGS hata defteri 6,6K | 16 Kas TYT 215 gün 1,7K | 15 Kas tatil pili 2,2K | 14 Kas LGS günde 40 soru 3,6K | 13 Kas YKS 218 gün 1,7K | 12 Kas kitap 110 | 10 Kas ara tatil 107 | 9 Kas erteleme 19 | 8 Kas pazartesi 7 | 7 Kas LGS 218 gün 14 | 6 Kas disiplin 12 | 5 Kas telefon 14 | 3 Kas %84 23 | 2 Kas YKS 229 gün 1,1K.
+- Kanal: 32 abone, toplam ≈ 25,6K izlenme. 3–12 Kasım ölü (7–110), 13 Kasım'dan beri Short başına 1,3K–6,6K (ort. 2,6K). Aynı 9 video Instagram'da ort. 143.
+- Tür ortalaması (13–22 Kasım, YouTube): LGS 5,1K (2 video) | okul gündemi 2,0K (5 video) | YKS/TYT 1,7K (2 video).
+- Karar: format kararı artık yalnızca YouTube'a göre. Haftalık karışım LGS 3 · YKS/TYT 1 · okul gündemi 2; öğrenci dışı genel motivasyon yok; CTA'da "yorumlara yaz" yerine kaydet / arkadaşına gönder. Ayrıntı PIPELINE.md adım 2b.
+- Not: önceki günlerin "sınav sayı kancası zayıf, gündem en iyi" sonuçları yalnızca Instagram'a dayanıyordu; YouTube tersini gösteriyor.
