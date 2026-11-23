@@ -354,5 +354,28 @@
   "metricool_ids": [
    437218635
   ]
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "YKS'ye 208 gün ama sadece 29 pazar (okullar açıldı, hafta içi dolu): her pazar 1 TYT denemesi = 29 deneme = 3.480 soru; ilk pazar 29 Kasım, 6 gün sonra",
+  "format": "YKS/LGS sayı kancası (YKS) + gündem (okula dönüş)",
+  "hook": "YKSye iki yüz sekiz gün kaldı. Ama sana sadece yirmi dokuz pazar kaldı.",
+  "script": [
+   "YKSye iki yüz sekiz gün kaldı.",
+   "Ama sana sadece yirmi dokuz pazar kaldı.",
+   "Okul açıldı, hafta içi zaten dolu.",
+   "Her pazar sabahı tek bir TYT denemesi çöz.",
+   "Yirmi dokuz pazar, yirmi dokuz deneme.",
+   "Tam üç bin dört yüz seksen soru.",
+   "Haziranda o salon sana yabancı gelmez.",
+   "İlk pazarın altı gün sonra.",
+   "Hedefini yorumlara yaz."
+  ],
+  "caption": "YKS'ye 208 gün kaldı (ÖSYM: TYT 19 Haziran 2027). Ama okullar açıldı ve hafta içi zaten dolu: önünde sadece 29 pazar var. Her pazar sabahı tek bir TYT denemesi çöz: 29 pazar = 29 deneme = 3.480 soru (1 TYT = 120 soru). İlk pazarın 29 Kasım, 6 gün sonra. Hedefin kaç deneme? Yorumlara yaz, kaydet 👇\n\n#yks #yks2027 #tyt #deneme #dersçalışma #okul #motivasyon #yüzdebir",
+  "yt_title": "YKS'ye 208 gün değil, 29 pazar kaldı #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-23.mp4",
+  "metricool_ids": [
+   438214786
+  ]
  }
 ]

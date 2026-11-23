@@ -110,5 +110,12 @@
   "yerlesim": "S0 üstte kicker + ortada iki satır başlık + altta ufuk/ay; S1 üstte iki satır, ortada ızgara, altta dev soru; S2 üstte satır + dev kırmızı 15 DK, ortada sütun grafiği, altta HAFTADA 75 DK; S3 üstte başlık, ortada 3+2 not panosu; S4 üstte üstü çizilen satır, ortada tek not, altta dev kelime; S5 ortalı yığın sayaç; ortalı CTA",
   "vurgu": "cyan (kayıp kırmızı)",
   "gecisler": "maske satırları, slam + kıvılcım, ayın ufuktan yükselişi, sıraların çapraz dalga ile zıplaması, soru işaretlerinin pop + renk değişimi, sütunların sırayla yükselmesi, notların sarkaç salınımlı düşüşü, yazının clip-path ile açılması, notların dönerek düşmesi, notun merkeze büyümesi, ✓ damgası, üstü çizme, bulanık kamera kesmeleri"
+ },
+ {
+  "date": "2026-11-23",
+  "metafor": "208 günlük haftalık takvim ızgarası (7 sütun × 30 satır, 23 Kasım pazartesi) → hafta içi hücreler söner, PAZ sütunu mor yanar (29 pazar) → hafta içi sütunlar gri dolar + kırmızı DOLU damgası → 29 pazar hücresi dikey domino taşlarına morph olur → domino zinciri devrilir (sayaç 0→29 DENEME) → 3.480 SORU sayacı → perspektifli sınav salonu (6×5 sıra), SEN sırası mor yanar → PZT 23–PAZ 29 hafta kartları, BUGÜN işaretçisi pazara kayar (6 GÜN)",
+  "yerlesim": "S0 ortalı dev sayı; S1–S2 solda dev sayı + sağda dikey takvim ızgarası, üstte satır; S3–S5 üstte başlık/sayaç, ortada tam genişlik domino sırası, altta tarih etiketi; S6 üstte çip, ortada perspektif sıra ızgarası, altta iki satır; S7 üstte satır, ortada 7 kart şeridi + işaretçi, altta dev sayı; ortalı CTA",
+  "vurgu": "violet (DOLU kırmızı)",
+  "gecisler": "slam + kıvılcım, hücrelerin çapraz dalga ile pop girişi, sütun bazlı renk değişimi, damga slam, hücre→domino morph, zincirleme devrilme + parlama, bulanık kamera kesmeleri, sıraların arkadan öne pop girişi, işaretçi kayması + kesikli iz, harf girişleri"
  }
 ]
