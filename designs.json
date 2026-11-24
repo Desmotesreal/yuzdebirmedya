@@ -117,5 +117,12 @@
   "yerlesim": "S0 ortalı dev sayı; S1–S2 solda dev sayı + sağda dikey takvim ızgarası, üstte satır; S3–S5 üstte başlık/sayaç, ortada tam genişlik domino sırası, altta tarih etiketi; S6 üstte çip, ortada perspektif sıra ızgarası, altta iki satır; S7 üstte satır, ortada 7 kart şeridi + işaretçi, altta dev sayı; ortalı CTA",
   "vurgu": "violet (DOLU kırmızı)",
   "gecisler": "slam + kıvılcım, hücrelerin çapraz dalga ile pop girişi, sütun bazlı renk değişimi, damga slam, hücre→domino morph, zincirleme devrilme + parlama, bulanık kamera kesmeleri, sıraların arkadan öne pop girişi, işaretçi kayması + kesikli iz, harf girişleri"
+ },
+ {
+  "date": "2026-11-24",
+  "metafor": "çiçek → soru: dönen pembe çiçek belirir, 'çiçek' kelimesinin üstü kırmızı çizilir ve çiçek düşer → altın SORU slam; 28 haftalık çip ızgarası (7×4) sırayla yanar; deneme kâğıdından 3 kırmızı ✗ satır kart olarak sökülür (?); kartlar yeşil kara tahtaya uçar, ? → altın ✓; kartlar 90 parçalık yapbozun ilk 3 parçası olur, 84 parça yağar, 6 boş yuva kesikli parlar (1 LGS = 90 soru); BUGÜN/YARIN plan kartları",
+  "yerlesim": "S0 üstte kicker, ortada çiçek + iki satır + dev SORU/GÖTÜR; S1 üstte satır + dev 28 + HAFTA, altta 7×4 çip ızgarası; S2 üstte başlık, solda deneme kâğıdı + sağda 3 kart sütunu; S3 üstte ÖĞRETMENİNE/SOR, ortada kara tahta; S4–S5 üstte sayaç/başlık, ortada 10×9 yapboz ızgarası, altta etiket; S6 dikey iki plan kartı (soldan/sağdan); ortalı CTA",
+  "vurgu": "gold (çiçek pembe, yanlış kırmızı, tahta yeşil)",
+  "gecisler": "maske satırları, üstü çizme, çiçeğin dönerek düşmesi, slam + kıvılcım, çiplerin elastik pop + altın yanma dalgası, satırların kart olarak sökülmesi, kartların tahtaya yay çizerek uçması, ?→✓ çapraz geçiş, tahtaya bulanık zoom kesmesi, kart→yapboz parçası morph, parçaların yukarıdan yağması + sayaç, altın çerçeve çizimi, kartların yanlardan kayması"
  }
 ]

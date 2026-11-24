@@ -131,3 +131,11 @@
 - Karar: format kararı artık yalnızca YouTube'a göre. Haftalık karışım LGS 3 · YKS/TYT 1 · okul gündemi 2; öğrenci dışı genel motivasyon yok; CTA'da "yorumlara yaz" yerine kaydet / arkadaşına gönder. Ayrıntı PIPELINE.md adım 2b.
 - Not: önceki günlerin "sınav sayı kancası zayıf, gündem en iyi" sonuçları yalnızca Instagram'a dayanıyordu; YouTube tersini gösteriyor.
 - Metricool kararı (Umut, 24 Kasım): ücretli plana geçilmeyecek. Aylık 20 gönderi kotası bitince video yine üretilir, rapor "BUGÜN ELLE PAYLAŞ" biçiminde link + başlık + açıklama verir, Umut kendisi paylaşır; ayın 1'inde otomatik akışa dönülür (PIPELINE.md adım 9). Kasım'da Metricool'dan çıkan gönderi: 23 Kasım itibarıyla 18 (posts.json'da id'si olan 17 + kayıtsız 9 Kasım gönderisi); 2 Kasım kayıtları Metricool dışı. Kesin karar yine Metricool'un yanıtıdır.
+
+## 2026-11-24
+- YouTube kanal (Metricool YTEV, 10–23 Kas): abone 2 (13 Kas) → 32 (23 Kas); günlük kanal izlenmesi 13–21 Kas arası 954–3.703 (en yüksek 17 Kas 3.703, LGS hata defteri günü), 22–23 Kas izlenme henüz null; günde 0–6 yeni abone.
+- IG Reels (yalnızca rapor): 23 Kas "YKS 29 pazar" 136 izlenme, 117 erişim, 0 kaydetme/paylaşım, ort. izlenme 6,9 sn; 14 gün bandı 128–160 (10 Kas 244 hariç).
+- Bugün: LGS + gündem (24 Kasım Öğretmenler Günü): "Öğretmenine bugün çiçek değil, soru götür; LGS'ye 28 hafta (201 gün, MEB: 13 Haziran 2027); her hafta denemede çözemediğin 3 soruyu öğretmenine sor → 84 soru ≈ bir LGS (90)". Açı: deneme analizi/net artırma (son 3 LGS: 7 Kas 218 gün, 14 Kas günde 40 soru, 17 Kas hata defteri). CTA: kaydet + sınıf arkadaşına gönder. Ses ilk denemede 32,1 sn → kısaltıldı, 23,2 sn. Metricool id 439740126, 07:00.
+- Haftalık karışım (23–29 Kasım): LGS 1/3 · YKS/TYT 1/1 · okul gündemi 0/2. Kalan yayın günleri 26, 27, 28, 29 Kasım (25 çarşamba yok): 2 LGS + 2 okul gündemi; LGS'yi üst üste koymamak için ör. 26 okul gündemi, 27 LGS, 28 okul gündemi, 29 LGS.
+- Metricool Kasım kotası: bugünkü dahil 19/20 (posts.json'da id'li 18 + kayıtsız 9 Kasım). Muhtemelen 26 Kasım son otomatik gönderi; sonrası 30 Kasım'a kadar elle paylaşım modu.
+- ElevenLabs kredisi okunamadı (anahtarda user_read yok, 401).

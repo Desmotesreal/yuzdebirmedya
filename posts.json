@@ -377,5 +377,27 @@
   "metricool_ids": [
    438214786
   ]
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Öğretmenler Günü + LGS'ye 201 gün = 28 hafta: her hafta denemede çözemediğin 3 soruyu öğretmenine sor → 84 soru ≈ bir LGS (90 soru)",
+  "format": "LGS (deneme analizi/net artırma açısı) + gündem (24 Kasım Öğretmenler Günü)",
+  "hook": "Öğretmenine bugün çiçek değil, soru götür.",
+  "script": [
+   "Öğretmenine bugün çiçek değil, soru götür.",
+   "Öğretmenler Günü ve LGSye yirmi sekiz hafta var.",
+   "Her hafta çözemediğin üç soruyu ayır.",
+   "Öğretmenine sor.",
+   "Yirmi sekiz haftada seksen dört soru.",
+   "Neredeyse bir LGS.",
+   "Bugün teşekkür et, yarın ilk soruyu götür.",
+   "Kaydet, sınıf arkadaşına gönder."
+  ],
+  "caption": "Bugün Öğretmenler Günü ve LGS'ye 201 gün, yani 28 hafta kaldı (MEB: 13 Haziran 2027). Öğretmenine bugün bir soru götür: her hafta denemede çözemediğin 3 soruyu ayır, ertesi gün nasıl çözüldüğünü sor. 28 hafta × 3 = 84 soru, neredeyse bir LGS (90 soru). Kaydet, sınıf arkadaşına gönder 👇\n\n#lgs #lgs2027 #8sınıf #öğretmenlergünü #24kasım #deneme #dersçalışma #yüzdebir",
+  "yt_title": "LGS'ye 201 gün: öğretmenine çiçek değil, soru götür #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-24.mp4",
+  "metricool_ids": [
+   439740126
+  ]
  }
 ]
