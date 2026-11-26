@@ -124,5 +124,12 @@
   "yerlesim": "S0 üstte kicker, ortada çiçek + iki satır + dev SORU/GÖTÜR; S1 üstte satır + dev 28 + HAFTA, altta 7×4 çip ızgarası; S2 üstte başlık, solda deneme kâğıdı + sağda 3 kart sütunu; S3 üstte ÖĞRETMENİNE/SOR, ortada kara tahta; S4–S5 üstte sayaç/başlık, ortada 10×9 yapboz ızgarası, altta etiket; S6 dikey iki plan kartı (soldan/sağdan); ortalı CTA",
   "vurgu": "gold (çiçek pembe, yanlış kırmızı, tahta yeşil)",
   "gecisler": "maske satırları, üstü çizme, çiçeğin dönerek düşmesi, slam + kıvılcım, çiplerin elastik pop + altın yanma dalgası, satırların kart olarak sökülmesi, kartların tahtaya yay çizerek uçması, ?→✓ çapraz geçiş, tahtaya bulanık zoom kesmesi, kart→yapboz parçası morph, parçaların yukarıdan yağması + sayaç, altın çerçeve çizimi, kartların yanlardan kayması"
+ },
+ {
+  "date": "2026-11-26",
+  "metafor": "bardak + damla: 22:00→04:00 dönen dijital gece saati (SON GECE) → '10 SAAT' kesikli çizgili cam bardak; tek gecede kırmızı akıntıyla dolup taşar (kenarlardan akış + zemin birikintisi) → bardak boşalır, cyan'a döner; her gün 1 damla (15 DK) → 40 damla sırayla düşer, halka dalgaları, sayaç 15→600 DK / GÜN 1→40, seviye tam 10 SAAT çizgisinde durur → UYKUSUZ (03:00, üstü çizili) vs HAZIR (✓) kartları",
+  "yerlesim": "S0 ortada kicker + dev 40 + GÜN KALDI + kaynak satırı; S1 ortada satır + dev dijital saat + kırmızı SON GECE; S2–S4 üstte başlık/sayaç, ortada tek bardak (y 640–1360), altta dev kelime (TAŞAR / 15 DK / damla damla); S5 üstte satır + yan yana iki kart + altta satır; ortalı CTA + formül",
+  "vurgu": "cyan (tek gece kırmızı)",
+  "gecisler": "slam + kıvılcım, gece saatinin dönmesi + kırmızı ton, bardağın elastik pop girişi, kesikli çizginin soldan çizilmesi, akıntıyla dolum + taşma, bulanık kamera kesmesiyle boşalma ve renk dönüşümü, damla düşüşü + yüzey halkaları, sayaç nabzı, kartların yanlardan dönerek girişi, üstü çizme, maske satırları"
  }
 ]

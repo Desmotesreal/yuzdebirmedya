@@ -139,3 +139,12 @@
 - Haftalık karışım (23–29 Kasım): LGS 1/3 · YKS/TYT 1/1 · okul gündemi 0/2. Kalan yayın günleri 26, 27, 28, 29 Kasım (25 çarşamba yok): 2 LGS + 2 okul gündemi; LGS'yi üst üste koymamak için ör. 26 okul gündemi, 27 LGS, 28 okul gündemi, 29 LGS.
 - Metricool Kasım kotası: bugünkü dahil 19/20 (posts.json'da id'li 18 + kayıtsız 9 Kasım). Muhtemelen 26 Kasım son otomatik gönderi; sonrası 30 Kasım'a kadar elle paylaşım modu.
 - ElevenLabs kredisi okunamadı (anahtarda user_read yok, 401).
+
+## 2026-11-26
+- 24 Kasım Öğretmenler Günü + LGS gönderisi IG ve YouTube'da PUBLISHED (YT kg8KT1XhL9I).
+- YouTube kanal (Metricool YTEV, 12–25 Kas): abone 2 (12 Kas) → 34 (24–25 Kas); günlük kanal izlenmesi 813–3.703 (17 Kas 3.703 en yüksek, 19 Kas 3.198; 23 Kas 813 kısmi), 24–25 Kas izlenme henüz null.
+- IG Reels (yalnızca rapor): 24 Kas "öğretmenine soru götür" 140 izlenme, 121 erişim, 0 kaydetme/paylaşım, ort. izlenme 8,5 sn; 14 gün bandı 129–163.
+- Bugün: okul gündemi (1. dönem 2. yazılılar; MEB ortak yazılı 5–6 Ocak 2027): "Yazılılara 40 gün; 10 saatlik bardak son gecede taşar; her gün 15 dk × 40 = 600 dk = 10 saat, damla damla". CTA: kaydet + yazılıya girecek arkadaşına gönder. Ses ilk denemede 30,6 sn → kısaltıldı, 26,0 sn (tek yeniden deneme hakkı kullanıldı, 24,5 sınırını aştı). Metricool id 442588312, 07:00.
+- Haftalık karışım (23–29 Kasım): LGS 1/3 · YKS/TYT 1/1 · okul gündemi 1/2. Kalan yayın günleri 27, 28, 29 Kasım: 2 LGS + 1 okul gündemi → öneri 27 LGS, 28 okul gündemi, 29 LGS.
+- Metricool Kasım kotası: bugünkü dahil 20/20 (posts.json'da id'li 19 + kayıtsız 9 Kasım). 27–30 Kasım büyük olasılıkla elle paylaşım modu; 1 Aralık'ta otomatik akışa dönüş.
+- ElevenLabs kredisi okunamadı (anahtarda user_read yok, 401).
