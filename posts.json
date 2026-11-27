@@ -421,5 +421,28 @@
   "metricool_ids": [
    442588312
   ]
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "LGS'ye 198 gün (MEB: 13 Haziran 2027): her gün 5 paragraf sorusu → ayda 150, Haziran'a 990 soru; sınavda Türkçe 20 soru → ≈50 katı; bugün ilk 5'i çöz, süreni yaz",
+  "format": "LGS (ders bazlı açı: Türkçe paragraf + süre)",
+  "hook": "Paragrafı okudun, ama süre bitti.",
+  "script": [
+   "Paragrafı okudun, ama süre bitti.",
+   "LGSye yüz doksan sekiz gün var.",
+   "Her gün sadece beş paragraf sorusu çöz.",
+   "Bir ayda yüz elli soru.",
+   "Haziranda dokuz yüz doksan soru.",
+   "Sınavda Türkçe yirmi soru.",
+   "Sen elli katını görmüş olursun.",
+   "Bugün ilk beşi çöz, süreni yaz.",
+   "Kaydet, sınıf arkadaşına gönder."
+  ],
+  "caption": "Paragrafı okudun ama süre bitti mi? LGS'ye 198 gün var (MEB: 13 Haziran 2027). Her gün sadece 5 paragraf sorusu çöz: ayda 150, Haziran'a kadar 990 soru. Sınavda Türkçe 20 soru; sen yaklaşık 50 katını görmüş olursun. Bugün ilk 5'i çöz, süreni yaz. Kaydet, sınıf arkadaşına gönder 👇\n\n#lgs #lgs2027 #8sınıf #paragraf #türkçe #dersçalışma #deneme #yüzdebir",
+  "yt_title": "LGS'ye 198 gün: günde 5 paragraf = 990 soru #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-27.mp4",
+  "metricool_ids": [
+   443868479
+  ]
  }
 ]

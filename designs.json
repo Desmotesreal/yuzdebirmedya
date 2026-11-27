@@ -131,5 +131,12 @@
   "yerlesim": "S0 ortada kicker + dev 40 + GÜN KALDI + kaynak satırı; S1 ortada satır + dev dijital saat + kırmızı SON GECE; S2–S4 üstte başlık/sayaç, ortada tek bardak (y 640–1360), altta dev kelime (TAŞAR / 15 DK / damla damla); S5 üstte satır + yan yana iki kart + altta satır; ortalı CTA + formül",
   "vurgu": "cyan (tek gece kırmızı)",
   "gecisler": "slam + kıvılcım, gece saatinin dönmesi + kırmızı ton, bardağın elastik pop girişi, kesikli çizginin soldan çizilmesi, akıntıyla dolum + taşma, bulanık kamera kesmesiyle boşalma ve renk dönüşümü, damla düşüşü + yüzey halkaları, sayaç nabzı, kartların yanlardan dönerek girişi, üstü çizme, maske satırları"
+ },
+ {
+  "date": "2026-11-27",
+  "metafor": "paragraf kartı + süre halkası: satır satır okunan paragraf (turuncu vurgu çubukları) ve 0:45→0:00 boşalan dairesel kronometre; okuma bitmeden halka kırmızı, kalan satırlar kırmızı nabız + SÜRE BİTTİ → dev 198 GÜN VAR → 5 soru kartı yelpaze gibi düşer, ✓ olur → kartlar tabana akar, çizgili kağıt yığını büyür (150 → 990 sayaç) → yanına 18 px'lik '20' yığını (SINAV vs SEN) → 50 KATI → canlı kronometre 00:00→07:42, '1. GÜN · 7 DK 42 SN' etiketi",
+  "yerlesim": "S0 üstte satır + ortada paragraf kartı, sağ üst köşede halka, altta dev kırmızı kelime; S1 ortada kicker + dev sayı + alt satır + kaynak; S2 üstte başlık, ortada 5 kartlık yatay sıra, altta dev 5 + satır; S3–S4 tabandan yükselen dikey yığın(lar), üstte sayaç / etiketler, altta taban yazısı; S4b ortada dev slam + alt satır; S5 ortada kicker + dev yazı + dijital kronometre + hap etiket; ortalı CTA + formül",
+  "vurgu": "ember (süre bitti kırmızı)",
+  "gecisler": "halka boşalması + renk dönüşümü, satır vurgu süpürmesi, kırmızı ton + shake ile slam, kıvılcımlı sayı slam'i, kartların dönerek elastik düşüşü, ✓ nabzı, kartların tabana akması, yığının sayaçla büyümesi, yığının yana kayması + minik yığın pop, bulanıklaşan arka plan üstüne slam, kronometre koşusu ve donması, maske satırları"
  }
 ]
