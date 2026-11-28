@@ -466,6 +466,8 @@
   "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-28.mp4",
   "metricool_ids": [
    445090090
-  ]
+  ],
+  "publish_status": "ERROR: You have reached your Metricool account limit (IG+YT, 28 Kasım 07:00) -> elle paylaşım",
+  "manual": true
  }
 ]
