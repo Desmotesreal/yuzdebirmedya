@@ -157,3 +157,11 @@
 - Haftalık karışım (23–29 Kasım): LGS 2/3 · YKS/TYT 1/1 · okul gündemi 1/2. Kalan: 28 Kasım okul gündemi, 29 Kasım LGS.
 - Metricool Kasım kotası: tahmin 20/20 idi ama bugünkü gönderi kabul edildi (posts.json'da id'li 20 + kayıtsız 9 Kasım = 21). Sınır sayımı tahminden farklı; her gün yine önce Metricool denenecek.
 - ElevenLabs kredisi okunamadı (anahtarda user_read yok, 401).
+
+## 2026-11-28
+- **27 Kasım LGS paragraf gönderisi YAYINLANMADI**: Metricool IG ve YT durumu `ERROR — You have reached your Metricool account limit.` Gönderi oluşturulurken kabul edildi, yayın anında reddedildi. → Kasım kotası 26 Kasım'la dolmuş; "kabul edildi = yayınlanacak" varsayımı yanlış. Ay sonuna kadar kabul edilen gönderiler de büyük olasılıkla yayın anında düşer.
+- YouTube kanal (Metricool YTEV, 14–27 Kas): abone 5 (14 Kas) → 36 (27 Kas); günlük kanal izlenmesi 417–3.703 (17 Kas 3.703, 19 Kas 3.198; 25 Kas 417 — çarşamba yayın yok), 26–27 Kas izlenme henüz null.
+- IG Reels (yalnızca rapor): 26 Kas "yazılılara 40 gün, bardak" 177 izlenme, 160 erişim, 2 kaydetme, 1 paylaşım, ort. izlenme 7,1 sn; 24 Kas 140 · 8,5 sn. 27 Kas listede yok (yayınlanmadı).
+- Bugün: okul gündemi (karneye 8 hafta sonu; MEB: 1. dönem 22 Ocak 2027): "Cumartesiyi öğlene kadar uyuyarak geçirme; her cumartesi sabahı 2 saat → 8 × 2 = 16 saat; pazar senin". Ses ilk denemede 27,4 sn → kısaltıldı, 23,2 sn. Metricool id 445090090 (07:00) kabul edildi ama 27 Kasım'daki gibi yayın anında kota hatası alma riski yüksek → raporda elle paylaşım paketi de verildi.
+- Haftalık karışım (23–29 Kasım): LGS 2/3 · YKS/TYT 1/1 · okul gündemi 2/2 (27 Kasım LGS yayınlanmadıysa da üretildi, sayıldı). Yarın 29 Kasım: zorunlu LGS (yeni açı: yeni nesil matematik ya da fen; son 3: öğretmene soru, paragraf, hata defteri).
+- ElevenLabs kredisi okunamadı (anahtarda user_read yok, 401).

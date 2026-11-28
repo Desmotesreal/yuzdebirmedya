@@ -443,6 +443,29 @@
   "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-27.mp4",
   "metricool_ids": [
    443868479
+  ],
+  "publish_status": "ERROR: You have reached your Metricool account limit (IG+YT, 27 Kasım 07:00; video yayınlanmadı)"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "okul gündemi (karneye 8 hafta sonu, cumartesi sabahı 2 saat)",
+  "format": "okul gündemi + simülasyon (hafta sonu güneşi / cumartesi kartları)",
+  "hook": "Karneye sadece sekiz hafta sonu kaldı.",
+  "script": [
+   "Karneye sadece sekiz hafta sonu kaldı.",
+   "Çoğu kişi cumartesiyi öğlene kadar uyuyarak geçirir.",
+   "Sen sabah sadece iki saat ayır.",
+   "Sekiz cumartesi, on altı saat.",
+   "Pazar tamamen senin, dinlen.",
+   "Karnedeki fark hafta sonunda açılır.",
+   "Saat dokuz, kitabı aç.",
+   "Kaydet, uyuyan arkadaşına gönder."
+  ],
+  "caption": "Karneye sadece 8 hafta sonu kaldı (MEB: 1. dönem 22 Ocak 2027'de bitiyor). Cumartesiyi öğlene kadar uyuyarak geçirme; her cumartesi sabahı sadece 2 saat ayır: 8 cumartesi × 2 saat = 16 saat. Pazar tamamen senin, dinlen. Kaydet, hafta sonu uyuyan arkadaşına gönder 👇\n\n#karne #haftasonu #dersçalışma #okul #lgs #yks #öğrenci #yüzdebir",
+  "yt_title": "Karneye 8 hafta sonu: cumartesi 2 saat = 16 saat #shorts",
+  "video_url": "https://raw.githubusercontent.com/Desmotesreal/yuzdebirmedya/media/reels/2026-11-28.mp4",
+  "metricool_ids": [
+   445090090
   ]
  }
 ]

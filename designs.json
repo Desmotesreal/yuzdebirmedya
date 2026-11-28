@@ -138,5 +138,12 @@
   "yerlesim": "S0 üstte satır + ortada paragraf kartı, sağ üst köşede halka, altta dev kırmızı kelime; S1 ortada kicker + dev sayı + alt satır + kaynak; S2 üstte başlık, ortada 5 kartlık yatay sıra, altta dev 5 + satır; S3–S4 tabandan yükselen dikey yığın(lar), üstte sayaç / etiketler, altta taban yazısı; S4b ortada dev slam + alt satır; S5 ortada kicker + dev yazı + dijital kronometre + hap etiket; ortalı CTA + formül",
   "vurgu": "ember (süre bitti kırmızı)",
   "gecisler": "halka boşalması + renk dönüşümü, satır vurgu süpürmesi, kırmızı ton + shake ile slam, kıvılcımlı sayı slam'i, kartların dönerek elastik düşüşü, ✓ nabzı, kartların tabana akması, yığının sayaçla büyümesi, yığının yana kayması + minik yığın pop, bulanıklaşan arka plan üstüne slam, kronometre koşusu ve donması, maske satırları"
+ },
+ {
+  "date": "2026-11-28",
+  "metafor": "hafta sonu güneşi: dev 8 + 8 CMT|PAZ çip şeridi → 06–12 zaman rayında soluk güneş yayı, gri UYKU çubuğu öğlene kadar dolar → güneş altına döner, 07–09 arası mor SEN bloğu → 4x2 cumartesi kartı (28 KAS–16 OCA) sırayla mor yanar, sayaç 0→16 SAAT → kartların altına yeşil PAZ · DİNLEN şeritleri → SEN +16 SAAT / ONLAR 0 yatay çubuk yarışı → 09:00 + kapağında %1 yazan kitap açılır, satırlar yazılır",
+  "yerlesim": "S0 ortada kicker + dev 8 + HAFTA SONU, altta çip şeridi; S1–S2 üstte satır + dev kelime, ortada güneş yayı + alttaki zaman rayı; S3–S4 üstte başlık, ortada 4x2 kart ızgarası, altta dev sayaç / PAZAR; S5 üstte üç satır, altta iki yatay çubuk; S6 üstte dev saat, ortada kitap, altta dev slam; ortalı CTA + formül",
+  "vurgu": "violet (uyku gri, pazar yeşil)",
+  "gecisler": "slam + kıvılcım, çiplerin elastik yükselişi, güneşin yay boyunca yükselişi + renk dönüşümü, gri çubuğun soldan dolması, mor bloğun parlayarak açılması, kartların elastik pop + sırayla yanması, sayaç nabzı, şeritlerin kayarak girişi, çubuk yarışı, kitap kapağının dönerek açılması + ışık patlaması, bulanık kamera kesmeleri, maske satırları"
  }
 ]
